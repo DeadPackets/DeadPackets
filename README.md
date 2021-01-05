@@ -9,13 +9,7 @@
 
 - 💪 I am most proud of [CRNotify, a web-app/crawler that scrapes my university's website for the latest updates on course availability!](https://github.com/DeadPackets/CRNotify)
 
-- 👨‍💻 All of my projects are available at [https://github.com/DeadPackets](https://github.com/DeadPackets)
-
 - 📝 I regularly write articles on [https://deadpackets.pw](https://deadpackets.pw)
-
-- 💬 Ask me about **security, NodeJS and anything Linux!**
-
-- 📫 How to reach me **youssef-awad@outlook.com**
 
 - 📄 Know about my experience/awards [https://www.linkedin.com/in/youssef-awad/](https://www.linkedin.com/in/youssef-awad/)
 
@@ -39,10 +33,5 @@
 <p><a href="https://www.buymeacoffee.com/deadpackets"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="deadpackets" /></a></p><br><br>
 
 <h3 align="left">Stats:</h3>
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=deadpackets&show_icons=true&locale=en&layout=compact" alt="deadpackets" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=deadpackets&show_icons=true&locale=en" alt="deadpackets" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=deadpackets&" alt="deadpackets" /></p>
 
 ![GitHub metrics](https://metrics.lecoq.io/DeadPackets)  
