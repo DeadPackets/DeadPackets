@@ -33,5 +33,7 @@
 <p><a href="https://www.buymeacoffee.com/deadpackets"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="deadpackets" /></a></p><br><br>
 
 <h3 align="left">Stats:</h3>
-
-![GitHub metrics](https://metrics.lecoq.io/DeadPackets)  
+<p float="left">
+<img src="https://github-readme-stats.vercel.app/api?username=deadpackets&show_icons=true&locale=en" alt="deadpackets" />
+<img src="https://metrics.lecoq.io/DeadPackets" alt="deadpackets" />
+</p>
