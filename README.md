@@ -1,17 +1,17 @@
 <h1 align="center">Hi 👋, I'm DeadPackets (Youssef Awad)!</h1>
 <h3 align="center">💻 A passionate cybersecurity researcher, programmer and tinkerer!</h3>
 
-- 🔭 I’m currently working on [Rumi, my privacy awareness app!](https://github.com/DeadPackets/Rumi)
+- 🔭  I’m currently working on [Rumi, my privacy awareness app!](https://github.com/DeadPackets/Rumi)
 
-- 🌱 I’m currently learning **Kubernetes, TravisCI and more python.**
+- 🌱  I’m currently learning **Kubernetes, TravisCI and more python.**
 
-- 🕶 I recently finished [DOSArchive, an interactive archive of my father's DOS programs!](https://deadpackets.pw/DOSArchive/)
+- 🕶  I recently finished [DOSArchive, an interactive archive of my father's DOS programs!](https://deadpackets.pw/DOSArchive/)
 
-- 💪 I am most proud of [CRNotify, a web-app/crawler that scrapes my university's website for the latest updates on course availability!](https://github.com/DeadPackets/CRNotify)
+- 💪  I am most proud of [CRNotify, a web-app/crawler that scrapes my university's website for the latest updates on course availability!](https://github.com/DeadPackets/CRNotify)
 
-- 📝 I regularly write articles on [https://deadpackets.pw](https://deadpackets.pw)
+- 📝  I regularly write articles on [https://deadpackets.pw](https://deadpackets.pw)
 
-- 📄 Know about my experience/awards [https://www.linkedin.com/in/youssef-awad/](https://www.linkedin.com/in/youssef-awad/)
+- 📄  Know about my experience/awards [https://www.linkedin.com/in/youssef-awad/](https://www.linkedin.com/in/youssef-awad/)
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
