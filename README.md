@@ -38,7 +38,7 @@
 ![](https://komarev.com/ghpvc/?username=DeadPackets&color=blue)
 
 <p float="left">
-<img src="https://github-readme-stats.vercel.app/api?username=deadpackets&show_icons=true&locale=en" alt="deadpackets" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=deadpackets&show_icons=true&locale=en&layout=compact" alt="deadpackets" />
+<img src="https://github-readme-stats.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=deadpackets&show_icons=true&locale=en&layout=compact&theme=react" alt="deadpackets" />
 <img src="https://metrics.lecoq.io/DeadPackets" alt="deadpackets" />
 </p>
