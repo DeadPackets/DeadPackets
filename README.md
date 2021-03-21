@@ -15,7 +15,10 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
-- [The Server From Hell - Writeup](https://deadpackets.pw/posts/the-server-from-hell-writeup/)
+- [Enable Google Page Views](https://deadpackets.pw/posts/enable-google-pv/)
+- [Customize the Favicon](https://deadpackets.pw/posts/customize-the-favicon/)
+- [Getting Started](https://deadpackets.pw/posts/getting-started/)
+- [Writing a New Post](https://deadpackets.pw/posts/write-a-new-post/)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
