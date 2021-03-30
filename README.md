@@ -3,7 +3,7 @@
 
 - 🔭  I’m currently working on [Rumi, my privacy awareness app!](https://github.com/DeadPackets/Rumi)
 
-- 🌱  I’m currently learning **Kubernetes, TravisCI and more python.**
+- 🌱  I’m currently learning **Kubernetes, Advanced DevOps and more python.**
 
 - 🕶  I recently finished [DOSArchive, an interactive archive of my father's DOS programs!](https://deadpackets.pw/DOSArchive/)
 
