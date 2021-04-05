@@ -18,6 +18,13 @@
 - [The Server From Hell - Writeup](https://deadpackets.pw/posts/the-server-from-hell-writeup/)
 <!-- BLOG-POST-LIST:END -->
 
+<h3 align="left">Hacking Stats</h3>
+<p align="center">
+  <a href="https://tryhackme.com/p/DeadPackets"><img src="https://tryhackme-badges.s3.amazonaws.com/DeadPackets.png?8" alt="TryHackMe" /></a>
+  <a href="https://app.hackthebox.eu/profile/3326"><img src="https://www.hackthebox.eu/badge/image/3326" alt="HackTheBox" /></a>
+</p>
+
+  
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/dead_packets" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="dead_packets" height="30" width="40" /></a>
