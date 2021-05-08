@@ -10,7 +10,7 @@
     - url: https://github.com/COE420Group4/Donation-Nation
 
 - name: NodeJS
-  logo: node-dot-js
+  logo: node.js
   url: https://nodejs.org/
   color: '#339933'
   projects:
@@ -29,7 +29,7 @@
     - url: https://github.com/DeadPackets/CRNotify
     - url: https://github.com/DeadPackets/AUSCrawl
 
-- name: React Native
+- name: React-Native
   logo: react
   url: https://reactnative.dev
   color: '#61DAFB'
