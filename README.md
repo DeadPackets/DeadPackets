@@ -25,6 +25,13 @@ TODO
 ### Waka-Time Stats
 
 <!--START_SECTION:waka-->
+```text
+Python       10 hrs 19 mins  ███████████▒░░░░░░░░░░░░░   45.64 % 
+JavaScript   2 hrs 25 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.73 % 
+PHP          1 hr 58 mins    ██▒░░░░░░░░░░░░░░░░░░░░░░   08.71 % 
+Bash         1 hr 48 mins    ██░░░░░░░░░░░░░░░░░░░░░░░   07.96 % 
+Docker       1 hr 46 mins    ██░░░░░░░░░░░░░░░░░░░░░░░   07.84 % 
+```
 <!--END_SECTION:waka-->
 
 ### Todoist Stats
