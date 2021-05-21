@@ -2,9 +2,26 @@
 
 <h3 align="center">💻 A passionate cybersecurity researcher, programmer and hacker!</h3>
 
-<p align="center"><img src="https://komarev.com/ghpvc/?username=DeadPackets&color=blue"></p>
+<p align="center">
 
-### Project Spotlight
+</p>
+
+---
+
+## `$> whoami`
+
+<img align="right" src="me.jpg" width="250px" />
+
+- <img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16px" /> Senior Computer Engineering student at [AUS](https://www.aus.edu)
+- <img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16px" /> Head of Engineering at [CTFae](https://ctf.ae)
+- <img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16px" /> I enjoy creating/playing in CTFs and hacking/breaking things
+- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16px" /> I absolutely love Python and Docker
+- I love the dev/cybersec community and enjoy teaching others new things
+- <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
+- <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
+- 📝 You can read my Resume/CV [here](https://a.com)
+
+## `$> ls -la projects/`
 
 <!-- START OF PROFILE STACK, DO NOT REMOVE -->
 | 💻 **Technology** | 🚀 **Projects** |
@@ -18,29 +35,23 @@
 | [![Java](https://img.shields.io/static/v1?label=&message=Java&color=F89820&logo=java&logoColor=FFFFFF)](https://www.java.com) | [![The-Mansion-Game](https://img.shields.io/static/v1?label=&message=The-Mansion-Game&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DanaOsama/The-Mansion-Game) |
 <!-- END OF PROFILE STACK, DO NOT REMOVE -->
 
-### Latest Social Media Posts
+## `$> social_media --latest-posts`
 
 TODO
 
-### Waka-Time Stats
-
-<!--START_SECTION:waka-->
-```text
-Python       10 hrs 19 mins  ███████████▒░░░░░░░░░░░░░   45.64 % 
-JavaScript   2 hrs 25 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.73 % 
-PHP          1 hr 58 mins    ██▒░░░░░░░░░░░░░░░░░░░░░░   08.71 % 
-Bash         1 hr 48 mins    ██░░░░░░░░░░░░░░░░░░░░░░░   07.96 % 
-Docker       1 hr 46 mins    ██░░░░░░░░░░░░░░░░░░░░░░░   07.84 % 
-```
-<!--END_SECTION:waka-->
-
-### Hacking Stats
+## `$> cat coding_stats.txt`
 
 <p align="center">
-  <a href="https://tryhackme.com/p/DeadPackets"><img src="https://tryhackme-badges.s3.amazonaws.com/DeadPackets.png" alt="TryHackMe" /></a>
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" alt="deadpackets" />
 </p>
 
-### Github Stats
+## `$> tryhackme --rank`
+
+<p align="center">
+  <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" /></a>
+</p>
+
+## `$> git show stats`
 
 <p align="center">
 

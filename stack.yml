@@ -64,3 +64,10 @@
   color: '#F89820'
   projects:
     - url: https://github.com/DanaOsama/The-Mansion-Game
+
+- name: C++
+  logo: cplusplus
+  url: https://www.cplusplus.com
+  color: '#00599C'
+  projects:
+    - url: https://github.com/DeadPackets/CMP220Project

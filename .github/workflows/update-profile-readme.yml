@@ -1,0 +1,51 @@
+name: Update profile README
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "* */3 * * *" # every 3 hours
+
+jobs:
+  update-profile-readme:
+    name: Update profile README
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Update TryHackMe Stats
+        run: |
+          wget https://tryhackme-badges.s3.amazonaws.com/DeadPackets.png -O tryhackme.png
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add tryhackme.png
+          git commit -m "Update TryHackMe Stats"
+          git push
+      - name: Generate Github Activity and Timestamp
+        uses: actions-js/profile-readme@master
+        with:
+          username: DeadPackets
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          template: './TEMPLATE.md'
+          readme: './TEMPLATE_2.md'
+      - name: Generate Profile Stats
+        uses: teoxoy/profile-readme-stats@v1
+        with:
+          token: ${{ secrets.PA_TOKEN }}
+          template: './TEMPLATE_2.md'
+          readme: './README.md'
+      - name: Update README.md
+        run: |
+          if [[ "$(git status --porcelain)" != "" ]]; then
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git commit -m "Update README"
+          git push
+          fi
+      - name: Update WakaTime Stats
+        uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
