@@ -41,9 +41,15 @@ TODO
 
 ## `$> cat coding_stats.txt`
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" alt="deadpackets" />
-</p>
+<!--START_SECTION:waka-->
+```text
+Python       5 hrs 56 mins   ████████████████░░░░░░░░░   64.10 % 
+HTML         2 hrs 36 mins   ███████░░░░░░░░░░░░░░░░░░   28.13 % 
+YAML         24 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   04.38 % 
+Git Config   16 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.92 % 
+Markdown     2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.47 % 
+```
+<!--END_SECTION:waka-->
 
 ## `$> tryhackme --rank`
 
