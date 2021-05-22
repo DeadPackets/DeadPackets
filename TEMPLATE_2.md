@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- ⭐ Over my **{{ ACCOUNT_AGE }}** years on GitHub, I have opened **{{ ISSUES }}** issues, opened **{{ PULL_REQUESTS }}** PRs, pushed **{{ COMMITS }}** commits, created **{{ REPOSITORIES }}** repositories, contributed to **{{ REPOSITORIES_CONTRIBUTED_TO }}** projects, gathered **{{ STARS }}** across all my repos and gists
+- ⭐ Over my **{{ ACCOUNT_AGE }}** years on GitHub, I have opened **{{ ISSUES }}** issues, opened **{{ PULL_REQUESTS }}** PRs, pushed **{{ COMMITS }}** commits, created **{{ REPOSITORIES }}** repositories, contributed to **{{ REPOSITORIES_CONTRIBUTED_TO }}** projects, gathered **{{ STARS }}** stars across all my repos and gists
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a>
 - 📝 You can read my Resume/CV [here](https://)
 
@@ -49,57 +49,65 @@
 
 #### Languages
 
-<img src="https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
-<img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
-<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" />
-<img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" />
-<img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node-dot-js&logoColor=white" />
-<img src="https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white" />
-<img src="https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
+  <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node-dot-js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white" />
+  <img src="https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white" />
+</p>
 
 #### Databases
 
-<img src="https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/SQLite-07405E?style=flat&logo=sqlite&logoColor=white" />
-<img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-07405E?style=flat&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" />
+</p>
 
 #### Frameworks
 
-<img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white" />
-<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white" />
-<img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" />
-<img src="https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white" />
+  <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white" />
+</p>
 
 #### Tools
 
-<img src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=yarn&logoColor=white" />
-<img src="https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white" />
-<img src="https://img.shields.io/badge/Raspberry%20Pi-C51A4A.svg?&style=flat&logo=raspberry%20pi&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
-<img src="https://img.shields.io/badge/Insomnia-5849be?style=flat&logo=Insomnia&logoColor=white" />
-<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=Selenium&logoColor=white" />
-<img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />
-<img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=yarn&logoColor=white" />
+  <img src="https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white" />
+  <img src="https://img.shields.io/badge/Raspberry%20Pi-C51A4A.svg?&style=flat&logo=raspberry%20pi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Insomnia-5849be?style=flat&logo=Insomnia&logoColor=white" />
+  <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=Selenium&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white" />
+</p>
 
 #### Operating Systems
 
-<img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" />
-<img src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kali-linux&logoColor=white" />
-<img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" />
-<img src="https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat&logo=alpine-linux&logoColor=white" />
-<img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white" />
-<img src="https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white" />
-<img src="https://img.shields.io/badge/OSX-999999?style=flat&logo=apple&logoColor=white" />
-<img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white" />
-
+<p align="left">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kali-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" />
+  <img src="https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat&logo=alpine-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white" />
+  <img src="https://img.shields.io/badge/OSX-999999?style=flat&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white" />
 </p>
 
 ## `$> cat life.txt | grep "Achievements"`
@@ -127,6 +135,7 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 3 commits to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
@@ -136,7 +145,6 @@
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #8638 in education/GitHubGraduation-2021
 * ⬆️ Pushed 1 commit to DeadPackets/GitHubGraduation-2021
-* 🍴 Forked DeadPackets/GitHubGraduation-2021 from education/GitHubGraduation-2021
 
 
 ## `$> tryhackme --rank`
@@ -172,5 +180,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 4 hours. It was last generated Saturday, May 22nd 2021, 11:32:42.</i>
+  <i>This README generates every 3 hours. It was last generated Saturday, May 22nd 2021, 11:54:02.</i>
 </p>

@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- ⭐ Over my **5** years on GitHub, I have opened **52** issues, opened **21** PRs, pushed **1009** commits, created **32** repositories, contributed to **9** projects, gathered **35** across all my repos and gists
+- ⭐ Over my **5** years on GitHub, I have opened **52** issues, opened **21** PRs, pushed **1013** commits, created **32** repositories, contributed to **9** projects, gathered **35** stars across all my repos and gists
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a>
 - 📝 You can read my Resume/CV [here](https://)
 
@@ -37,70 +37,77 @@
 | 💻 **Technology** | 🚀 **Projects** |
 | - | - |
 | [![Python](https://img.shields.io/static/v1?label=&message=Python&color=3C78A9&logo=python&logoColor=FFFFFF)](https://www.python.org/) | [![pwnbox-cli](https://img.shields.io/static/v1?label=&message=pwnbox-cli&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/pwnbox-cli) [![EasyGuard](https://img.shields.io/static/v1?label=&message=EasyGuard%20(WIP)&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/EasyGuard) [![ctfd-discord-webhook-plugin](https://img.shields.io/static/v1?label=&message=ctfd-discord-webhook-plugin&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/ctfd-discord-webhook-plugin) [![Donation-Nation](https://img.shields.io/static/v1?label=&message=Donation-Nation&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/COE420Group4/Donation-Nation) |
-| [![NodeJS](https://img.shields.io/static/v1?label=&message=NodeJS&color=339933&logo=node-dot-js&logoColor=FFFFFF)](https://nodejs.org/) | [![CRNotify](https://img.shields.io/static/v1?label=&message=CRNotify&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/CRNotify) [![AUSCrawl](https://img.shields.io/static/v1?label=&message=AUSCrawl&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/AUSCrawl) [![InfoSteal](https://img.shields.io/static/v1?label=&message=InfoSteal&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/InfoSteal) [![Phishing_Catcher.js](https://img.shields.io/static/v1?label=&message=Phishing_Catcher.js&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/Phishing_Catcher.js) [![iPwn](https://img.shields.io/static/v1?label=&message=iPwn&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/iPwn) [![HackPi](https://img.shields.io/static/v1?label=&message=HackPi&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/HackPi) |
+| [![NodeJS](https://img.shields.io/static/v1?label=&message=NodeJS&color=339933&logo=node.js&logoColor=FFFFFF)](https://nodejs.org/) | [![CRNotify](https://img.shields.io/static/v1?label=&message=CRNotify&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/CRNotify) [![AUSCrawl](https://img.shields.io/static/v1?label=&message=AUSCrawl&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/AUSCrawl) [![InfoSteal](https://img.shields.io/static/v1?label=&message=InfoSteal&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/InfoSteal) [![Phishing_Catcher.js](https://img.shields.io/static/v1?label=&message=Phishing_Catcher.js&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/Phishing_Catcher.js) [![iPwn](https://img.shields.io/static/v1?label=&message=iPwn&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/iPwn) [![HackPi](https://img.shields.io/static/v1?label=&message=HackPi&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/HackPi) |
 | [![Puppeteer](https://img.shields.io/static/v1?label=&message=Puppeteer&color=40B5A4&logo=puppeteer&logoColor=FFFFFF)](https://github.com/DeadPackets/DOSArchive) | [![CRNotify](https://img.shields.io/static/v1?label=&message=CRNotify&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/CRNotify) [![AUSCrawl](https://img.shields.io/static/v1?label=&message=AUSCrawl&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/AUSCrawl) |
 | [![React-Native](https://img.shields.io/static/v1?label=&message=React-Native&color=61DAFB&logo=react&logoColor=FFFFFF)](https://reactnative.dev) | [![Rumi](https://img.shields.io/static/v1?label=&message=Rumi%20(WIP)&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/Rumi) [![CRNotify-App](https://img.shields.io/static/v1?label=&message=CRNotify-App&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/CRNotify-App) [![Aiko](https://img.shields.io/static/v1?label=&message=Aiko&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/Aiko) |
 | [![Docker](https://img.shields.io/static/v1?label=&message=Docker&color=2496ED&logo=docker&logoColor=FFFFFF)](https://www.docker.com) | [![pwnbox](https://img.shields.io/static/v1?label=&message=pwnbox&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/pwnbox) [![EasyGuard](https://img.shields.io/static/v1?label=&message=EasyGuard&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/EasyGuard) [![AUSCTF-S19](https://img.shields.io/static/v1?label=&message=AUSCTF-S19&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/AUSCTF-S19) |
 | [![JavaScript](https://img.shields.io/static/v1?label=&message=JavaScript&color=F7DF1E&logo=javascript&logoColor=FFFFFF)](https://www.javascript.com) | [![DOSArchive](https://img.shields.io/static/v1?label=&message=DOSArchive&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/DOSArchive) [![CrackTheHack](https://img.shields.io/static/v1?label=&message=CrackTheHack&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/CrackTheHack) [![EmailCheck](https://img.shields.io/static/v1?label=&message=EmailCheck&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/EmailCheck) [![HistoryThief](https://img.shields.io/static/v1?label=&message=HistoryThief&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/HistoryThief) |
 | [![Java](https://img.shields.io/static/v1?label=&message=Java&color=F89820&logo=java&logoColor=FFFFFF)](https://www.java.com) | [![The-Mansion-Game](https://img.shields.io/static/v1?label=&message=The-Mansion-Game&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DanaOsama/The-Mansion-Game) |
-| [![C%2B%2B](https://img.shields.io/static/v1?label=&message=C%2B%2B&color=00599C&logo=c%2B%2B&logoColor=FFFFFF)](https://www.cplusplus.com) | [![CMP220Project](https://img.shields.io/static/v1?label=&message=CMP220Project&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/CMP220Project) |
 <!-- END OF PROFILE STACK, DO NOT REMOVE -->
 
 ## `$> cat skills.txt`
 
 #### Languages
 
-<img src="https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
-<img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
-<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" />
-<img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" />
-<img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node-dot-js&logoColor=white" />
-<img src="https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white" />
-<img src="https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
+  <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node-dot-js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white" />
+  <img src="https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white" />
+</p>
 
 #### Databases
 
-<img src="https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/SQLite-07405E?style=flat&logo=sqlite&logoColor=white" />
-<img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-07405E?style=flat&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" />
+</p>
 
 #### Frameworks
 
-<img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white" />
-<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white" />
-<img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" />
-<img src="https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white" />
+  <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white" />
+</p>
 
 #### Tools
 
-<img src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=yarn&logoColor=white" />
-<img src="https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white" />
-<img src="https://img.shields.io/badge/Raspberry%20Pi-C51A4A.svg?&style=flat&logo=raspberry%20pi&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
-<img src="https://img.shields.io/badge/Insomnia-5849be?style=flat&logo=Insomnia&logoColor=white" />
-<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=Selenium&logoColor=white" />
-<img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />
-<img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=yarn&logoColor=white" />
+  <img src="https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white" />
+  <img src="https://img.shields.io/badge/Raspberry%20Pi-C51A4A.svg?&style=flat&logo=raspberry%20pi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Insomnia-5849be?style=flat&logo=Insomnia&logoColor=white" />
+  <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=Selenium&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white" />
+</p>
 
 #### Operating Systems
 
-<img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" />
-<img src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kali-linux&logoColor=white" />
-<img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" />
-<img src="https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat&logo=alpine-linux&logoColor=white" />
-<img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white" />
-<img src="https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white" />
-<img src="https://img.shields.io/badge/OSX-999999?style=flat&logo=apple&logoColor=white" />
-<img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white" />
-
+<p align="left">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kali-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" />
+  <img src="https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat&logo=alpine-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white" />
+  <img src="https://img.shields.io/badge/OSX-999999?style=flat&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white" />
 </p>
 
 ## `$> cat life.txt | grep "Achievements"`
@@ -124,16 +131,11 @@
 ## `$> wakatime --show-coding-stats`
 
 <!--START_SECTION:waka-->
-```text
-Markdown     2 hrs 32 mins   ███████████▓░░░░░░░░░░░░░   46.07 % 
-HTML         1 hr 42 mins    ███████▓░░░░░░░░░░░░░░░░░   30.99 % 
-YAML         53 mins         ████░░░░░░░░░░░░░░░░░░░░░   16.16 % 
-Python       22 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.73 % 
-```
 <!--END_SECTION:waka-->
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 3 commits to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
@@ -143,7 +145,6 @@ Python       22 mins         █▓░░░░░░░░░░░░░░░
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #8638 in education/GitHubGraduation-2021
 * ⬆️ Pushed 1 commit to DeadPackets/GitHubGraduation-2021
-* 🍴 Forked DeadPackets/GitHubGraduation-2021 from education/GitHubGraduation-2021
 
 
 ## `$> tryhackme --rank`
@@ -179,5 +180,5 @@ Python       22 mins         █▓░░░░░░░░░░░░░░░
 </p>
 
 <p align="center">
-  <i>This README generates every 4 hours. It was last generated Saturday, May 22nd 2021, 11:32:42.</i>
+  <i>This README generates every 3 hours. It was last generated Saturday, May 22nd 2021, 11:54:02.</i>
 </p>
