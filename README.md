@@ -3,23 +3,33 @@
 <h3 align="center">💻 A passionate cybersecurity researcher, programmer and hacker!</h3>
 
 <p align="center">
-
+  <a href="mailto:b00073615@aus.edu"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" /></a>
+  <a href="https://t.me/deadpackets"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white" /></a>
+  <a href="mailto:DeadPackets#5317"><img src="https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white" /></a>
+  <a href="https://instagram.com/lucidgamer"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white" /></a>
+  <a href="https://twitter.com/dead_packets"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/youssef-awad/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" /></a>
+  <a href="https://www.youtube.com/channel/UCdNjReL5xxOOvPtnnUgt_hQ"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" /></a>
+  <a href="https://www.twitch.tv/deadpackets"><img src="https://img.shields.io/badge/Twitch-9146FF?style=flat&logo=twitch&logoColor=white" /></a>
+  <a href="https://open.spotify.com/user/r876i9nhmpdg2qe0wrc9rsace?si=59a116007ba54bce"><img src="https://img.shields.io/badge/Spotify-1ED760?&style=flat&logo=spotify&logoColor=white" /></a>
 </p>
 
 ---
 
 ## `$> whoami`
 
-<img align="right" src="me.jpg" width="250px" />
+<img align="right" src="me.jpg" width="300px" />
 
 - <img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16px" /> Senior Computer Engineering student at [AUS](https://www.aus.edu)
-- <img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16px" /> Head of Engineering at [CTFae](https://ctf.ae)
+- <img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16px" /> Head of Engineering & Co-Founder at [CTFae](https://ctf.ae)
 - <img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16px" /> I enjoy creating/playing in CTFs and hacking/breaking things
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16px" /> I absolutely love Python and Docker
-- I love the dev/cybersec community and enjoy teaching others new things
+- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- 📝 You can read my Resume/CV [here](https://a.com)
+- ⭐ Over my **5** years on GitHub, I have opened **52** issues, opened **21** PRs, pushed **1009** commits, created **32** repositories, contributed to **9** projects, gathered **35** across all my repos and gists
+- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a>
+- 📝 You can read my Resume/CV [here](https://)
 
 ## `$> ls -la projects/`
 
@@ -35,34 +45,132 @@
 | [![Java](https://img.shields.io/static/v1?label=&message=Java&color=F89820&logo=java&logoColor=FFFFFF)](https://www.java.com) | [![The-Mansion-Game](https://img.shields.io/static/v1?label=&message=The-Mansion-Game&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DanaOsama/The-Mansion-Game) |
 <!-- END OF PROFILE STACK, DO NOT REMOVE -->
 
-## `$> social_media --latest-posts`
+## `$> cat skills.txt`
 
-TODO
+#### Languages
 
-## `$> cat coding_stats.txt`
+<img src="https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
+<img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white" />
+<img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" />
+<img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node-dot-js&logoColor=white" />
+<img src="https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white" />
+<img src="https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white" />
+
+#### Databases
+
+<img src="https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/SQLite-07405E?style=flat&logo=sqlite&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white" />
+
+#### Frameworks
+
+<img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white" />
+<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white" />
+<img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" />
+<img src="https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white" />
+
+#### Tools
+
+<img src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=yarn&logoColor=white" />
+<img src="https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white" />
+<img src="https://img.shields.io/badge/Raspberry%20Pi-C51A4A.svg?&style=flat&logo=raspberry%20pi&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/Insomnia-5849be?style=flat&logo=Insomnia&logoColor=white" />
+<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=Selenium&logoColor=white" />
+<img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />
+<img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white" />
+
+#### Operating Systems
+
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" />
+<img src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kali-linux&logoColor=white" />
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" />
+<img src="https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat&logo=alpine-linux&logoColor=white" />
+<img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white" />
+<img src="https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white" />
+<img src="https://img.shields.io/badge/OSX-999999?style=flat&logo=apple&logoColor=white" />
+<img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white" />
+
+</p>
+
+## `$> cat life.txt | grep "Achievements"`
+
+- **[2021]** 🏆 Created & hosted the longest CTF in UAE with CTFae ([link](https://ramadan.ctf.ae))
+- **[2021]** 🏆 Awarded the "Outstanding CSE Student Talent Award" at AUS ([link](https://www.aus.edu/media/news/outstanding-computer-science-and-engineering-students-recognized-at-cse-annual-awards))
+- **[2020]** 🎤 Demonstrated a password stealing Windows attack @ GISEC ([link](https://www.youtube.com/watch?v=EKp4WVupukY))
+- **[2020]** 🥇 1st Place Winner at CyberKnight CTF ([link](https://www.linkedin.com/feed/update/urn:li:activity:6709742565509369856/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6709742565509369856%29))
+- **[2020]** 🥇 1st Place Winner at CyberTalents UAE Regional CTF ([link](https://cybertalents.com/competitions/uae-national-cybersecurity-ctf-2020/teams))
+- **[2020]** 🥇 1st Place Winner at HITB Lockdown CTF ([link](https://www.ctftech.com/events/open-battle-ctf/))
+- **[2019]** 🎤 Invited to give a talk at DESC UAE
+- **[2019]** 🥇 1st Place Winner at CyberBattle Of The Emirates ([link](https://www.eyeofriyadh.com/news/details/cyber-battle-of-the-emirates-victors-crowned-as-future-cyber-warriors-turn-up-the-heat-in-abu-dhabi-during-hitb-cyberweek-2019))
+- **[2019]** 🥈 2nd Place Winner at HITB AI Challenge ([link](https://www.aus.edu/media/news/team-led-by-aus-computer-engineering-student-wins-2nd-place-in-ai-competition))
+- **[2019]** 🥉 3rd Place Winner at CyberTalents Arab Regional CTF ([link](https://cybertalents.com/competitions/arab-regional-cyber-security-ctf-2019/teams))
+- **[2019]** 🥇 1st Place Winner at CyberTalents UAE Regional CTF ([link](https://cybertalents.com/competitions/final-uae-national-cyber-security-ctf-2019/teams))
+- **[2019]** 🥇 1st Place Winner at Dubai Police CTF ([link](https://trendingbusinessinsights.com/2019/02/25/three-winners-from-the-same-nationality-win-dubai-police-ctf-cybersecurity-challenge/))
+- **[2018]** 🥇 1st Place Winner at CyberQuest Attack & Defence ([link](https://twitter.com/UAECyberQuest/status/1049276160876658688))
+- **[2016]** 🥇 1st Place Winner at CyberQuest CTF ([link](https://gulfnews.com/uae/education/cyber-warriors-needed-to-protect-online-security-in-uae-1.1816234))
+- **[2016]** 🥈 2nd Place Winner at NYU CSAW Forensics CTF ([link](https://sites.nyuad.nyu.edu/ccs-ad/csaw/))
+
+## `$> wakatime --show-coding-stats`
 
 <!--START_SECTION:waka-->
-```text
-Python       5 hrs 56 mins   ████████████████░░░░░░░░░   64.10 % 
-HTML         2 hrs 36 mins   ███████░░░░░░░░░░░░░░░░░░   28.13 % 
-YAML         24 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   04.38 % 
-Git Config   16 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.92 % 
-Markdown     2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.47 % 
-```
 <!--END_SECTION:waka-->
+
+## `$> github-cli --recent-activity`
+
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 2 commits to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/CMP220Project
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* 💪 Opened PR #8638 in education/GitHubGraduation-2021
+* ⬆️ Pushed 1 commit to DeadPackets/GitHubGraduation-2021
+* 🍴 Forked DeadPackets/GitHubGraduation-2021 from education/GitHubGraduation-2021
+
 
 ## `$> tryhackme --rank`
 
 <p align="center">
   <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" /></a>
 </p>
+<p align="center">🥇 1st place in all of the UAE with over 29,000 points!</p>
 
 ## `$> git show stats`
 
 <p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
+  <img src="http://github-readme-streak-stats.herokuapp.com?user=DeadPackets&theme=react" alt="deadpackets" />
+  <img src="https://github-profile-trophy.vercel.app/?username=DeadPackets&theme=nord" />
+</p>
 
-<img src="https://github-readme-stats.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
+## `$> twitter_cli --latest-tweets`
 
-<img src="http://github-readme-streak-stats.herokuapp.com?user=DeadPackets&theme=react" alt="deadpackets" />
+<p align="center">
+  <a href="https://twitter.com/dead_packets">
+    <img src="https://github-readme-twitter-gazf.vercel.app/api?id=dead_packets&layout=wide&show_reply=no&show_retweet=no" />
+  </a>
+</p>
 
+## `$> spotify_cli --currently-playing`
+
+<p align="center">
+  <a href="https://spotify-github-profile.vercel.app/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&redirect=true">
+    <img src="https://spotify-github-profile.vercel.app/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&cover_image=false&theme=default" />
+  </a>
+</p>
+</p>
+
+<p align="center">
+  <i>This README generates every 4 hours. It was last generated Saturday, May 22nd 2021, 11:32:42.</i>
 </p>

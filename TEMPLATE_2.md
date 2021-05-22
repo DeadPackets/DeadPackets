@@ -127,7 +127,17 @@
 
 ## `$> github-cli --recent-activity`
 
-TODO
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 2 commits to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/CMP220Project
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* 💪 Opened PR #8638 in education/GitHubGraduation-2021
+* ⬆️ Pushed 1 commit to DeadPackets/GitHubGraduation-2021
+* 🍴 Forked DeadPackets/GitHubGraduation-2021 from education/GitHubGraduation-2021
+
 
 ## `$> tryhackme --rank`
 
@@ -159,4 +169,8 @@ TODO
     <img src="https://spotify-github-profile.vercel.app/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&cover_image=false&theme=default" />
   </a>
 </p>
+</p>
+
+<p align="center">
+  <i>This README generates every 4 hours. It was last generated Saturday, May 22nd 2021, 11:32:42.</i>
 </p>
