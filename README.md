@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- ⭐ Over my **5** years on GitHub, I have opened **52** issues, opened **21** PRs, pushed **1025** commits, created **32** repositories, contributed to **9** projects, gathered **35** stars across all my repos and gists
+- ⭐ Over my **5** years on GitHub, I have opened **52** issues, opened **21** PRs, pushed **1026** commits, created **32** repositories, contributed to **9** projects, gathered **35** stars across all my repos and gists
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a>
 - 📝 You can read my Resume/CV [here](https://)
 
@@ -132,12 +132,6 @@
 ## `$> wakatime --show-coding-stats`
 
 <!--START_SECTION:waka-->
-```text
-Week: 14 May, 2021 - 21 May, 2021
-
-Markdown   2 hrs 45 mins   ████████████████▓░░░░░░░░   66.23 % 
-YAML       1 hr 24 mins    ████████▒░░░░░░░░░░░░░░░░   33.77 % 
-```
 <!--END_SECTION:waka-->
 
 ## `$> github-cli --recent-activity`
@@ -187,5 +181,5 @@ YAML       1 hr 24 mins    ████████▒░░░░░░░░�
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, May 22nd 2021, 9:55:36.</i>
+  <i>This README generates every 3 hours. It was last generated Saturday, May 22nd 2021, 10:23:12.</i>
 </p>
