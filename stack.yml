@@ -10,7 +10,7 @@
     - url: https://github.com/COE420Group4/Donation-Nation
 
 - name: NodeJS
-  logo: node.js
+  logo: node-dot-js
   url: https://nodejs.org/
   color: '#339933'
   projects:
@@ -65,8 +65,8 @@
   projects:
     - url: https://github.com/DanaOsama/The-Mansion-Game
 
-- name: C++
-  logo: cplusplus
+- name: C%2B%2B
+  logo: c%2B%2B
   url: https://www.cplusplus.com
   color: '#00599C'
   projects:
