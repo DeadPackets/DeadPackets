@@ -123,6 +123,12 @@
 ## `$> wakatime --show-coding-stats`
 
 <!--START_SECTION:waka-->
+```text
+Markdown     2 hrs 32 mins   ███████████▓░░░░░░░░░░░░░   46.07 % 
+HTML         1 hr 42 mins    ███████▓░░░░░░░░░░░░░░░░░   30.99 % 
+YAML         53 mins         ████░░░░░░░░░░░░░░░░░░░░░   16.16 % 
+Python       22 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.73 % 
+```
 <!--END_SECTION:waka-->
 
 ## `$> github-cli --recent-activity`
