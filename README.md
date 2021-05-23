@@ -132,6 +132,13 @@
 ## `$> wakatime --show-coding-stats`
 
 <!--START_SECTION:waka-->
+```text
+Week: 15 May, 2021 - 22 May, 2021
+
+Markdown   2 hrs 47 mins   ██████████████▒░░░░░░░░░░   57.38 % 
+YAML       1 hr 24 mins    ███████▒░░░░░░░░░░░░░░░░░   28.92 % 
+C          39 mins         ███▒░░░░░░░░░░░░░░░░░░░░░   13.55 % 
+```
 <!--END_SECTION:waka-->
 
 ## `$> github-cli --recent-activity`
