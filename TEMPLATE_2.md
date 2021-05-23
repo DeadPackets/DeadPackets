@@ -136,6 +136,7 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 2 commits to DeadPackets/DeadPackets
 * ⬆️ Pushed 3 commits to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
@@ -145,7 +146,6 @@
 * ⬆️ Pushed 2 commits to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/CMP220Project
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* 💪 Opened PR #8638 in education/GitHubGraduation-2021
 
 
 ## `$> tryhackme --rank`
@@ -181,5 +181,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, May 22nd 2021, 10:23:12.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, May 23rd 2021, 1:17:47.</i>
 </p>
