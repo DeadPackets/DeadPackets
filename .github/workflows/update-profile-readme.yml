@@ -30,7 +30,7 @@ jobs:
       - name: Push updates to repo
         uses: EndBug/add-and-commit@v7
         with:
-          default_author: github_actor
+          default_author: github_actions
           message: Update README with latest stats
       - name: Update WakaTime Stats
         uses: athul/waka-readme@master
