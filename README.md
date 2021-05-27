@@ -132,25 +132,18 @@
 ## `$> wakatime --show-coding-stats`
 
 <!--START_SECTION:waka-->
-```text
-Week: 19 May, 2021 - 26 May, 2021
-
-Markdown   2 hrs 47 mins   ██████████████░░░░░░░░░░░   55.59 % 
-YAML       1 hr 24 mins    ███████░░░░░░░░░░░░░░░░░░   28.02 % 
-C          48 mins         ████░░░░░░░░░░░░░░░░░░░░░   16.25 % 
-```
 <!--END_SECTION:waka-->
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
+* ⬆️ Pushed 1 commit to DeadPackets/InfoSteal
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 2 commits to DeadPackets/DeadPackets
 * ⬆️ Pushed 3 commits to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 
@@ -188,5 +181,5 @@ C          48 mins         ████░░░░░░░░░░░░░�
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Thursday, May 27th 2021, 1:39:53.</i>
+  <i>This README generates every 3 hours. It was last generated Thursday, May 27th 2021, 4:10:38.</i>
 </p>
