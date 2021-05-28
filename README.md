@@ -132,18 +132,11 @@
 ## `$> wakatime --show-coding-stats`
 
 <!--START_SECTION:waka-->
-```text
-Week: 20 May, 2021 - 27 May, 2021
-
-Markdown   2 hrs 45 mins   ██████████████▓░░░░░░░░░░   59.16 % 
-YAML       1 hr            █████▒░░░░░░░░░░░░░░░░░░░   21.55 % 
-C          48 mins         ████▒░░░░░░░░░░░░░░░░░░░░   17.56 % 
-Python     4 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.56 % 
-```
 <!--END_SECTION:waka-->
 
 ## `$> github-cli --recent-activity`
 
+* 🗣 Commented on #2 in DeadPackets/pwnbox-cli
 * ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
 * ❌ Closed PR #2 in DeadPackets/Phishing_Catcher.js
 * ❌ Closed PR #1 in DeadPackets/Phishing_Catcher.js
@@ -153,7 +146,6 @@ Python     4 mins          ▒░░░░░░░░░░░░░░░░�
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +181,5 @@ Python     4 mins          ▒░░░░░░░░░░░░░░░░�
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Friday, May 28th 2021, 12:55:23.</i>
+  <i>This README generates every 3 hours. It was last generated Friday, May 28th 2021, 2:03:03.</i>
 </p>
