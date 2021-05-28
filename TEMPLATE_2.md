@@ -137,15 +137,15 @@
 ## `$> github-cli --recent-activity`
 
 * ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
+* ❌ Closed PR #2 in DeadPackets/Phishing_Catcher.js
+* ❌ Closed PR #1 in DeadPackets/Phishing_Catcher.js
+* 🗣 Commented on #2 in DeadPackets/pwnbox-cli
+* ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
 * ⬆️ Pushed 1 commit to DeadPackets/InfoSteal
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 2 commits to DeadPackets/DeadPackets
-* ⬆️ Pushed 3 commits to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 
 
 ## `$> tryhackme --rank`
@@ -181,5 +181,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Friday, May 28th 2021, 10:28:04.</i>
+  <i>This README generates every 3 hours. It was last generated Friday, May 28th 2021, 12:55:23.</i>
 </p>
