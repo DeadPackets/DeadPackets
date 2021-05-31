@@ -132,6 +132,11 @@
 ## `$> wakatime --show-coding-stats`
 
 <!--START_SECTION:waka-->
+```text
+Week: 23 May, 2021 - 30 May, 2021
+
+Python   4 mins          █████████████████████████   100.00 % 
+```
 <!--END_SECTION:waka-->
 
 ## `$> github-cli --recent-activity`
