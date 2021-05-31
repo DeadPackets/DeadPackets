@@ -132,12 +132,6 @@
 ## `$> wakatime --show-coding-stats`
 
 <!--START_SECTION:waka-->
-```text
-Week: 23 May, 2021 - 30 May, 2021
-
-C        9 mins          █████████████████░░░░░░░░   68.35 % 
-Python   4 mins          ████████░░░░░░░░░░░░░░░░░   31.65 % 
-```
 <!--END_SECTION:waka-->
 
 ## `$> github-cli --recent-activity`
@@ -187,5 +181,5 @@ Python   4 mins          ████████░░░░░░░░░░�
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Monday, May 31st 2021, 5:16:06.</i>
+  <i>This README generates every 3 hours. It was last generated Monday, May 31st 2021, 7:31:39.</i>
 </p>
