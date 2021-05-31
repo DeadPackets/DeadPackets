@@ -137,6 +137,7 @@
 ## `$> github-cli --recent-activity`
 
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 🗣 Commented on #2 in DeadPackets/pwnbox-cli
 * ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
@@ -145,13 +146,12 @@
 * 🗣 Commented on #2 in DeadPackets/pwnbox-cli
 * ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
 * ⬆️ Pushed 1 commit to DeadPackets/InfoSteal
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 
 
 ## `$> tryhackme --rank`
 
 <p align="center">
-  <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" /></a>
+  <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" width="400px" /></a>
 </p>
 <p align="center">🥇 1st place in all of the UAE with over 29,000 points!</p>
 
@@ -181,5 +181,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Monday, May 31st 2021, 3:22:01.</i>
+  <i>This README generates every 3 hours. It was last generated Monday, May 31st 2021, 3:41:33.</i>
 </p>
