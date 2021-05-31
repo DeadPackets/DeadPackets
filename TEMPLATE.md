@@ -142,7 +142,7 @@
 ## `$> tryhackme --rank`
 
 <p align="center">
-  <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" /></a>
+  <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" width="400px" /></a>
 </p>
 <p align="center">🥇 1st place in all of the UAE with over 29,000 points!</p>
 
