@@ -131,8 +131,9 @@
 
 ## `$> wakatime --show-coding-stats`
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" />
+</p>
 
 ## `$> github-cli --recent-activity`
 
