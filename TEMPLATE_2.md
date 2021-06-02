@@ -28,8 +28,8 @@
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
 - ⭐ Over my **{{ ACCOUNT_AGE }}** years on GitHub, I have opened **{{ ISSUES }}** issues, opened **{{ PULL_REQUESTS }}** PRs, pushed **{{ COMMITS }}** commits, created **{{ REPOSITORIES }}** repositories, contributed to **{{ REPOSITORIES_CONTRIBUTED_TO }}** projects, gathered **{{ STARS }}** stars across all my repos and gists
-- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a>
-- 📝 You can read my Resume/CV [here](https://)
+<!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
+<!-- - 📝 You can read my Resume/CV [here](https://) -->
 
 ## `$> ls -la projects/`
 
@@ -138,14 +138,14 @@
 
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/deadpackets.github.io
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 🗣 Commented on #2 in DeadPackets/pwnbox-cli
 * ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
-* ❌ Closed PR #2 in DeadPackets/Phishing_Catcher.js
-* ❌ Closed PR #1 in DeadPackets/Phishing_Catcher.js
 
 
 ## `$> tryhackme --rank`
@@ -153,7 +153,7 @@
 <p align="center">
   <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" width="400px" /></a>
 </p>
-<p align="center">🥇 1st place in all of the UAE with over 29,000 points!</p>
+<p align="center">🥇 1st place in all of the UAE with over 33,000 points!</p>
 
 ## `$> git show stats`
 
@@ -181,5 +181,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, June 2nd 2021, 4:01:29.</i>
+  <i>This README generates every 3 hours. It was last generated Wednesday, June 2nd 2021, 5:01:19.</i>
 </p>
