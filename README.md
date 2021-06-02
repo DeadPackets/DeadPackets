@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- ⭐ Over my **5** years on GitHub, I have opened **52** issues, opened **21** PRs, pushed **1101** commits, created **32** repositories, contributed to **9** projects, gathered **37** stars across all my repos and gists
+- ⭐ Over my **5** years on GitHub, I have opened **52** issues, opened **21** PRs, pushed **1102** commits, created **32** repositories, contributed to **9** projects, gathered **37** stars across all my repos and gists
 <!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
 <!-- - 📝 You can read my Resume/CV [here](https://) -->
 
@@ -131,16 +131,13 @@
 
 ## `$> wakatime --show-coding-stats`
 
-<!--START_SECTION:waka-->
-```text
-Week: 25 May, 2021 - 01 June, 2021
-
-Python   4 mins          █████████████████████████   100.00 % 
-```
-<!--END_SECTION:waka-->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" />
+</p>
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
@@ -150,7 +147,6 @@ Python   4 mins          ██████████████████�
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 🗣 Commented on #2 in DeadPackets/pwnbox-cli
-* ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
 
 
 ## `$> tryhackme --rank`
@@ -186,5 +182,5 @@ Python   4 mins          ██████████████████�
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, June 2nd 2021, 5:01:19.</i>
+  <i>This README generates every 3 hours. It was last generated Wednesday, June 2nd 2021, 5:17:59.</i>
 </p>

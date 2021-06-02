@@ -131,11 +131,13 @@
 
 ## `$> wakatime --show-coding-stats`
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" />
+</p>
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
@@ -145,7 +147,6 @@
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 🗣 Commented on #2 in DeadPackets/pwnbox-cli
-* ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
 
 
 ## `$> tryhackme --rank`
@@ -181,5 +182,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, June 2nd 2021, 5:01:19.</i>
+  <i>This README generates every 3 hours. It was last generated Wednesday, June 2nd 2021, 5:17:59.</i>
 </p>
