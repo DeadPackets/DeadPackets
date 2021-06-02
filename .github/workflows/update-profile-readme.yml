@@ -37,3 +37,19 @@ jobs:
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           SHOW_TITLE: true
+      - name: Update index.html
+        uses: docker://pandoc/core:2.9
+        with:
+          args: >-
+            --standalone
+            --template=template.html
+            --section-divs
+            --from=gfm
+            --to=html5
+            --output=index.html
+            README.md
+      - name: Push updates to repo
+        uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: Update index.html with latest version
