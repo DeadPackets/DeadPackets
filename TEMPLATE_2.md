@@ -113,6 +113,7 @@
 
 ## `$> cat life.txt | grep "Achievements"`
 
+- **[2021]** 🥇 1st Place Winner at The Hunt SOCathon hosted at GISEC ([link](https://www.linkedin.com/posts/cyberunittech_cyberunittech-socathon-gisec2021-activity-6806306706688118784-SogR))
 - **[2021]** 🏆 Created & hosted the longest CTF in UAE with CTFae ([link](https://ramadan.ctf.ae))
 - **[2021]** 🏆 Awarded the "Outstanding CSE Student Talent Award" at AUS ([link](https://www.aus.edu/media/news/outstanding-computer-science-and-engineering-students-recognized-at-cse-annual-awards))
 - **[2020]** 🎤 Demonstrated a password stealing Windows attack @ GISEC ([link](https://www.youtube.com/watch?v=EKp4WVupukY))
@@ -137,16 +138,16 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ❗️ Opened issue #7 in DeadPackets/AUSCrawl
+* ❗️ Opened issue #6 in DeadPackets/AUSCrawl
+* ❗️ Opened issue #5 in DeadPackets/AUSCrawl
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
 * ❗️ Opened issue #3 in DeadPackets/pwnbox
 * 🗣 Commented on #3 in DeadPackets/pwnbox-cli
 * ❗️ Opened issue #4 in DeadPackets/pwnbox-cli
 * ⬆️ Pushed 2 commits to DeadPackets/pwnbox-cli
 * 🎉 Merged PR #3 in DeadPackets/pwnbox-cli
-* 🗣 Commented on #3 in DeadPackets/pwnbox-cli
-* ⬆️ Pushed 2 commits to DeadPackets/pwnbox-cli
-* 🎉 Merged PR #2 in DeadPackets/pwnbox-cli
-* 🗣 Commented on #2 in DeadPackets/pwnbox-cli
 
 
 ## `$> tryhackme --rank`
@@ -182,5 +183,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Friday, June 4th 2021, 1:06:33.</i>
+  <i>This README generates every 3 hours. It was last generated Friday, June 4th 2021, 1:50:20.</i>
 </p>
