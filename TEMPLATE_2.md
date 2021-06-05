@@ -138,6 +138,9 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/deadpackets.github.io
+* ⬆️ Pushed 1 commit to DeadPackets/deadpackets.github.io
+* ❗️ Opened issue #1 in DeadPackets/deadpackets.github.io
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ❗️ Opened issue #7 in DeadPackets/AUSCrawl
 * ❗️ Opened issue #6 in DeadPackets/AUSCrawl
@@ -145,9 +148,6 @@
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
 * ❗️ Opened issue #3 in DeadPackets/pwnbox
 * 🗣 Commented on #3 in DeadPackets/pwnbox-cli
-* ❗️ Opened issue #4 in DeadPackets/pwnbox-cli
-* ⬆️ Pushed 2 commits to DeadPackets/pwnbox-cli
-* 🎉 Merged PR #3 in DeadPackets/pwnbox-cli
 
 
 ## `$> tryhackme --rank`
@@ -183,5 +183,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Friday, June 4th 2021, 10:21:42.</i>
+  <i>This README generates every 3 hours. It was last generated Saturday, June 5th 2021, 1:41:04.</i>
 </p>
