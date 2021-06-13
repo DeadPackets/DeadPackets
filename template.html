@@ -68,7 +68,7 @@
 		crossorigin="anonymous"></script>
 	<script>
 		/* Bootstrap styles */
-		ScrollReveal().reveal('section');
+		ScrollReveal().reveal('section', {mobile: false});
 		function bootstrapFixes() {
 			$$('tr.header').parent('thead').parent('table').addClass('table table-dark table-condensed');
 			$$('h2').addClass('mb-2').append('<hr />');
