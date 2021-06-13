@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- ⭐ Over my **5** years on GitHub, I have opened **58** issues, opened **21** PRs, pushed **1122** commits, created **33** repositories, contributed to **9** projects, gathered **37** stars across all my repos and gists
+- ⭐ Over my **5** years on GitHub, I have opened **59** issues, opened **21** PRs, pushed **1124** commits, created **33** repositories, contributed to **9** projects, gathered **37** stars across all my repos and gists
 <!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
 <!-- - 📝 You can read my Resume/CV [here](https://) -->
 
@@ -138,16 +138,16 @@
 
 ## `$> github-cli --recent-activity`
 
+* 🗣 Commented on #1 in DeadPackets/DeadPackets
+* ⬆️ Pushed 2 commits to DeadPackets/DeadPackets
+* ❗️ Closed issue #1 in DeadPackets/DeadPackets
+* ❗️ Opened issue #1 in DeadPackets/DeadPackets
 * ⬆️ Pushed 2 commits to DeadPackets/Rumi
 * 🎉 Merged PR #3 in DeadPackets/Rumi
 * ⬆️ Pushed 2 commits to DeadPackets/Rumi
 * 🎉 Merged PR #4 in DeadPackets/Rumi
 * ⬆️ Pushed 2 commits to DeadPackets/Rumi
 * 🎉 Merged PR #5 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #6 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #7 in DeadPackets/Rumi
 
 
 ## `$> tryhackme --rank`
@@ -183,5 +183,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Sunday, June 13th 2021, 7:05:34.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, June 13th 2021, 9:19:16.</i>
 </p>
