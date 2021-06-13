@@ -113,6 +113,7 @@
 
 ## `$> cat life.txt | grep "Achievements"`
 
+- **[2021]** 🥇 1st Place Winner at The Hunt SOCathon hosted at GISEC ([link](https://www.linkedin.com/posts/cyberunittech_cyberunittech-socathon-gisec2021-activity-6806306706688118784-SogR))
 - **[2021]** 🏆 Created & hosted the longest CTF in UAE with CTFae ([link](https://ramadan.ctf.ae))
 - **[2021]** 🏆 Awarded the "Outstanding CSE Student Talent Award" at AUS ([link](https://www.aus.edu/media/news/outstanding-computer-science-and-engineering-students-recognized-at-cse-annual-awards))
 - **[2020]** 🎤 Demonstrated a password stealing Windows attack @ GISEC ([link](https://www.youtube.com/watch?v=EKp4WVupukY))

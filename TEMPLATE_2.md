@@ -113,6 +113,7 @@
 
 ## `$> cat life.txt | grep "Achievements"`
 
+- **[2021]** 🥇 1st Place Winner at The Hunt SOCathon hosted at GISEC ([link](https://www.linkedin.com/posts/cyberunittech_cyberunittech-socathon-gisec2021-activity-6806306706688118784-SogR))
 - **[2021]** 🏆 Created & hosted the longest CTF in UAE with CTFae ([link](https://ramadan.ctf.ae))
 - **[2021]** 🏆 Awarded the "Outstanding CSE Student Talent Award" at AUS ([link](https://www.aus.edu/media/news/outstanding-computer-science-and-engineering-students-recognized-at-cse-annual-awards))
 - **[2020]** 🎤 Demonstrated a password stealing Windows attack @ GISEC ([link](https://www.youtube.com/watch?v=EKp4WVupukY))
@@ -131,21 +132,22 @@
 
 ## `$> wakatime --show-coding-stats`
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" />
+</p>
 
 ## `$> github-cli --recent-activity`
 
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/deadpackets.github.io
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* 🗣 Commented on #2 in DeadPackets/pwnbox-cli
-* ⬆️ Pushed 1 commit to DeadPackets/Phishing_Catcher.js
+* ⬆️ Pushed 2 commits to DeadPackets/Rumi
+* 🎉 Merged PR #3 in DeadPackets/Rumi
+* ⬆️ Pushed 2 commits to DeadPackets/Rumi
+* 🎉 Merged PR #4 in DeadPackets/Rumi
+* ⬆️ Pushed 2 commits to DeadPackets/Rumi
+* 🎉 Merged PR #5 in DeadPackets/Rumi
+* ⬆️ Pushed 2 commits to DeadPackets/Rumi
+* 🎉 Merged PR #6 in DeadPackets/Rumi
+* ⬆️ Pushed 2 commits to DeadPackets/Rumi
+* 🎉 Merged PR #7 in DeadPackets/Rumi
 
 
 ## `$> tryhackme --rank`
@@ -181,5 +183,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, June 2nd 2021, 5:01:19.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, June 13th 2021, 7:05:34.</i>
 </p>
