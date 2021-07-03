@@ -135,6 +135,9 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" />
 </p>
+ <p align="center">
+  <i>NOTE: This data only shows how long I have spent writing a language since March 2021. It does not reflect all languages I have ever written.</i>
+ </p>
 
 ## `$> github-cli --recent-activity`
 
