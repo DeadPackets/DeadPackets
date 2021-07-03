@@ -135,9 +135,13 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" />
 </p>
+ <p align="center">
+  <i>NOTE: This data only shows how long I have spent writing a language since March 2021. It does not reflect all languages I have ever written.</i>
+ </p>
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 2 commits to DeadPackets/pwnbox
@@ -147,7 +151,6 @@
 * ⬆️ Pushed 2 commits to DeadPackets/DeadPackets
 * ❗️ Closed issue #1 in DeadPackets/DeadPackets
 * ❗️ Opened issue #1 in DeadPackets/DeadPackets
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
 
 
 ## `$> tryhackme --rank`
@@ -183,5 +186,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, July 3rd 2021, 7:16:04.</i>
+  <i>This README generates every 3 hours. It was last generated Saturday, July 3rd 2021, 7:35:46.</i>
 </p>
