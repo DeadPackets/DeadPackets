@@ -113,6 +113,7 @@
 
 ## `$> cat life.txt | grep "Achievements"`
 
+- **[2021]** 🎤 Gave a 2-day long training in Attack Defense CTFs @ HITB SECCONF ([link_1](https://www.youtube.com/watch?v=u9ypv7wY9o0)) ([link_2](https://www.youtube.com/watch?v=sGk4trFj5sU))
 - **[2021]** 🥇 1st Place Winner at The Hunt SOCathon hosted at GISEC ([link](https://www.linkedin.com/posts/cyberunittech_cyberunittech-socathon-gisec2021-activity-6806306706688118784-SogR))
 - **[2021]** 🏆 Created & hosted the longest CTF in UAE with CTFae ([link](https://ramadan.ctf.ae))
 - **[2021]** 🏆 Awarded the "Outstanding CSE Student Talent Award" at AUS ([link](https://www.aus.edu/media/news/outstanding-computer-science-and-engineering-students-recognized-at-cse-annual-awards))
@@ -141,16 +142,16 @@
 
 ## `$> github-cli --recent-activity`
 
+* ❗️ Closed issue #4 in DeadPackets/pwnbox
+* 🗣 Commented on #4 in DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
+* ❗️ Closed issue #5 in DeadPackets/pwnbox-cli
+* ⬆️ Pushed 2 commits to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/BannerPlus
 * ⬆️ Pushed 1 commit to DeadPackets/BannerPlus
 * ⬆️ Pushed 1 commit to DeadPackets/BannerPlus
-* 🍴 Forked DeadPackets/alacritty from alacritty/alacritty
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ❗️ Opened issue #4 in DeadPackets/pwnbox
-* ❗️ Opened issue #5 in DeadPackets/pwnbox-cli
-* ⬆️ Pushed 1 commit to DeadPackets/CRNotify
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -158,7 +159,7 @@
 <p align="center">
   <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" width="400px" /></a>
 </p>
-<p align="center">🥇 1st place in all of the UAE with over 33,000 points!</p>
+<p align="center">🥈 2nd place in all of the UAE with over 33,000 points!</p>
 
 ## `$> git show stats`
 
@@ -186,5 +187,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Sunday, September 5th 2021, 7:18:39.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, September 5th 2021, 9:17:40.</i>
 </p>
