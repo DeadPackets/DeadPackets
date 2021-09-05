@@ -135,19 +135,22 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" />
 </p>
+ <p align="center">
+  <i>NOTE: This data only shows how long I have spent writing a language since March 2021. It does not reflect all languages I have ever written.</i>
+ </p>
 
 ## `$> github-cli --recent-activity`
 
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #3 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #4 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #5 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #6 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #7 in DeadPackets/Rumi
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/BannerPlus
+* ⬆️ Pushed 1 commit to DeadPackets/BannerPlus
+* ⬆️ Pushed 1 commit to DeadPackets/BannerPlus
+* 🍴 Forked DeadPackets/alacritty from alacritty/alacritty
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ❗️ Opened issue #4 in DeadPackets/pwnbox
+* ❗️ Opened issue #5 in DeadPackets/pwnbox-cli
+* ⬆️ Pushed 1 commit to DeadPackets/CRNotify
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -183,5 +186,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Sunday, June 13th 2021, 7:05:34.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, September 5th 2021, 7:18:39.</i>
 </p>

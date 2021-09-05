@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- ⭐ Over my **5** years on GitHub, I have opened **58** issues, opened **21** PRs, pushed **1122** commits, created **33** repositories, contributed to **9** projects, gathered **37** stars across all my repos and gists
+- ⭐ Over my **5** years on GitHub, I have opened **61** issues, opened **21** PRs, pushed **1138** commits, created **33** repositories, contributed to **10** projects, gathered **39** stars across all my repos and gists
 <!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
 <!-- - 📝 You can read my Resume/CV [here](https://) -->
 
@@ -135,19 +135,22 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=DeadPackets&theme=react&layout=compact" />
 </p>
+ <p align="center">
+  <i>NOTE: This data only shows how long I have spent writing a language since March 2021. It does not reflect all languages I have ever written.</i>
+ </p>
 
 ## `$> github-cli --recent-activity`
 
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #3 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #4 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #5 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #6 in DeadPackets/Rumi
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
-* 🎉 Merged PR #7 in DeadPackets/Rumi
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/BannerPlus
+* ⬆️ Pushed 1 commit to DeadPackets/BannerPlus
+* ⬆️ Pushed 1 commit to DeadPackets/BannerPlus
+* 🍴 Forked DeadPackets/alacritty from alacritty/alacritty
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ❗️ Opened issue #4 in DeadPackets/pwnbox
+* ❗️ Opened issue #5 in DeadPackets/pwnbox-cli
+* ⬆️ Pushed 1 commit to DeadPackets/CRNotify
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -183,5 +186,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Sunday, June 13th 2021, 7:05:34.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, September 5th 2021, 7:18:39.</i>
 </p>
