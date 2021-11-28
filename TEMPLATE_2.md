@@ -145,13 +145,13 @@
 * ⬆️ Pushed 1 commit to DeadPackets/CTFae-Scoreboard
 * ⬆️ Pushed 1 commit to DeadPackets/CTFae-Scoreboard
 * ⬆️ Pushed 1 commit to DeadPackets/CTFae-Scoreboard
+* ⬆️ Pushed 1 commit to DeadPackets/CTFae-Scoreboard
+* ⬆️ Pushed 1 commit to DeadPackets/CTFae-Scoreboard
+* ⬆️ Pushed 1 commit to DeadPackets/CTFae-Scoreboard
+* ⬆️ Pushed 1 commit to DeadPackets/CTFae-Scoreboard
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/CTFae-Scoreboard
 * ⬆️ Pushed 1 commit to DeadPackets/CTFae-Scoreboard
-* 🍴 Forked DeadPackets/GryphonCTF-Scoreboard from DISMGryphons/GryphonCTF-Scoreboard
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -187,5 +187,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Sunday, November 28th 2021, 7:21:01.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, November 28th 2021, 9:19:10.</i>
 </p>
