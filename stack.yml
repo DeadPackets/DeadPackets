@@ -6,6 +6,7 @@
     - url: https://github.com/DeadPackets/pwnbox-cli
     - url: https://github.com/DeadPackets/EasyGuard
       wip: true
+    - url: https://github.com/DeadPackets/AUSCrawl
     - url: https://github.com/DeadPackets/ctfd-discord-webhook-plugin
     - url: https://github.com/COE420Group4/Donation-Nation
 
