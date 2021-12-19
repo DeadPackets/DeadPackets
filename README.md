@@ -20,14 +20,14 @@
 
 <img align="right" src="me.jpg" width="300px" />
 
-- <img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16px" /> Senior Computer Engineering student at [AUS](https://www.aus.edu)
+- <img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16px" /> Graduate of Computer Engineering (with Comp Sci minor) from [AUS](https://www.aus.edu)
 - <img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16px" /> Head of Engineering & Co-Founder at [CTFae](https://ctf.ae)
 - <img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16px" /> I enjoy creating/playing in CTFs and hacking/breaking things
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16px" /> I absolutely love Python and Docker
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- ⭐ Over my **5** years on GitHub, I have opened **107** issues, opened **44** PRs, pushed **1355** commits, created **35** repositories, contributed to **12** projects, gathered **43** stars across all my repos and gists
+- ⭐ Over my **5** years on GitHub, I have opened **107** issues, opened **44** PRs, pushed **1359** commits, created **35** repositories, contributed to **12** projects, gathered **43** stars across all my repos and gists
 <!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
 <!-- - 📝 You can read my Resume/CV [here](https://) -->
 
@@ -113,6 +113,8 @@
 
 ## `$> cat life.txt | grep "Achievements"`
 
+- **[2021]** 💻 Hosted the largest CTF in the Middle East with CTFae @ AtHack 2021 ([link](https://athack.com/capture-the-flag))
+- **[2021]** 💻 Hosted the official jeopardy CTF with CTFae @ HITB CyberWeek 2021 ([link](https://cyberweek.ae/2021/jeopardy-ctf/))
 - **[2021]** 🎤 Gave a 2-day long training in Attack Defense CTFs @ HITB SECCONF ([link_1](https://www.youtube.com/watch?v=u9ypv7wY9o0)) ([link_2](https://www.youtube.com/watch?v=sGk4trFj5sU))
 - **[2021]** 🥇 1st Place Winner at The Hunt SOCathon hosted at GISEC ([link](https://www.linkedin.com/posts/cyberunittech_cyberunittech-socathon-gisec2021-activity-6806306706688118784-SogR))
 - **[2021]** 🏆 Created & hosted the longest CTF in UAE with CTFae ([link](https://ramadan.ctf.ae))
@@ -142,6 +144,8 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
+* ⬆️ Pushed 3 commits to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
@@ -150,8 +154,6 @@
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 2 commits to DeadPackets/pwnbox
-* ❗️ Opened issue #217 in bunkerity/bunkerized-nginx
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -159,7 +161,7 @@
 <p align="center">
   <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" width="400px" /></a>
 </p>
-<p align="center">🥈 2nd place in all of the UAE with over 33,000 points!</p>
+<p align="center">Top 10 in all of the UAE with over 33,000 points!</p>
 
 ## `$> git show stats`
 
@@ -187,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Sunday, December 19th 2021, 6:46:28.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, December 19th 2021, 6:57:34.</i>
 </p>
