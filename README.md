@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- ⭐ Over my **6** years on GitHub, I have opened **107** issues, opened **43** PRs, pushed **1366** commits, created **35** repositories, contributed to **12** projects, gathered **44** stars across all my repos and gists
+- ⭐ Over my **6** years on GitHub, I have opened **107** issues, opened **43** PRs, pushed **1368** commits, created **35** repositories, contributed to **12** projects, gathered **44** stars across all my repos and gists
 <!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
 <!-- - 📝 You can read my Resume/CV [here](https://) -->
 
@@ -145,15 +145,15 @@
 ## `$> github-cli --recent-activity`
 
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* 🗣 Commented on #6 in DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 🗣 Commented on #6 in DeadPackets/pwnbox
 * 🗣 Commented on #5 in DeadPackets/pwnbox
 * ⬆️ Pushed 2 commits to DeadPackets/pwnbox
 * 🎉 Merged PR #5 in DeadPackets/pwnbox
 * 🗣 Commented on #6 in DeadPackets/pwnbox
 * 🗣 Commented on #6 in DeadPackets/pwnbox
-* ⬆️ Pushed 2 commits to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Friday, January 7th 2022, 1:04:52.</i>
+  <i>This README generates every 3 hours. It was last generated Friday, January 7th 2022, 3:21:54.</i>
 </p>
