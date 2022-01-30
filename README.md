@@ -146,6 +146,7 @@
 
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 2 commits to DeadPackets/pwnbox-cli
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
@@ -153,7 +154,6 @@
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
 * 🗣 Commented on #10 in DeadPackets/pwnbox
 * ❗️ Opened issue #9 in DeadPackets/pwnbox
-* ❗️ Opened issue #8 in DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, January 29th 2022, 10:12:17.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, January 30th 2022, 1:06:33.</i>
 </p>
