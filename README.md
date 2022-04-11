@@ -152,8 +152,8 @@
 * ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
 * ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
 * ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
+* ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/CRNotify
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Monday, April 11th 2022, 3:22:48.</i>
+  <i>This README generates every 3 hours. It was last generated Monday, April 11th 2022, 3:42:19.</i>
 </p>
