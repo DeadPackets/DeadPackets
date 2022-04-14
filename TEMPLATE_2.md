@@ -144,8 +144,8 @@
 
 ## `$> github-cli --recent-activity`
 
-* ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
-* ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
+* ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
+* ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 * ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
 * ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
 * ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Thursday, April 14th 2022, 1:17:29.</i>
+  <i>This README generates every 3 hours. It was last generated Thursday, April 14th 2022, 3:22:44.</i>
 </p>
