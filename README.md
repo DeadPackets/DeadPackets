@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16px" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16px" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16px" /> I am always building new things or contributing to OSS
-- ⭐ Over my **6** years on GitHub, I have opened **110** issues, opened **43** PRs, pushed **1408** commits, created **38** repositories, contributed to **8** projects, gathered **45** stars across all my repos and gists
+- ⭐ Over my **6** years on GitHub, I have opened **110** issues, opened **44** PRs, pushed **1408** commits, created **38** repositories, contributed to **8** projects, gathered **45** stars across all my repos and gists
 <!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
 <!-- - 📝 You can read my Resume/CV [here](https://) -->
 
@@ -144,14 +144,14 @@
 
 ## `$> github-cli --recent-activity`
 
+* 💪 Opened PR #55 in DeadPackets/CRNotify
+* ⬆️ Pushed 1 commit to DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
-* ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
-* ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
 * ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
 * ⬆️ Pushed 1 commit to DeadPackets/PandorasBox
 
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Friday, April 29th 2022, 4:26:59.</i>
+  <i>This README generates every 3 hours. It was last generated Friday, April 29th 2022, 6:27:00.</i>
 </p>
