@@ -145,6 +145,7 @@
 ## `$> github-cli --recent-activity`
 
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 🍴 Forked DeadPackets/PayloadsAllTheThings from swisskyrepo/PayloadsAllTheThings
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 🍴 Forked DeadPackets/MusicBot from jagrosh/MusicBot
@@ -153,7 +154,6 @@
 * 💪 Opened PR #55 in DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, May 28th 2022, 10:00:16.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, May 29th 2022, 2:07:15.</i>
 </p>
