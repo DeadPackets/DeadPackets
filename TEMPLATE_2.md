@@ -153,7 +153,7 @@
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
-* ⬆️ Pushed 1 commit to DeadPackets/CRNotify
+* ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, June 22nd 2022, 3:21:57.</i>
+  <i>This README generates every 3 hours. It was last generated Wednesday, June 22nd 2022, 3:41:21.</i>
 </p>
