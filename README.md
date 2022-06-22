@@ -145,7 +145,7 @@
 ## `$> github-cli --recent-activity`
 
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
-* ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
 * ⬆️ Pushed 1 commit to DeadPackets/DiscordIPs
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, June 22nd 2022, 6:27:42.</i>
+  <i>This README generates every 3 hours. It was last generated Wednesday, June 22nd 2022, 6:51:22.</i>
 </p>
