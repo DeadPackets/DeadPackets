@@ -144,6 +144,7 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 2 commits to DeadPackets/DiscordIPs
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 🍴 Forked DeadPackets/DanaOsama from DanaOsama/DanaOsama
@@ -153,7 +154,6 @@
 * ⬆️ Pushed 2 commits to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* 💪 Opened PR #60 in DeadPackets/CRNotify
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Sunday, September 11th 2022, 1:20:16.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, September 11th 2022, 3:23:49.</i>
 </p>
