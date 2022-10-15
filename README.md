@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> I am always building new things or contributing to OSS
-- ⭐ Over my **6** years on GitHub, I have opened **110** issues, opened **46** PRs, pushed **1432** commits, created **38** repositories, contributed to **4** projects, gathered **47** stars across all my repos and gists
+- ⭐ Over my **6** years on GitHub, I have opened **110** issues, opened **47** PRs, pushed **1432** commits, created **38** repositories, contributed to **5** projects, gathered **47** stars across all my repos and gists
 <!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
 <!-- - 📝 You can read my Resume/CV [here](https://) -->
 
@@ -144,16 +144,16 @@
 
 ## `$> github-cli --recent-activity`
 
+* 🗣 Commented on #20 in hackerschoice/segfault
+* 💪 Opened PR #16 in hackerschoice/segfault
+* ⬆️ Pushed 1 commit to DeadPackets/segfault
+* ⬆️ Pushed 1 commit to DeadPackets/segfault
+* 🍴 Forked DeadPackets/segfault from hackerschoice/segfault
+* 🗣 Commented on #14 in hackerschoice/segfault
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #63 in DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/CRNotify
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* 🍴 Forked DeadPackets/proctf-2019 from HITB-CyberWeek/proctf-2019
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 2 commits to DeadPackets/DiscordIPs
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, October 15th 2022, 7:22:54.</i>
+  <i>This README generates every 3 hours. It was last generated Saturday, October 15th 2022, 9:22:36.</i>
 </p>

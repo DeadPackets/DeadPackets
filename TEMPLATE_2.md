@@ -144,16 +144,16 @@
 
 ## `$> github-cli --recent-activity`
 
+* 🗣 Commented on #20 in hackerschoice/segfault
+* 💪 Opened PR #16 in hackerschoice/segfault
+* ⬆️ Pushed 1 commit to DeadPackets/segfault
+* ⬆️ Pushed 1 commit to DeadPackets/segfault
+* 🍴 Forked DeadPackets/segfault from hackerschoice/segfault
+* 🗣 Commented on #14 in hackerschoice/segfault
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #63 in DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/CRNotify
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* 🍴 Forked DeadPackets/proctf-2019 from HITB-CyberWeek/proctf-2019
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 2 commits to DeadPackets/DiscordIPs
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, October 15th 2022, 7:22:54.</i>
+  <i>This README generates every 3 hours. It was last generated Saturday, October 15th 2022, 9:22:36.</i>
 </p>
