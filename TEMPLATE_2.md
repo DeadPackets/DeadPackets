@@ -144,16 +144,16 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 2 commits to DeadPackets/AUSCTF-S19
+* 🎉 Merged PR #1 in DeadPackets/AUSCTF-S19
+* ⬆️ Pushed 2 commits to DeadPackets/CRNotify
+* 🎉 Merged PR #63 in DeadPackets/CRNotify
+* 🗣 Commented on #11 in DeadPackets/pwnbox
+* ⬆️ Pushed 2 commits to DeadPackets/Rumi
+* 🎉 Merged PR #9 in DeadPackets/Rumi
 * ⬆️ Pushed 1 commit to DeadPackets/AUSCrawl
 * ⬆️ Pushed 1 commit to DeadPackets/DOSArchive
 * 🗣 Commented on #19 in hackerschoice/segfault
-* 🗣 Commented on #18 in hackerschoice/segfault
-* 🗣 Commented on #15 in hackerschoice/segfault
-* ⬆️ Pushed 10 commits to DeadPackets/segfault
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* 🗣 Commented on #4 in hackerschoice/segfault
-* 🗣 Commented on #20 in hackerschoice/segfault
-* 💪 Opened PR #16 in hackerschoice/segfault
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Tuesday, October 18th 2022, 9:34:18.</i>
+  <i>This README generates every 3 hours. It was last generated Tuesday, October 18th 2022, 9:58:54.</i>
 </p>
