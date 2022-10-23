@@ -144,6 +144,7 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 2 commits to DeadPackets/AUSCTF-S19
 * 🎉 Merged PR #1 in DeadPackets/AUSCTF-S19
 * ⬆️ Pushed 2 commits to DeadPackets/CRNotify
@@ -153,7 +154,6 @@
 * 🎉 Merged PR #9 in DeadPackets/Rumi
 * ⬆️ Pushed 1 commit to DeadPackets/AUSCrawl
 * ⬆️ Pushed 1 commit to DeadPackets/DOSArchive
-* 🗣 Commented on #19 in hackerschoice/segfault
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, October 22nd 2022, 10:28:36.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, October 23rd 2022, 2:30:21.</i>
 </p>
