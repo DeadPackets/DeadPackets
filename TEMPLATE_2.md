@@ -144,6 +144,7 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #7 in DeadPackets/InfoSteal
 * ⬆️ Pushed 1 commit to DeadPackets/InfoSteal
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
@@ -153,7 +154,6 @@
 * ⬆️ Pushed 2 commits to DeadPackets/CRNotify
 * 🎉 Merged PR #63 in DeadPackets/CRNotify
 * 🗣 Commented on #11 in DeadPackets/pwnbox
-* ⬆️ Pushed 2 commits to DeadPackets/Rumi
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, November 5th 2022, 10:22:39.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, November 6th 2022, 2:03:24.</i>
 </p>
