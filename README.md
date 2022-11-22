@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> I love the dev/cybersec community and enjoy teaching others new things
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> I am always building new things or contributing to OSS
-- ⭐ Over my **6** years on GitHub, I have opened **110** issues, opened **48** PRs, pushed **1455** commits, created **39** repositories, contributed to **5** projects, gathered **49** stars across all my repos and gists
+- ⭐ Over my **6** years on GitHub, I have opened **110** issues, opened **49** PRs, pushed **1455** commits, created **39** repositories, contributed to **5** projects, gathered **49** stars across all my repos and gists
 <!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
 <!-- - 📝 You can read my Resume/CV [here](https://) -->
 
@@ -144,6 +144,8 @@
 
 ## `$> github-cli --recent-activity`
 
+* 💪 Opened PR #8 in DeadPackets/InfoSteal
+* ⬆️ Pushed 1 commit to DeadPackets/InfoSteal
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
@@ -152,8 +154,6 @@
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 2 commits to DeadPackets/AUSCTF-S19
-* 🎉 Merged PR #1 in DeadPackets/AUSCTF-S19
-* ⬆️ Pushed 2 commits to DeadPackets/CRNotify
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Tuesday, November 22nd 2022, 4:31:16.</i>
+  <i>This README generates every 3 hours. It was last generated Tuesday, November 22nd 2022, 6:26:43.</i>
 </p>
