@@ -144,6 +144,7 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
 * ❗️ Closed issue #6 in DeadPackets/pwnbox-cli
@@ -153,7 +154,6 @@
 * 🗣 Commented on #7 in DeadPackets/pwnbox
 * 🗣 Commented on #8 in DeadPackets/pwnbox
 * ❗️ Closed issue #8 in DeadPackets/pwnbox
-* ❗️ Closed issue #4 in DeadPackets/pwnbox-cli
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, November 26th 2022, 10:12:45.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, November 27th 2022, 1:49:03.</i>
 </p>
