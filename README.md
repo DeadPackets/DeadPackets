@@ -144,6 +144,7 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #1 in cytamora/Quick-etc-hosts
 * ⬆️ Pushed 1 commit to DeadPackets/Quick-etc-hosts
 * 🍴 Forked DeadPackets/Quick-etc-hosts from cytamora/Quick-etc-hosts
@@ -153,7 +154,6 @@
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
 * ❗️ Closed issue #6 in DeadPackets/pwnbox-cli
 * ❗️ Opened issue #12 in DeadPackets/pwnbox
-* ❗️ Closed issue #9 in DeadPackets/pwnbox
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, December 3rd 2022, 10:09:25.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, December 4th 2022, 1:37:04.</i>
 </p>
