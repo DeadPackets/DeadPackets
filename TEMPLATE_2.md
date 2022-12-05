@@ -144,6 +144,8 @@
 
 ## `$> github-cli --recent-activity`
 
+* 💪 Opened PR #10 in DeadPackets/InfoSteal
+* ⬆️ Pushed 1 commit to DeadPackets/InfoSteal
 * 💪 Opened PR #74 in DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
@@ -152,8 +154,6 @@
 * 🍴 Forked DeadPackets/Quick-etc-hosts from cytamora/Quick-etc-hosts
 * ⬆️ Pushed 1 commit to DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
-* ⬆️ Pushed 1 commit to DeadPackets/pwnbox-cli
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Monday, December 5th 2022, 4:27:03.</i>
+  <i>This README generates every 3 hours. It was last generated Monday, December 5th 2022, 6:23:39.</i>
 </p>
