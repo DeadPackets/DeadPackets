@@ -147,13 +147,13 @@
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #10 in DeadPackets/InfoSteal
 * ⬆️ Pushed 1 commit to DeadPackets/InfoSteal
 * 💪 Opened PR #74 in DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #1 in cytamora/Quick-etc-hosts
-* ⬆️ Pushed 1 commit to DeadPackets/Quick-etc-hosts
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, December 31st 2022, 10:07:42.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, January 1st 2023, 1:45:29.</i>
 </p>
