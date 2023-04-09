@@ -144,6 +144,7 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to cytamora/UncleBillBot
 * ⬆️ Pushed 1 commit to cytamora/UncleBillBot
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
@@ -153,7 +154,6 @@
 * 💪 Opened PR #1 in DeadPackets/ctfd-discord-webhook-plugin
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #81 in DeadPackets/CRNotify
-* ⬆️ Pushed 1 commit to DeadPackets/CRNotify
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +189,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, April 8th 2023, 10:03:39.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, April 9th 2023, 1:22:25.</i>
 </p>
