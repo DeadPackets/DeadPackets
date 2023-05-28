@@ -112,7 +112,12 @@
 </p>
 
 ## `$> cat life.txt | grep "Achievements"`
-
+- **[2023]** 💻 Hosted the CTF for GITEX Africa in Morocco with CTFae @ GITEX Africa 2023 ([link](https://twitter.com/CTFae/status/1662279732287746051))
+- **[2023]** 💻 Hosted the CTF for the last HITB in Amsterdam with CTFae @ HITBAMS 2023 ([link](https://twitter.com/CTFae/status/1649553232904048640))
+- **[2022]** 💻 Hosted a CTF for the return of Dubai Police CTF in the UAE with CTFae @ DPCTF 2022 ([link](https://twitter.com/CTFae/status/1631349255330734080))
+- **[2022]** 💻 Hosted the CTF for the first ever BlackHat in Saudi Arabia with CTFae @ BlackHat 2022 ([link](https://twitter.com/SAFCSP/status/1589351916286287872))
+- **[2022]** 💍 Got engaged to the wonderful and beautiful Dana Osama ([link](https://twitter.com/HDLucidGamer/status/1522652714441879560))
+- **[2022]** 💻 Hosted a CTF for the Government of Thailand with CTFae @ TBCERT 2022 ([link](https://twitter.com/CTFae/status/1571053661564076040))
 - **[2021]** 💻 Hosted the largest CTF in the Middle East with CTFae @ AtHack 2021 ([link](https://athack.com/capture-the-flag))
 - **[2021]** 💻 Hosted the official jeopardy CTF with CTFae @ HITB CyberWeek 2021 ([link](https://cyberweek.ae/2021/jeopardy-ctf/))
 - **[2021]** 🎤 Gave a 2-day long training in Attack Defense CTFs @ HITB SECCONF ([link_1](https://www.youtube.com/watch?v=u9ypv7wY9o0)) ([link_2](https://www.youtube.com/watch?v=sGk4trFj5sU))
@@ -144,6 +149,7 @@
 
 ## `$> github-cli --recent-activity`
 
+* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
@@ -153,7 +159,6 @@
 * 🍴 Forked DeadPackets/Auto-GPT from Significant-Gravitas/Auto-GPT
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to cytamora/UncleBillBot
 
 
 ## `$> tryhackme --rank`
@@ -189,5 +194,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Sunday, May 28th 2023, 7:01:01.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, May 28th 2023, 9:05:02.</i>
 </p>
