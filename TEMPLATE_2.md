@@ -151,6 +151,7 @@
 
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
@@ -158,7 +159,6 @@
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* 🍴 Forked DeadPackets/Auto-GPT from Significant-Gravitas/Auto-GPT
 
 
 ## `$> tryhackme --rank`
@@ -194,5 +194,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, June 17th 2023, 10:08:56.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, June 18th 2023, 12:24:22.</i>
 </p>
