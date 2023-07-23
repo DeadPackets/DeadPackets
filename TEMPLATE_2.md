@@ -153,12 +153,12 @@
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
+* ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * 💪 Opened PR #82 in DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/CRNotify
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
 * ⬆️ Pushed 1 commit to DeadPackets/pwnbox
-* ⬆️ Pushed 1 commit to DeadPackets/DeadPackets
 
 
 ## `$> tryhackme --rank`
@@ -194,5 +194,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, July 22nd 2023, 10:08:01.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, July 23rd 2023, 12:24:44.</i>
 </p>
