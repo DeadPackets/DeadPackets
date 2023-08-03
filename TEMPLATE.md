@@ -1,6 +1,6 @@
 <h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"> Hi, I'm DeadPackets (Youssef Awad)!</h1>
 
-<h3 align="center">💻 A passionate cybersecurity researcher, programmer and hacker!</h3>
+<h3 align="center">💻 A passionate cybersecurity researcher, developer, engineer and hacker!</h3>
 
 <p align="center">
   <a href="mailto:b00073615@aus.edu"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" /></a>
@@ -22,11 +22,11 @@
 
 - <img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16" /> Graduate of Computer Engineering (with Comp Sci minor) from [AUS](https://www.aus.edu)
 - <img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16" /> Head of Engineering & Co-Founder at [CTFae](https://ctf.ae)
-- <img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16" /> I enjoy creating/playing in CTFs and hacking/breaking things
-- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> I absolutely love Python and Docker
-- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> I love the dev/cybersec community and enjoy teaching others new things
+- <img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16" /> I enjoy playing CTFs and hacking (or breaking) things
+- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> I absolutely love DevOps and building solutions
+- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> Spreading knowledge in dev/cybersec is one of my many passions
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16" /> You can contact me anytime for questions, I love answering them
-- <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> I am always building new things or contributing to OSS
+- <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Forever faithful to Python & Docker <3
 - ⭐ Over my **{{ ACCOUNT_AGE }}** years on GitHub, I have opened **{{ ISSUES }}** issues, opened **{{ PULL_REQUESTS }}** PRs, pushed **{{ COMMITS }}** commits, created **{{ REPOSITORIES }}** repositories, contributed to **{{ REPOSITORIES_CONTRIBUTED_TO }}** projects, gathered **{{ STARS }}** stars across all my repos and gists
 <!-- - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/cat-typing.gif" width="16px" /> I write blog posts <a href="https://deadpackets.pw/">here</a> -->
 <!-- - 📝 You can read my Resume/CV [here](https://) -->
