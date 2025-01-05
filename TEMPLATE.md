@@ -76,7 +76,6 @@
 - **[2022]** 💻 Hosted a CTF for the return of Dubai Police CTF in the UAE with CTFae @ DPCTF 2022 ([link](https://twitter.com/CTFae/status/1631349255330734080))
 - **[2022]** 💻 Hosted the CTF for the first ever BlackHat in Saudi Arabia with CTFae @ BlackHat 2022 ([link](https://twitter.com/SAFCSP/status/1589351916286287872))
 - **[2022]** 💻 Hosted a CTF for the Government of Thailand with CTFae @ TBCERT 2022 ([link](https://twitter.com/CTFae/status/1571053661564076040))
-- **[2022]** 💍 Got engaged to the wonderful and beautiful Dana Osama
 - **[2021]** 💻 Hosted the largest CTF in the Middle East with CTFae @ AtHack 2021 ([link](https://athack.com/capture-the-flag))
 - **[2021]** 💻 Hosted the official jeopardy CTF with CTFae @ HITB CyberWeek 2021 ([link](https://cyberweek.ae/2021/jeopardy-ctf/))
 - **[2021]** 🎤 Gave a 2-day long training in Attack Defense CTFs @ HITB SECCONF ([link_1](https://www.youtube.com/watch?v=u9ypv7wY9o0)) ([link_2](https://www.youtube.com/watch?v=sGk4trFj5sU))
