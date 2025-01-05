@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> Spreading knowledge in dev/cybersec is one of my many passions
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Forever faithful to Python & Docker <3
-- ⭐ Over my **8** years on GitHub, I have opened **119** issues, opened **89** PRs, pushed **2139** commits, created **40** repositories, contributed to **25** projects, gathered **78** stars across all my repos and gists
+- ⭐ Over my **8** years on GitHub, I have opened **119** issues, opened **89** PRs, pushed **2140** commits, created **40** repositories, contributed to **25** projects, gathered **78** stars across all my repos and gists
 
 ## `$> ls -la projects/`
 
@@ -76,7 +76,6 @@
 - **[2022]** 💻 Hosted a CTF for the return of Dubai Police CTF in the UAE with CTFae @ DPCTF 2022 ([link](https://twitter.com/CTFae/status/1631349255330734080))
 - **[2022]** 💻 Hosted the CTF for the first ever BlackHat in Saudi Arabia with CTFae @ BlackHat 2022 ([link](https://twitter.com/SAFCSP/status/1589351916286287872))
 - **[2022]** 💻 Hosted a CTF for the Government of Thailand with CTFae @ TBCERT 2022 ([link](https://twitter.com/CTFae/status/1571053661564076040))
-- **[2022]** 💍 Got engaged to the wonderful and beautiful Dana Osama
 - **[2021]** 💻 Hosted the largest CTF in the Middle East with CTFae @ AtHack 2021 ([link](https://athack.com/capture-the-flag))
 - **[2021]** 💻 Hosted the official jeopardy CTF with CTFae @ HITB CyberWeek 2021 ([link](https://cyberweek.ae/2021/jeopardy-ctf/))
 - **[2021]** 🎤 Gave a 2-day long training in Attack Defense CTFs @ HITB SECCONF ([link_1](https://www.youtube.com/watch?v=u9ypv7wY9o0)) ([link_2](https://www.youtube.com/watch?v=sGk4trFj5sU))
@@ -122,5 +121,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Sunday, January 5th 2025, 3:57:12.</i>
+  <i>This README generates every 3 hours. It was last generated Sunday, January 5th 2025, 4:08:21.</i>
 </p>
