@@ -6,7 +6,7 @@
   <a href="mailto:b00073615@aus.edu"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" /></a>
   <a href="https://t.me/deadpackets"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white" /></a>
   <a href="mailto:DeadPackets#5317"><img src="https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white" /></a>
-  <a href="https://instagram.com/lucidgamer"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white" /></a>
+  <a href="https://instagram.com/deadpackets"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white" /></a>
   <a href="https://twitter.com/dead_packets"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/youssef-awad/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" /></a>
   <a href="https://www.youtube.com/channel/UCdNjReL5xxOOvPtnnUgt_hQ"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" /></a>
@@ -71,6 +71,15 @@
 </p>
 
 ## `$> cat life.txt | grep "Achievements"`
+- **[2024]** 🏆 Won the Guinness World Record for the largest CTF in the world with CTFae @ BlackHat 2024 ([link](https://x.com/Blackhatmea/status/1862171555683320251))
+- **[2024]** 🎤 Gave CTFae's first Cyber Drill workshop at HITB SecConf in Thailand @ HITB SecConf 2024 ([link](https://x.com/CTFae/status/1832755293404500239))
+- **[2024]** 💻 Hosted a CTF at GITEX GLOBAL with CTFae showcasing our new Cyber Drill technology @ GITEX GLOBAL 2024 ([link](https://www.linkedin.com/posts/ctfae_after-a-week-of-online-qualifiers-20-elite-activity-7252717762324668416-N_PK))
+- **[2024]** 💻 Hosted the CTF for BSides Nashville with CTFae (our first USA CTF!) @ BSides Nashville 2024 ([link](https://x.com/bsidesnash/status/1755003862102990952))
+- **[2024]** 🏆 Won "Best Emarati Startup" with CTFae @ GISEC UAE 2024 ([link](https://www.instagram.com/gisecglobal/p/C6Q2Ycbrejv))
+- **[2024]** 🏆 Became the Official CTF Partner for GISEC UAE ([link](https://twitter.com/CTFae/status/1662279732287746051))
+- **[2024]** 🎤 Gave a talk about CTFae's story and success @ CPX CyberAlley 2024 ([link](https://www.linkedin.com/posts/cpxholding_cyberalley-entrepreneurship-ai-ugcPost-7244338301061500929-0ZCS))
+- **[2023]** 💻 Hosted the ADQ CTF with CTFae @ ADQ CTF 2023 ([link](https://www.linkedin.com/posts/ctfae_adq-in-partnership-with-malcrove-powered-activity-7151238726067593217-UpwB))
+- **[2023]** 💻 Hosted the CTF for BlackHat in Saudi Arabia with CTFae @ BlackHat 2023 ([link](https://x.com/Blackhatmea/status/1724806987886874656))
 - **[2023]** 💻 Hosted the CTF for GITEX Africa in Morocco with CTFae @ GITEX Africa 2023 ([link](https://twitter.com/CTFae/status/1662279732287746051))
 - **[2023]** 💻 Hosted the CTF for the last HITB in Amsterdam with CTFae @ HITBAMS 2023 ([link](https://twitter.com/CTFae/status/1649553232904048640))
 - **[2022]** 💻 Hosted a CTF for the return of Dubai Police CTF in the UAE with CTFae @ DPCTF 2022 ([link](https://twitter.com/CTFae/status/1631349255330734080))
@@ -95,13 +104,6 @@
 - **[2018]** 🥇 1st Place Winner at CyberQuest Attack & Defence ([link](https://twitter.com/UAECyberQuest/status/1049276160876658688))
 - **[2016]** 🥇 1st Place Winner at CyberQuest CTF ([link](https://gulfnews.com/uae/education/cyber-warriors-needed-to-protect-online-security-in-uae-1.1816234))
 - **[2016]** 🥈 2nd Place Winner at NYU CSAW Forensics CTF ([link](https://sites.nyuad.nyu.edu/ccs-ad/csaw/))
-
-## `$> tryhackme --rank`
-
-<p align="center">
-  <a href="https://tryhackme.com/p/DeadPackets"><img src="tryhackme.png" alt="TryHackMe" width="400" /></a>
-</p>
-<p align="center">Top 10 in all of the UAE with over 33,000 points!</p>
 
 ## `$> git show stats`
 
