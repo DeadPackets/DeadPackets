@@ -18,7 +18,7 @@
 
 ## `$> whoami`
 
-<img align="right" src="me.jpg" width="300" />
+<img align="right" src="me.jpg" width="500" />
 
 - <img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16" /> Graduate of Computer Engineering (with Comp Sci minor) from [AUS](https://www.aus.edu)
 - <img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16" /> Head of Engineering & Co-Founder at [CTFae](https://ctf.ae)
