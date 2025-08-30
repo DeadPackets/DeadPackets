@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> Spreading knowledge in dev/cybersec is one of my many passions
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Forever faithful to Python & Docker <3
-- ⭐ Over my **9** years on GitHub, I have opened **150** issues, opened **104** PRs, pushed **3677** commits, created **40** repositories, contributed to **47** projects, gathered **80** stars across all my repos and gists
+- ⭐ Over my **9** years on GitHub, I have opened **150** issues, opened **104** PRs, pushed **3683** commits, created **41** repositories, contributed to **47** projects, gathered **80** stars across all my repos and gists
 
 ## `$> ls -la projects/`
 
@@ -123,5 +123,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Saturday, August 30th 2025, 1:01:05.</i>
+  <i>This README generates every 3 hours. It was last generated Saturday, August 30th 2025, 3:05:33.</i>
 </p>
