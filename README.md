@@ -27,7 +27,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> Spreading knowledge in dev/cybersec is one of my many passions
 - <img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16" /> You can contact me anytime for questions, I love answering them
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Forever faithful to Python & Docker <3
-- ⭐ Over my **9** years on GitHub, I have opened **150** issues, opened **113** PRs, pushed **3802** commits, created **42** repositories, contributed to **51** projects, gathered **81** stars across all my repos and gists
+- ⭐ Over my **9** years on GitHub, I have opened **150** issues, opened **113** PRs, pushed **3804** commits, created **42** repositories, contributed to **51** projects, gathered **81** stars across all my repos and gists
 
 ## `$> ls -la projects/`
 
@@ -71,6 +71,11 @@
 </p>
 
 ## `$> cat life.txt | grep "Achievements"`
+- **[2025]** 💻 Hosted the first ever Bug Bounty CTF at DEFCON with CTFae @ DEFCON 33 2025 ([link](https://x.com/CTFae/status/1955398456899670141)) 
+- **[2025]** 💻 Hosted the Dubai Cyber Security Challenge with CTFae @ GITEX 2025 ([link](https://www.linkedin.com/posts/descofficial_dubai-cybersecurity-gisec2025-ugcPost-7323753058398535680-vfpl?utm_source=share&utm_medium=member_desktop&rcm=ACoAACxS7LUBeMVRAZ2tfDb2baNiaYt5UTYsuRc))
+- **[2025]** 🏆 Won "Best Community Engagement" with CTFae @ UAE CyberSecurity Awards and Recognition 2025 ([link](https://www.linkedin.com/posts/ctfae_in-light-of-the-national-initiatives-that-activity-7341558348380524544-0lXN?utm_source=share&utm_medium=member_desktop&rcm=ACoAACxS7LUBeMVRAZ2tfDb2baNiaYt5UTYsuRc)) 
+- **[2025]** 💻 Hosted the Bahrain National CTF with CTFae @ Bahrain National CTF 2025 ([link](https://www.linkedin.com/posts/fatma-ali-2a845928a_ctfbahrain-cybersecurity-ctfae-ugcPost-7354140444613652481-DJm6?utm_source=share&utm_medium=member_desktop&rcm=ACoAACxS7LUBeMVRAZ2tfDb2baNiaYt5UTYsuRc))
+- **[2025]** 💻 Hosted BSides Nashville CTF for the second year in a row with CTFae @ BSides Nashville 2025 ([link](https://bsidesnash.org/ctf))
 - **[2024]** 🏆 Won the Guinness World Record for the largest CTF in the world with CTFae @ BlackHat 2024 ([link](https://x.com/Blackhatmea/status/1862171555683320251))
 - **[2024]** 🎤 Gave CTFae's first Cyber Drill workshop at HITB SecConf in Thailand @ HITB SecConf 2024 ([link](https://x.com/CTFae/status/1832755293404500239))
 - **[2024]** 💻 Hosted a CTF at GITEX GLOBAL with CTFae showcasing our new Cyber Drill technology @ GITEX GLOBAL 2024 ([link](https://www.linkedin.com/posts/ctfae_after-a-week-of-online-qualifiers-20-elite-activity-7252717762324668416-N_PK))
@@ -123,5 +128,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Monday, September 29th 2025, 1:35:45.</i>
+  <i>This README generates every 3 hours. It was last generated Monday, September 29th 2025, 2:31:58.</i>
 </p>
