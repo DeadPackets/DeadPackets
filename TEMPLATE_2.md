@@ -41,7 +41,7 @@
 | Period | Company | Role |
 | ------ | ------- | ---- |
 | 2021 - Present | [**CTFae**](https://ctf.ae) | Head of Engineering & Co-Founder |
-| 2022 - Dec 2024 | [**Malcrove**](https://malcrove.com) | Senior Cyber Security Consultant |
+| 2022 - Dec 2025 | [**Malcrove**](https://malcrove.com) | Senior Cyber Security Consultant |
 | 2019 - 2024 | [**GDI.Foundation**](https://gdi.foundation) | Volunteer |
 
 ## `$> ls -la projects/`
@@ -166,5 +166,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 2:14:48.</i>
+  <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 2:24:30.</i>
 </p>

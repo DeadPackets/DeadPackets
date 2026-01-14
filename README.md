@@ -34,14 +34,14 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> DevOps enthusiast - I automate everything
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> Cybersecurity educator and community builder
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Python & Docker evangelist
-- ⭐ Over my **10** years on GitHub, I have opened **150** issues, opened **132** PRs, pushed **4621** commits, created **44** repositories, contributed to **49** projects, gathered **84** stars across all my repos and gists
+- ⭐ Over my **10** years on GitHub, I have opened **150** issues, opened **132** PRs, pushed **4622** commits, created **44** repositories, contributed to **49** projects, gathered **84** stars across all my repos and gists
 
 ## `$> cat resume.txt`
 
 | Period | Company | Role |
 | ------ | ------- | ---- |
 | 2021 - Present | [**CTFae**](https://ctf.ae) | Head of Engineering & Co-Founder |
-| 2022 - Dec 2024 | [**Malcrove**](https://malcrove.com) | Senior Cyber Security Consultant |
+| 2022 - Dec 2025 | [**Malcrove**](https://malcrove.com) | Senior Cyber Security Consultant |
 | 2019 - 2024 | [**GDI.Foundation**](https://gdi.foundation) | Volunteer |
 
 ## `$> ls -la projects/`
@@ -166,5 +166,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 2:14:48.</i>
+  <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 2:24:30.</i>
 </p>
