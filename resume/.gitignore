@@ -1,0 +1,10 @@
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Keep cv.pdf as backup, but main file is Youssef-Awad-CV.pdf
+cv.pdf
