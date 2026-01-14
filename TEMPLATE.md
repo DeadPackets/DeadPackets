@@ -17,8 +17,8 @@
 ---
 
 <p align="center">
-  <b>Guinness World Record holder</b> for hosting the <b>largest CTF in the world</b> (BlackHat MEA 2024)<br/>
-  Head of Engineering & Co-Founder at <a href="https://ctf.ae">CTFae</a> | Building world-class cybersecurity competitions<br/><br/>
+  Won <b>"Best Emirati Startup"</b> with <a href="https://ctf.ae">CTFae</a> @ GISEC UAE 2024<br/>
+  Head of Engineering & Co-Founder | Building world-class cybersecurity competitions<br/><br/>
   <img src="https://img.shields.io/badge/Open_to_Opportunities-00C853?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/UAE_(GMT+4)-0A66C2?style=for-the-badge&logo=googlemaps&logoColor=white" />
 </p>
@@ -65,25 +65,25 @@
 #### Languages
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,js,html,css,py,c,cpp,java,bash,md,regex" />
+  <img src="https://skillicons.dev/icons?i=py,ts,nodejs,js,html,css,bash,md,regex" />
 </p>
 
 #### Technologies
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=arduino,docker,firebase,git,linux,mysql,nginx,postgres,raspberrypi,redis,sqlite,webpack" />
+  <img src="https://skillicons.dev/icons?i=docker,firebase,git,linux,mysql,nginx,postgres,rabbitmq,redis,sqlite,celery" />
 </p>
 
 #### Frameworks
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=bootstrap,django,express,fastapi,flask,jquery,react,selenium" />
+  <img src="https://skillicons.dev/icons?i=django,express,fastapi,flask,jquery,selenium" />
 </p>
 
 #### DevOps
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=ansible,aws,cloudflare,gcp,github,githubactions,gitlab" />
+  <img src="https://skillicons.dev/icons?i=ansible,aws,cloudflare,gcp,github,githubactions,gitlab,terraform,packer" />
 </p>
 
 ## `$> cat life.txt | grep "Achievements"`
