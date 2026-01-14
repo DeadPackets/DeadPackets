@@ -7,9 +7,8 @@
   <a href="https://t.me/deadpackets"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white" /></a>
   <a href="https://discord.com/users/deadpackets"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white" /></a>
   <a href="https://instagram.com/deadpackets"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white" /></a>
-  <a href="https://x.com/dead_packets"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>
+  <a href="https://x.com/deadpackets"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/youssef-awad/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" /></a>
-  <a href="https://www.youtube.com/channel/UCdNjReL5xxOOvPtnnUgt_hQ"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" /></a>
   <a href="https://www.twitch.tv/deadpackets"><img src="https://img.shields.io/badge/Twitch-9146FF?style=flat&logo=twitch&logoColor=white" /></a>
   <a href="https://open.spotify.com/user/r876i9nhmpdg2qe0wrc9rsace?si=59a116007ba54bce"><img src="https://img.shields.io/badge/Spotify-1ED760?&style=flat&logo=spotify&logoColor=white" /></a>
 </p>
