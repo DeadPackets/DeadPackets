@@ -154,15 +154,17 @@
 ## `$> git show stats`
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
   <img src="https://streak-stats.demolab.com?user=DeadPackets&theme=react" alt="deadpackets" />
-  <img src="https://github-profile-trophy.vercel.app/?username=DeadPackets&theme=nord" />
+  <img src="https://github-trophies.vercel.app/?username=DeadPackets&theme=nord" />
 </p>
 
 ## `$> spotify_cli --currently-playing`
 
 <p align="center">
-  [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=true&mode=dark)](https://spotify-github-profile.kittinanx.com/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&redirect=true)
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&redirect=true">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&cover_image=true&theme=compact&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true" alt="spotify-github-profile" />
+  </a>
 </p>
 
 <p align="center">
