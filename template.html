@@ -8,7 +8,7 @@
 	<meta name="generator" content="pandoc">
 	<meta name="title" content="DeadPackets (Youssef Awad)">
 	<meta name="description"
-		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Guinness World Record holder for hosting the largest CTF in the world.">
+		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Won 'Best Emirati Startup' @ GISEC UAE 2024.">
 	<meta name="author" content="Youssef Awad">
 	<meta name="keywords" content="cybersecurity, CTF, capture the flag, hacker, developer, DevOps, CTFae, Youssef Awad, DeadPackets">
 
@@ -32,7 +32,7 @@
 	<meta property="og:url" content="https://deadpackets.pw/">
 	<meta property="og:title" content="DeadPackets (Youssef Awad)">
 	<meta property="og:description"
-		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Guinness World Record holder for hosting the largest CTF in the world.">
+		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Won 'Best Emirati Startup' @ GISEC UAE 2024.">
 	<meta property="og:image" content="https://deadpackets.pw/me.jpg">
 
 	<!-- Twitter -->
@@ -40,7 +40,7 @@
 	<meta property="twitter:url" content="https://deadpackets.pw/">
 	<meta property="twitter:title" content="DeadPackets (Youssef Awad)">
 	<meta property="twitter:description"
-		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Guinness World Record holder for hosting the largest CTF in the world.">
+		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Won 'Best Emirati Startup' @ GISEC UAE 2024.">
 	<meta property="twitter:image" content="https://deadpackets.pw/me.jpg">
 
 	<!-- JSON-LD Structured Data -->
@@ -106,6 +106,7 @@
 			--border-color: rgba(0, 0, 0, 0.1);
 			--nav-bg: rgba(255, 255, 255, 0.95);
 			--shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			--link-color: #0d6efd;
 		}
 
 		/* ========== Base Styles ========== */
@@ -122,6 +123,24 @@
 
 		[data-theme="light"] body {
 			background-color: var(--bg-primary);
+		}
+
+		/* ========== Links ========== */
+		a {
+			color: var(--accent-color);
+			transition: color 0.2s ease;
+		}
+
+		a:hover {
+			color: var(--accent-hover);
+		}
+
+		[data-theme="light"] a {
+			color: var(--link-color);
+		}
+
+		[data-theme="light"] a:hover {
+			color: var(--accent-hover);
 		}
 
 		/* ========== Code & Pre Styles ========== */

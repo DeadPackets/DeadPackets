@@ -154,7 +154,6 @@
 
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
-  <img src="https://streak-stats.demolab.com?user=DeadPackets&theme=react" alt="deadpackets" />
   <img src="https://github-trophies.vercel.app/?username=DeadPackets&theme=nord" />
 </p>
 
