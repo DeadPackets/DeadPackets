@@ -5,8 +5,6 @@
   projects:
     - url: https://github.com/DeadPackets/pwnbox-cli
     - url: https://github.com/DeadPackets/AUSCrawl
-    - url: https://github.com/DeadPackets/ctfd-discord-webhook-plugin
-    - url: https://github.com/COE420Group4/Donation-Nation
 
 - name: NodeJS
   logo: nodedotjs
@@ -15,10 +13,6 @@
   projects:
     - url: https://github.com/DeadPackets/CRNotify
     - url: https://github.com/DeadPackets/AUSCrawl
-    - url: https://github.com/DeadPackets/InfoSteal
-    - url: https://github.com/DeadPackets/Phishing_Catcher.js
-    - url: https://github.com/DeadPackets/iPwn
-    - url: https://github.com/DeadPackets/HackPi
 
 - name: Puppeteer
   logo: puppeteer
@@ -28,21 +22,12 @@
     - url: https://github.com/DeadPackets/CRNotify
     - url: https://github.com/DeadPackets/AUSCrawl
 
-- name: React-Native
-  logo: react
-  url: https://reactnative.dev
-  color: '#61DAFB'
-  projects:
-    - url: https://github.com/DeadPackets/CRNotify-App
-    - url: https://github.com/DeadPackets/Aiko
-
 - name: Docker
   logo: docker
   url: https://www.docker.com
   color: '#2496ED'
   projects:
     - url: https://github.com/DeadPackets/pwnbox
-    - url: https://github.com/DeadPackets/AUSCTF-S19
 
 - name: JavaScript
   logo: javascript
@@ -53,17 +38,3 @@
     - url: https://github.com/DeadPackets/CrackTheHack
     - url: https://github.com/DeadPackets/EmailCheck
     - url: https://github.com/DeadPackets/HistoryThief
-
-- name: Java
-  logo: openjdk
-  url: https://www.java.com
-  color: '#F89820'
-  projects:
-    - url: https://github.com/DanaOsama/The-Mansion-Game
-
-- name: C%2B%2B
-  logo: c%2B%2B
-  url: https://www.cplusplus.com
-  color: '#00599C'
-  projects:
-    - url: https://github.com/DeadPackets/CMP220Project
