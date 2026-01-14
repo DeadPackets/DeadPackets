@@ -154,7 +154,6 @@
 
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
-  <img src="https://streak-stats.demolab.com?user=DeadPackets&theme=react" alt="deadpackets" />
   <img src="https://github-trophies.vercel.app/?username=DeadPackets&theme=nord" />
 </p>
 
@@ -167,5 +166,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 2:08:38.</i>
+  <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 2:14:48.</i>
 </p>
