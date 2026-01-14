@@ -18,6 +18,7 @@
 <p align="center">
   Won <b>"Best Emirati Startup"</b> with <a href="https://ctf.ae">CTFae</a> @ GISEC UAE 2024<br/>
   Head of Engineering & Co-Founder | Building world-class cybersecurity competitions<br/><br/>
+  <a href="resume/Youssef-Awad-CV.pdf"><img src="https://img.shields.io/badge/Download_CV-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/Open_to_Opportunities-00C853?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/UAE_(GMT+4)-0A66C2?style=for-the-badge&logo=googlemaps&logoColor=white" />
 </p>
@@ -34,7 +35,7 @@
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> DevOps enthusiast - I automate everything
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> Cybersecurity educator and community builder
 - <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Python & Docker evangelist
-- ⭐ Over my **10** years on GitHub, I have opened **150** issues, opened **132** PRs, pushed **4622** commits, created **44** repositories, contributed to **49** projects, gathered **84** stars across all my repos and gists
+- ⭐ Over my **10** years on GitHub, I have opened **150** issues, opened **132** PRs, pushed **4623** commits, created **44** repositories, contributed to **49** projects, gathered **84** stars across all my repos and gists
 
 ## `$> cat resume.txt`
 
@@ -166,5 +167,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 2:24:30.</i>
+  <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 2:38:36.</i>
 </p>
