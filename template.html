@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" data-theme="dark">
 
 <head>
 	<meta charset="utf-8">
@@ -8,14 +8,31 @@
 	<meta name="generator" content="pandoc">
 	<meta name="title" content="DeadPackets (Youssef Awad)">
 	<meta name="description"
-		content="Welcome to my portfolio. I am a passionate cybersecurity researcher, programmer, and hacker!">
+		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Guinness World Record holder for hosting the largest CTF in the world.">
+	<meta name="author" content="Youssef Awad">
+	<meta name="keywords" content="cybersecurity, CTF, capture the flag, hacker, developer, DevOps, CTFae, Youssef Awad, DeadPackets">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://deadpackets.pw/">
+
+	<!-- Emoji Favicon -->
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💀</text></svg>">
+
+	<!-- Preconnect hints for faster loading -->
+	<link rel="preconnect" href="https://img.shields.io" crossorigin>
+	<link rel="preconnect" href="https://skillicons.dev" crossorigin>
+	<link rel="preconnect" href="https://github-readme-stats-sigma-five.vercel.app" crossorigin>
+	<link rel="preconnect" href="https://streak-stats.demolab.com" crossorigin>
+	<link rel="preconnect" href="https://github-trophies.vercel.app" crossorigin>
+	<link rel="preconnect" href="https://spotify-github-profile.kittinanx.com" crossorigin>
+	<link rel="preconnect" href="https://bootswatch.com" crossorigin>
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://deadpackets.pw/">
 	<meta property="og:title" content="DeadPackets (Youssef Awad)">
 	<meta property="og:description"
-		content="Welcome to my portfolio. I am a passionate cybersecurity researcher, programmer, and hacker!">
+		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Guinness World Record holder for hosting the largest CTF in the world.">
 	<meta property="og:image" content="https://deadpackets.pw/me.jpg">
 
 	<!-- Twitter -->
@@ -23,55 +40,435 @@
 	<meta property="twitter:url" content="https://deadpackets.pw/">
 	<meta property="twitter:title" content="DeadPackets (Youssef Awad)">
 	<meta property="twitter:description"
-		content="Welcome to my portfolio. I am a passionate cybersecurity researcher, programmer, and hacker!">
+		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Guinness World Record holder for hosting the largest CTF in the world.">
 	<meta property="twitter:image" content="https://deadpackets.pw/me.jpg">
+
+	<!-- JSON-LD Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Youssef Awad",
+		"alternateName": "DeadPackets",
+		"url": "https://deadpackets.pw",
+		"image": "https://deadpackets.pw/me.jpg",
+		"jobTitle": "Head of Engineering & Co-Founder",
+		"worksFor": {
+			"@type": "Organization",
+			"name": "CTFae",
+			"url": "https://ctf.ae"
+		},
+		"alumniOf": {
+			"@type": "CollegeOrUniversity",
+			"name": "American University of Sharjah"
+		},
+		"knowsAbout": ["Cybersecurity", "Capture The Flag", "DevOps", "Python", "Docker", "Red Teaming"],
+		"sameAs": [
+			"https://github.com/DeadPackets",
+			"https://linkedin.com/in/youssef-awad",
+			"https://x.com/deadpackets",
+			"https://instagram.com/deadpackets",
+			"https://t.me/deadpackets"
+		]
+	}
+	</script>
+
 	<link rel="stylesheet" href="https://bootswatch.com/5/slate/bootstrap.min.css" />
-	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://unpkg.com/scrollreveal@4"></script>
+
 	<style>
-		code,
-		pre {
-			font-family: monospace, monospace;
+		/* ========== CSS Custom Properties for Theming ========== */
+		:root {
+			--bg-primary: #272b30;
+			--bg-secondary: #1a1d21;
+			--bg-tertiary: #32383e;
+			--text-primary: #dee2e6;
+			--text-secondary: #adb5bd;
+			--text-muted: #6c757d;
+			--accent-color: #5bc0de;
+			--accent-hover: #46b8da;
+			--code-bg: rgb(27, 31, 35);
+			--border-color: rgba(255, 255, 255, 0.1);
+			--nav-bg: rgba(26, 29, 33, 0.95);
+			--shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		[data-theme="light"] {
+			--bg-primary: #f8f9fa;
+			--bg-secondary: #ffffff;
+			--bg-tertiary: #e9ecef;
+			--text-primary: #212529;
+			--text-secondary: #495057;
+			--text-muted: #6c757d;
+			--accent-color: #0d6efd;
+			--accent-hover: #0b5ed7;
+			--code-bg: #e9ecef;
+			--border-color: rgba(0, 0, 0, 0.1);
+			--nav-bg: rgba(255, 255, 255, 0.95);
+			--shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		/* ========== Base Styles ========== */
+		html {
+			scroll-behavior: smooth;
+			scroll-padding-top: 70px;
+		}
+
+		body {
+			background-color: var(--bg-primary);
+			color: var(--text-primary);
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		[data-theme="light"] body {
+			background-color: var(--bg-primary);
+		}
+
+		/* ========== Code & Pre Styles ========== */
+		code, pre {
+			font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
 		}
 
 		code {
 			padding: .2em .4em;
 			margin: 0;
 			font-size: 85%;
-			background-color: rgb(27, 31, 35);
-			color: #ddd;
-			border-radius: 3px;
+			background-color: var(--code-bg);
+			color: var(--text-primary);
+			border-radius: 4px;
+			transition: background-color 0.3s ease;
 		}
 
 		pre {
-			background-color: rgb(27, 31, 35);
+			background-color: var(--code-bg);
+			padding: 1rem;
+			border-radius: 8px;
+			overflow-x: auto;
 		}
 
+		/* ========== Navigation Bar ========== */
+		.navbar-custom {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+			background: var(--nav-bg);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			box-shadow: var(--shadow);
+			padding: 0.5rem 1rem;
+			transition: all 0.3s ease;
+		}
+
+		.navbar-custom .nav-links {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 0.5rem;
+			flex-wrap: wrap;
+		}
+
+		.navbar-custom .nav-link {
+			color: var(--text-secondary);
+			text-decoration: none;
+			padding: 0.4rem 0.8rem;
+			border-radius: 4px;
+			font-size: 0.85rem;
+			transition: all 0.2s ease;
+		}
+
+		.navbar-custom .nav-link:hover {
+			color: var(--accent-color);
+			background: var(--bg-tertiary);
+		}
+
+		.navbar-custom .nav-separator {
+			color: var(--text-muted);
+			font-size: 0.7rem;
+		}
+
+		.theme-toggle {
+			background: none;
+			border: none;
+			color: var(--text-secondary);
+			cursor: pointer;
+			padding: 0.4rem 0.6rem;
+			border-radius: 4px;
+			font-size: 1.1rem;
+			transition: all 0.2s ease;
+			position: absolute;
+			right: 1rem;
+		}
+
+		.theme-toggle:hover {
+			background: var(--bg-tertiary);
+			color: var(--accent-color);
+		}
+
+		/* ========== Main Container ========== */
+		#main {
+			padding-top: 60px;
+		}
+
+		/* ========== Details/Collapsible Sections ========== */
 		details {
-			background-color: rgba(0, 0, 0, 0.2);
+			background-color: var(--bg-secondary);
+			border: 1px solid var(--border-color);
 			border-radius: 8px;
 			padding: 1rem;
 			margin-bottom: 1rem;
+			transition: all 0.3s ease;
+		}
+
+		details:hover {
+			border-color: var(--accent-color);
 		}
 
 		details summary {
 			cursor: pointer;
 			font-weight: bold;
 			padding: 0.5rem 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
+
+		details summary::-webkit-details-marker {
+			display: none;
+		}
+
+		details summary::before {
+			content: '▶';
+			font-size: 0.7rem;
+			transition: transform 0.2s ease;
+		}
+
+		details[open] summary::before {
+			transform: rotate(90deg);
 		}
 
 		details summary:hover {
-			color: #5bc0de;
+			color: var(--accent-color);
 		}
 
 		details[open] summary {
 			margin-bottom: 0.5rem;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			border-bottom: 1px solid var(--border-color);
 			padding-bottom: 0.5rem;
+		}
+
+		/* ========== Tables ========== */
+		.table-responsive-wrapper {
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		/* ========== Images ========== */
+		img {
+			opacity: 0;
+			transition: opacity 0.5s ease;
+		}
+
+		img.loaded {
+			opacity: 1;
+		}
+
+		/* ========== Back to Top Button ========== */
+		.back-to-top {
+			position: fixed;
+			bottom: 2rem;
+			right: 2rem;
+			width: 45px;
+			height: 45px;
+			background: var(--accent-color);
+			color: white;
+			border: none;
+			border-radius: 50%;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.2rem;
+			box-shadow: var(--shadow);
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(20px);
+			transition: all 0.3s ease;
+			z-index: 999;
+		}
+
+		.back-to-top.visible {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+
+		.back-to-top:hover {
+			background: var(--accent-hover);
+			transform: translateY(-3px);
+		}
+
+		/* ========== Footer ========== */
+		.footer {
+			text-align: center;
+			padding: 2rem 0;
+			margin-top: 3rem;
+			border-top: 1px solid var(--border-color);
+			color: var(--text-muted);
+			font-size: 0.9rem;
+		}
+
+		/* ========== Animations ========== */
+		.fade-in {
+			opacity: 0;
+			transform: translateY(20px);
+			transition: opacity 0.6s ease, transform 0.6s ease;
+		}
+
+		.fade-in.visible {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		/* ========== Mobile Responsiveness ========== */
+		@media (max-width: 768px) {
+			.navbar-custom {
+				padding: 0.4rem 0.5rem;
+			}
+
+			.navbar-custom .nav-link {
+				padding: 0.3rem 0.5rem;
+				font-size: 0.75rem;
+			}
+
+			.navbar-custom .nav-separator {
+				display: none;
+			}
+
+			.theme-toggle {
+				position: static;
+				margin-left: auto;
+			}
+
+			.navbar-custom .nav-links {
+				gap: 0.2rem;
+			}
+
+			#main {
+				padding-top: 50px;
+			}
+
+			html {
+				scroll-padding-top: 60px;
+			}
+
+			.back-to-top {
+				bottom: 1rem;
+				right: 1rem;
+				width: 40px;
+				height: 40px;
+			}
+
+			img[align="right"] {
+				float: none !important;
+				display: block;
+				margin: 1rem auto !important;
+				max-width: 250px;
+			}
+
+			table {
+				font-size: 0.85rem;
+			}
+
+			h1 {
+				font-size: 1.5rem;
+			}
+
+			h2 {
+				font-size: 1.25rem;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.navbar-custom .nav-link {
+				padding: 0.25rem 0.4rem;
+				font-size: 0.7rem;
+			}
+		}
+
+		/* ========== Print Styles ========== */
+		@media print {
+			.navbar-custom,
+			.back-to-top,
+			.theme-toggle,
+			#spotify-section,
+			.footer {
+				display: none !important;
+			}
+
+			body {
+				background: white !important;
+				color: black !important;
+			}
+
+			#main {
+				padding-top: 0 !important;
+			}
+
+			a {
+				color: black !important;
+				text-decoration: underline;
+			}
+
+			details {
+				border: 1px solid #ccc;
+			}
+
+			details[open] {
+				break-inside: avoid;
+			}
+
+			img {
+				max-width: 100% !important;
+				opacity: 1 !important;
+			}
+
+			code, pre {
+				background: #f5f5f5 !important;
+				color: black !important;
+			}
 		}
 	</style>
 </head>
 
 <body>
+	<!-- Navigation Bar -->
+	<nav class="navbar-custom" role="navigation" aria-label="Main navigation">
+		<div class="nav-links">
+			<a href="#-whoami" class="nav-link">whoami</a>
+			<span class="nav-separator">|</span>
+			<a href="#-cat-resumetxt" class="nav-link">resume</a>
+			<span class="nav-separator">|</span>
+			<a href="#-ls--la-projects" class="nav-link">projects</a>
+			<span class="nav-separator">|</span>
+			<a href="#-cat-skillstxt" class="nav-link">skills</a>
+			<span class="nav-separator">|</span>
+			<a href="#-cat-lifetxt--grep-achievements" class="nav-link">achievements</a>
+			<span class="nav-separator">|</span>
+			<a href="#-git-show-stats" class="nav-link">stats</a>
+			<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light theme" title="Toggle theme">
+				🌙
+			</button>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
 	<div class="container" id="main">
 		<div class="row my-5">
 			<div class="col">
@@ -79,27 +476,157 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Back to Top Button -->
+	<button class="back-to-top" onclick="scrollToTop()" aria-label="Scroll to top" title="Back to top">
+		↑
+	</button>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Youssef Awad. All rights reserved.</p>
+		</div>
+	</footer>
+
 	<!-- Bootstrap 5 Bundle (includes Popper) -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
+
 	<script>
-		/* Bootstrap styles */
-		ScrollReveal().reveal('section', {mobile: false});
+		// ========== Theme Toggle ==========
+		function getPreferredTheme() {
+			const stored = localStorage.getItem('theme');
+			if (stored) return stored;
+			return 'dark'; // Default to dark
+		}
+
+		function setTheme(theme) {
+			document.documentElement.setAttribute('data-theme', theme);
+			localStorage.setItem('theme', theme);
+			updateThemeIcon(theme);
+		}
+
+		function updateThemeIcon(theme) {
+			const btn = document.querySelector('.theme-toggle');
+			if (btn) {
+				btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+			}
+		}
+
+		function toggleTheme() {
+			const current = document.documentElement.getAttribute('data-theme');
+			const next = current === 'dark' ? 'light' : 'dark';
+			setTheme(next);
+		}
+
+		// Initialize theme
+		setTheme(getPreferredTheme());
+
+		// ========== Back to Top Button ==========
+		const backToTop = document.querySelector('.back-to-top');
+
+		function handleScroll() {
+			if (window.scrollY > 300) {
+				backToTop.classList.add('visible');
+			} else {
+				backToTop.classList.remove('visible');
+			}
+		}
+
+		function scrollToTop() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+
+		window.addEventListener('scroll', handleScroll, { passive: true });
+
+		// ========== Image Loading Animation ==========
+		function handleImageLoad() {
+			document.querySelectorAll('img').forEach(img => {
+				if (img.complete) {
+					img.classList.add('loaded');
+				} else {
+					img.addEventListener('load', () => img.classList.add('loaded'));
+					img.addEventListener('error', () => img.classList.add('loaded')); // Show even if error
+				}
+			});
+		}
+
+		// ========== ScrollReveal Animations ==========
+		function initScrollReveal() {
+			ScrollReveal().reveal('section', {
+				delay: 100,
+				distance: '20px',
+				duration: 600,
+				easing: 'ease-out',
+				origin: 'bottom',
+				mobile: true
+			});
+		}
+
+		// ========== Bootstrap Fixes ==========
 		function bootstrapFixes() {
+			// Add table classes
 			document.querySelectorAll('tr.header').forEach(el => {
 				const table = el.closest('table');
-				if (table) table.classList.add('table', 'table-dark', 'table-condensed');
+				if (table) {
+					table.classList.add('table', 'table-dark', 'table-condensed');
+					// Wrap table for responsive scrolling
+					if (!table.parentElement.classList.contains('table-responsive-wrapper')) {
+						const wrapper = document.createElement('div');
+						wrapper.className = 'table-responsive-wrapper';
+						table.parentNode.insertBefore(wrapper, table);
+						wrapper.appendChild(table);
+					}
+				}
 			});
+
+			// Add heading styles
 			document.querySelectorAll('h2').forEach(el => {
 				el.classList.add('mb-2');
-				el.insertAdjacentHTML('beforeend', '<hr />');
+				if (!el.querySelector('hr')) {
+					el.insertAdjacentHTML('beforeend', '<hr />');
+				}
 			});
-			document.querySelectorAll('img[align="right"]').forEach(el => el.classList.add('mx-3', 'img-fluid'));
-			document.querySelectorAll('section').forEach(el => el.classList.add('mb-5'));
-			document.querySelectorAll('li').forEach(el => el.classList.add('py-1'));
+
+			// Add image classes
+			document.querySelectorAll('img[align="right"]').forEach(el => {
+				el.classList.add('mx-3', 'img-fluid');
+			});
+
+			// Add section classes
+			document.querySelectorAll('section').forEach(el => {
+				el.classList.add('mb-5');
+			});
+
+			// Add list item classes
+			document.querySelectorAll('li').forEach(el => {
+				el.classList.add('py-1');
+			});
+
+			// Mark Spotify section for print hiding
+			const spotifySection = document.querySelector('[id*="spotify"]');
+			if (spotifySection) {
+				spotifySection.id = 'spotify-section';
+			}
 		}
-		document.addEventListener('DOMContentLoaded', bootstrapFixes);
+
+		// ========== Dynamic Copyright Year ==========
+		function updateCopyrightYear() {
+			const yearEl = document.getElementById('year');
+			if (yearEl) {
+				yearEl.textContent = new Date().getFullYear();
+			}
+		}
+
+		// ========== Initialize Everything ==========
+		document.addEventListener('DOMContentLoaded', function() {
+			bootstrapFixes();
+			handleImageLoad();
+			initScrollReveal();
+			updateCopyrightYear();
+		});
 	</script>
 </body>
 
