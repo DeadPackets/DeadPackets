@@ -1,114 +1,109 @@
 %-------------------------
 % Professional CV for Youssef Awad
-% LaTeX Template - Modern Clean Style (1 Page)
+% Standard LaTeX Template - ATS Compatible
 %-------------------------
 
-\documentclass[10pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper]{article}
 
-% ModernCV themes
-\moderncvstyle{banking}
-\moderncvcolor{blue}
-
-% Packages
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.9, top=1.2cm, bottom=1.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.85, top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
 \usepackage{fontawesome5}
-\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
 
-% Reduce spacing globally
-\setlength{\hintscolumnwidth}{2.2cm}
-\setlength{\parskip}{0pt}
+% Color definition
+\definecolor{primary}{RGB}{0, 0, 0}
+\definecolor{secondary}{RGB}{40, 40, 40}
 
-% Tighter section spacing
-\renewcommand*{\sectionfont}{\Large\bfseries\upshape}
-\renewcommand*{\subsectionfont}{\large\bfseries\upshape}
+% Title formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
 
-% Personal Information
-\name{Youssef}{Awad}
-\title{Cybersecurity Engineer \& Entrepreneur}
-\email{youssef@ctf.ae}
-\homepage{deadpackets.pw}
-\social[linkedin]{youssef-awad}
-\social[github]{DeadPackets}
-\extrainfo{\faMapMarker*\ UAE (GMT+4) \quad \faMobile*\ +971 50 739 9908}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt}
+\pagenumbering{gobble}
 
-%-------------------------
-% Document Start
-%-------------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
 \begin{document}
 
-\makecvtitle
-\vspace{-3em}
+% Header
+\begin{center}
+    {\huge \textbf{Youssef Awad}} \\
+    \vspace{5pt}
+    \small
+    \faEnvelope\ \href{mailto:youssef@ctf.ae}{youssef@ctf.ae} \quad
+    \faGlobe\ \href{https://deadpackets.pw}{deadpackets.pw} \quad
+    \faLinkedin\ \href{https://linkedin.com/in/youssef-awad}{linkedin.com/in/youssef-awad} \quad
+    \faGithub\ \href{https://github.com/DeadPackets}{github.com/DeadPackets} \\
+    \faMapMarker*\ UAE (GMT+4) \quad \faMobile*\ +971 50 739 9908
+\end{center}
 
-%-------------------------
-% Professional Summary
-%-------------------------
+% Summary
 \section{Summary}
-\small{OSCP-certified cybersecurity professional with 8+ years in offensive security, DevOps, and software development. Co-founded CTFae, winning \textbf{``Best Emirati Startup''} at GISEC 2024 and achieving a \textbf{Guinness World Record} for the world's largest CTF. Built platforms serving BlackHat, DEFCON, HITB, and government agencies worldwide.}
+OSCP-certified cybersecurity professional with 8+ years in offensive security, DevOps, and software development. Co-founder of \textbf{CTFae}, winner of \textbf{``Best Emirati Startup''} at GISEC 2024 and \textbf{Guinness World Record} holder for the world's largest CTF. Architected and scaled cybersecurity platforms serving BlackHat, DEFCON, HITB, and government agencies worldwide.
 
-\vspace{-0.5em}
-
-%-------------------------
 % Experience
-%-------------------------
 \section{Experience}
 
-\cventry{2021 -- Present}{Head of Engineering \& Co-Founder}{CTFae}{Dubai, UAE}{}{
-\vspace{-1em}
+\textbf{CTFae} \hfill \textbf{Dubai, UAE} \\
+\textit{Head of Engineering \& Co-Founder} \hfill \textit{2021 -- Present}
 \begin{itemize}
-\item Architected CTF platform serving 10,000+ concurrent participants; achieved \textbf{Guinness World Record} (BlackHat MEA 2024)
-\item Led engineering for BlackHat MEA, DEFCON 33, GITEX, HITB, Dubai Police, and national CTFs (UAE, Bahrain, Saudi)
-\item Designed Cyber Drill attack-defense simulations; automated infrastructure with Terraform, Ansible, AWS/GCP
-\end{itemize}}
+    \item Architected CTF platform serving 10,000+ concurrent participants; achieved \textbf{Guinness World Record} (BlackHat MEA 2024).
+    \item Led engineering for BlackHat MEA, DEFCON 33, GITEX, HITB, Dubai Police, and national CTFs (UAE, Bahrain, Saudi).
+    \item Designed Cyber Drill attack-defense simulations; automated infrastructure with Terraform, Ansible, AWS, and GCP.
+\end{itemize}
 
-\vspace{-0.5em}
+\vspace{5pt}
 
-\cventry{2022 -- Dec 2025}{Senior Cyber Security Consultant}{Malcrove}{Dubai, UAE}{}{
-\vspace{-1em}
+\textbf{Malcrove} \hfill \textbf{Dubai, UAE} \\
+\textit{Senior Cyber Security Consultant} \hfill \textit{2022 -- Dec 2025}
 \begin{itemize}
-\item Conducted penetration testing for web/mobile apps, networks, and wireless systems across UAE and international clients
-\item Authored vulnerability reports with remediation guidance for technical and executive stakeholders
-\end{itemize}}
+    \item Conducted penetration testing for web/mobile apps, networks, and wireless systems for UAE and international clients.
+    \item Authored detailed vulnerability reports with remediation guidance for technical and executive stakeholders.
+\end{itemize}
 
-\vspace{-0.5em}
+\vspace{5pt}
 
-\cventry{2019 -- 2024}{Volunteer Ethical Hacker}{GDI.Foundation}{Netherlands (Remote)}{}{
-\vspace{-1em}
+\textbf{GDI.Foundation} \hfill \textbf{Netherlands (Remote)} \\
+\textit{Volunteer Ethical Hacker} \hfill \textit{2019 -- 2024}
 \begin{itemize}
-\item Responsibly disclosed critical vulnerabilities to governments and organizations; collaborated on internet-wide research
-\end{itemize}}
+    \item Responsibly disclosed critical vulnerabilities to governments and organizations; collaborated on internet-wide research.
+\end{itemize}
 
-\vspace{-0.5em}
-
-%-------------------------
 % Skills
-%-------------------------
-\section{Skills}
-\cvitem{Security}{Penetration Testing, Red Teaming, CTF Development (Web/Pwn/OSINT), Vulnerability Assessment}
-\cvitem{Languages}{Python, TypeScript, JavaScript, Bash, SQL}
-\cvitem{DevOps}{Docker, Terraform, Ansible, Packer, GitHub Actions, GitLab CI, AWS, GCP}
-\cvitem{Stack}{Django, FastAPI, Flask, Express, Celery, PostgreSQL, Redis, RabbitMQ, Nginx, Linux}
+\section{Technical Skills}
+\begin{itemize}
+    \item \textbf{Security:} Penetration Testing, Red Teaming, CTF Development (Web/Pwn/OSINT), Vulnerability Assessment.
+    \item \textbf{Languages:} Python, TypeScript, JavaScript, Bash, SQL.
+    \item \textbf{DevOps:} Docker, Terraform, Ansible, Packer, GitHub Actions, GitLab CI, AWS, GCP.
+    \item \textbf{Stack:} Django, FastAPI, Flask, Express, Celery, PostgreSQL, Redis, RabbitMQ, Nginx, Linux.
+\end{itemize}
 
-\vspace{-0.5em}
-
-%-------------------------
 % Education & Certifications
-%-------------------------
 \section{Education \& Certifications}
-\cventry{2017 -- 2022}{B.Sc. Computer Engineering (Minor: CS)}{American University of Sharjah}{UAE}{}{}
-\vspace{-1em}
-\cvitem{OSCP}{Offensive Security Certified Professional -- Passed with 90/100}
+\textbf{American University of Sharjah} \hfill \textbf{UAE} \\
+\textit{B.Sc. Computer Engineering (Minor: Computer Science)} \hfill \textit{2017 -- 2022} \\
+\textbf{OSCP} - Offensive Security Certified Professional (Passed with 90/100)
 
-\vspace{-0.5em}
-
-%-------------------------
 % Awards
-%-------------------------
 \section{Awards}
-\cvitem{2024}{\textbf{Guinness World Record} -- Largest CTF in the world (BlackHat MEA)}
-\cvitem{2025}{\textbf{Best Community Engagement} -- UAE CyberSecurity Awards}
-\cvitem{2024}{\textbf{Best Emirati Startup} -- GISEC UAE}
-\cvitem{2021}{\textbf{Outstanding CSE Student Talent Award} -- American University of Sharjah}
-\cvitem{CTFs}{12+ first-place wins: CyberBattle of Emirates, Dubai Police CTF, CyberTalents UAE, HITB Lockdown, CyberQuest}
+\begin{itemize}
+    \item \textbf{Guinness World Record (2024):} Largest CTF competition in the world (BlackHat MEA).
+    \item \textbf{Best Community Engagement (2025):} UAE CyberSecurity Awards.
+    \item \textbf{Best Emirati Startup (2024):} GISEC UAE.
+    \item \textbf{Outstanding CSE Student Talent Award (2021):} American University of Sharjah.
+    \item \textbf{CTF Wins:} 12+ first-place wins (CyberBattle of Emirates, Dubai Police CTF, CyberTalents UAE, HITB, CyberQuest).
+\end{itemize}
+
+% Notable Events
+\section{Notable Events Hosted}
+\small{DEFCON 33 Bug Bounty CTF (2025), BlackHat MEA CTF (2022--2024), Dubai Cyber Security Challenge @ GITEX (2024--2025), Bahrain National CTF (2025), BSides Nashville (2024--2025), HITB Amsterdam \& Dubai, Dubai Police CTF, AtHack Saudi Arabia.}
 
 \end{document}
