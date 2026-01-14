@@ -4,14 +4,12 @@
   color: '#3C78A9'
   projects:
     - url: https://github.com/DeadPackets/pwnbox-cli
-    - url: https://github.com/DeadPackets/EasyGuard
-      wip: true
     - url: https://github.com/DeadPackets/AUSCrawl
     - url: https://github.com/DeadPackets/ctfd-discord-webhook-plugin
     - url: https://github.com/COE420Group4/Donation-Nation
 
 - name: NodeJS
-  logo: node-dot-js
+  logo: nodedotjs
   url: https://nodejs.org/
   color: '#339933'
   projects:
@@ -35,8 +33,6 @@
   url: https://reactnative.dev
   color: '#61DAFB'
   projects:
-    - url: https://github.com/DeadPackets/Rumi
-      wip: true
     - url: https://github.com/DeadPackets/CRNotify-App
     - url: https://github.com/DeadPackets/Aiko
 
@@ -46,7 +42,6 @@
   color: '#2496ED'
   projects:
     - url: https://github.com/DeadPackets/pwnbox
-    - url: https://github.com/DeadPackets/EasyGuard
     - url: https://github.com/DeadPackets/AUSCTF-S19
 
 - name: JavaScript
@@ -60,7 +55,7 @@
     - url: https://github.com/DeadPackets/HistoryThief
 
 - name: Java
-  logo: java
+  logo: openjdk
   url: https://www.java.com
   color: '#F89820'
   projects:

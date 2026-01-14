@@ -25,8 +25,6 @@ jobs:
           token: ${{ secrets.PA_TOKEN }}
           template: './TEMPLATE_2.md'
           readme: './README.md'
-      - name: Update TryHackMe Stats
-        run: curl https://tryhackme.com/badge/regen/171076 && wget https://tryhackme-badges.s3.amazonaws.com/DeadPackets.png -O tryhackme.png
       - name: Update index.html
         uses: docker://pandoc/core:2.9
         with:
