@@ -41,7 +41,7 @@
 | Period | Company | Role |
 | ------ | ------- | ---- |
 | 2021 - Present | [**CTFae**](https://ctf.ae) | Head of Engineering & Co-Founder |
-| 2022 - Dec 2024 | [**Malcrove**](https://malcrove.com) | Senior Cyber Security Consultant |
+| 2022 - Dec 2025 | [**Malcrove**](https://malcrove.com) | Senior Cyber Security Consultant |
 | 2019 - 2024 | [**GDI.Foundation**](https://gdi.foundation) | Volunteer |
 
 ## `$> ls -la projects/`
