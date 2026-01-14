@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" data-theme="dark">
 
 <head>
 	<meta charset="utf-8">
@@ -8,47 +8,467 @@
 	<meta name="generator" content="pandoc">
 	<meta name="title" content="DeadPackets (Youssef Awad)">
 	<meta name="description"
-		content="Welcome to my portfolio. I am a passionate cybersecurity researcher, programmer, and hacker!">
+		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Guinness World Record holder for hosting the largest CTF in the world.">
+	<meta name="author" content="Youssef Awad">
+	<meta name="keywords" content="cybersecurity, CTF, capture the flag, hacker, developer, DevOps, CTFae, Youssef Awad, DeadPackets">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://deadpackets.pw/">
+
+	<!-- Emoji Favicon -->
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💀</text></svg>">
+
+	<!-- Preconnect hints for faster loading -->
+	<link rel="preconnect" href="https://img.shields.io" crossorigin>
+	<link rel="preconnect" href="https://skillicons.dev" crossorigin>
+	<link rel="preconnect" href="https://github-readme-stats-sigma-five.vercel.app" crossorigin>
+	<link rel="preconnect" href="https://streak-stats.demolab.com" crossorigin>
+	<link rel="preconnect" href="https://github-trophies.vercel.app" crossorigin>
+	<link rel="preconnect" href="https://spotify-github-profile.kittinanx.com" crossorigin>
+	<link rel="preconnect" href="https://bootswatch.com" crossorigin>
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://deadpackets.pw/">
 	<meta property="og:title" content="DeadPackets (Youssef Awad)">
 	<meta property="og:description"
-		content="Welcome to my portfolio. I am a passionate cybersecurity researcher, programmer, and hacker!">
-	<meta property="og:image" content="">
+		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Guinness World Record holder for hosting the largest CTF in the world.">
+	<meta property="og:image" content="https://deadpackets.pw/me.jpg">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://deadpackets.pw/">
 	<meta property="twitter:title" content="DeadPackets (Youssef Awad)">
 	<meta property="twitter:description"
-		content="Welcome to my portfolio. I am a passionate cybersecurity researcher, programmer, and hacker!">
-	<meta property="twitter:image" content="">
+		content="Cybersecurity researcher, developer, and Head of Engineering at CTFae. Guinness World Record holder for hosting the largest CTF in the world.">
+	<meta property="twitter:image" content="https://deadpackets.pw/me.jpg">
+
+	<!-- JSON-LD Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Youssef Awad",
+		"alternateName": "DeadPackets",
+		"url": "https://deadpackets.pw",
+		"image": "https://deadpackets.pw/me.jpg",
+		"jobTitle": "Head of Engineering & Co-Founder",
+		"worksFor": {
+			"@type": "Organization",
+			"name": "CTFae",
+			"url": "https://ctf.ae"
+		},
+		"alumniOf": {
+			"@type": "CollegeOrUniversity",
+			"name": "American University of Sharjah"
+		},
+		"knowsAbout": ["Cybersecurity", "Capture The Flag", "DevOps", "Python", "Docker", "Red Teaming"],
+		"sameAs": [
+			"https://github.com/DeadPackets",
+			"https://linkedin.com/in/youssef-awad",
+			"https://x.com/deadpackets",
+			"https://instagram.com/deadpackets",
+			"https://t.me/deadpackets"
+		]
+	}
+	</script>
+
 	<link rel="stylesheet" href="https://bootswatch.com/5/slate/bootstrap.min.css" />
-	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://unpkg.com/scrollreveal@4"></script>
+
 	<style>
-		code,
-		pre {
-			font-family: monospace, monospace;
+		/* ========== CSS Custom Properties for Theming ========== */
+		:root {
+			--bg-primary: #272b30;
+			--bg-secondary: #1a1d21;
+			--bg-tertiary: #32383e;
+			--text-primary: #dee2e6;
+			--text-secondary: #adb5bd;
+			--text-muted: #6c757d;
+			--accent-color: #5bc0de;
+			--accent-hover: #46b8da;
+			--code-bg: rgb(27, 31, 35);
+			--border-color: rgba(255, 255, 255, 0.1);
+			--nav-bg: rgba(26, 29, 33, 0.95);
+			--shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		[data-theme="light"] {
+			--bg-primary: #f8f9fa;
+			--bg-secondary: #ffffff;
+			--bg-tertiary: #e9ecef;
+			--text-primary: #212529;
+			--text-secondary: #495057;
+			--text-muted: #6c757d;
+			--accent-color: #0d6efd;
+			--accent-hover: #0b5ed7;
+			--code-bg: #e9ecef;
+			--border-color: rgba(0, 0, 0, 0.1);
+			--nav-bg: rgba(255, 255, 255, 0.95);
+			--shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		/* ========== Base Styles ========== */
+		html {
+			scroll-behavior: smooth;
+			scroll-padding-top: 70px;
+		}
+
+		body {
+			background-color: var(--bg-primary);
+			color: var(--text-primary);
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		[data-theme="light"] body {
+			background-color: var(--bg-primary);
+		}
+
+		/* ========== Code & Pre Styles ========== */
+		code, pre {
+			font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
 		}
 
 		code {
 			padding: .2em .4em;
 			margin: 0;
 			font-size: 85%;
-			background-color: rgb(27, 31, 35);
-			color: #ddd;
-			border-radius: 3px;
+			background-color: var(--code-bg);
+			color: var(--text-primary);
+			border-radius: 4px;
+			transition: background-color 0.3s ease;
 		}
 
 		pre {
-			background-color: rgb(27, 31, 35);
+			background-color: var(--code-bg);
+			padding: 1rem;
+			border-radius: 8px;
+			overflow-x: auto;
+		}
+
+		/* ========== Navigation Bar ========== */
+		.navbar-custom {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+			background: var(--nav-bg);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			box-shadow: var(--shadow);
+			padding: 0.5rem 1rem;
+			transition: all 0.3s ease;
+		}
+
+		.navbar-custom .nav-links {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 0.5rem;
+			flex-wrap: wrap;
+		}
+
+		.navbar-custom .nav-link {
+			color: var(--text-secondary);
+			text-decoration: none;
+			padding: 0.4rem 0.8rem;
+			border-radius: 4px;
+			font-size: 0.85rem;
+			transition: all 0.2s ease;
+		}
+
+		.navbar-custom .nav-link:hover {
+			color: var(--accent-color);
+			background: var(--bg-tertiary);
+		}
+
+		.navbar-custom .nav-separator {
+			color: var(--text-muted);
+			font-size: 0.7rem;
+		}
+
+		.theme-toggle {
+			background: none;
+			border: none;
+			color: var(--text-secondary);
+			cursor: pointer;
+			padding: 0.4rem 0.6rem;
+			border-radius: 4px;
+			font-size: 1.1rem;
+			transition: all 0.2s ease;
+			position: absolute;
+			right: 1rem;
+		}
+
+		.theme-toggle:hover {
+			background: var(--bg-tertiary);
+			color: var(--accent-color);
+		}
+
+		/* ========== Main Container ========== */
+		#main {
+			padding-top: 60px;
+		}
+
+		/* ========== Details/Collapsible Sections ========== */
+		details {
+			background-color: var(--bg-secondary);
+			border: 1px solid var(--border-color);
+			border-radius: 8px;
+			padding: 1rem;
+			margin-bottom: 1rem;
+			transition: all 0.3s ease;
+		}
+
+		details:hover {
+			border-color: var(--accent-color);
+		}
+
+		details summary {
+			cursor: pointer;
+			font-weight: bold;
+			padding: 0.5rem 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
+
+		details summary::-webkit-details-marker {
+			display: none;
+		}
+
+		details summary::before {
+			content: '▶';
+			font-size: 0.7rem;
+			transition: transform 0.2s ease;
+		}
+
+		details[open] summary::before {
+			transform: rotate(90deg);
+		}
+
+		details summary:hover {
+			color: var(--accent-color);
+		}
+
+		details[open] summary {
+			margin-bottom: 0.5rem;
+			border-bottom: 1px solid var(--border-color);
+			padding-bottom: 0.5rem;
+		}
+
+		/* ========== Tables ========== */
+		.table-responsive-wrapper {
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		/* ========== Images ========== */
+		img {
+			opacity: 0;
+			transition: opacity 0.5s ease;
+		}
+
+		img.loaded {
+			opacity: 1;
+		}
+
+		/* ========== Back to Top Button ========== */
+		.back-to-top {
+			position: fixed;
+			bottom: 2rem;
+			right: 2rem;
+			width: 45px;
+			height: 45px;
+			background: var(--accent-color);
+			color: white;
+			border: none;
+			border-radius: 50%;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.2rem;
+			box-shadow: var(--shadow);
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(20px);
+			transition: all 0.3s ease;
+			z-index: 999;
+		}
+
+		.back-to-top.visible {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+
+		.back-to-top:hover {
+			background: var(--accent-hover);
+			transform: translateY(-3px);
+		}
+
+		/* ========== Footer ========== */
+		.footer {
+			text-align: center;
+			padding: 2rem 0;
+			margin-top: 3rem;
+			border-top: 1px solid var(--border-color);
+			color: var(--text-muted);
+			font-size: 0.9rem;
+		}
+
+		/* ========== Animations ========== */
+		.fade-in {
+			opacity: 0;
+			transform: translateY(20px);
+			transition: opacity 0.6s ease, transform 0.6s ease;
+		}
+
+		.fade-in.visible {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		/* ========== Mobile Responsiveness ========== */
+		@media (max-width: 768px) {
+			.navbar-custom {
+				padding: 0.4rem 0.5rem;
+			}
+
+			.navbar-custom .nav-link {
+				padding: 0.3rem 0.5rem;
+				font-size: 0.75rem;
+			}
+
+			.navbar-custom .nav-separator {
+				display: none;
+			}
+
+			.theme-toggle {
+				position: static;
+				margin-left: auto;
+			}
+
+			.navbar-custom .nav-links {
+				gap: 0.2rem;
+			}
+
+			#main {
+				padding-top: 50px;
+			}
+
+			html {
+				scroll-padding-top: 60px;
+			}
+
+			.back-to-top {
+				bottom: 1rem;
+				right: 1rem;
+				width: 40px;
+				height: 40px;
+			}
+
+			img[align="right"] {
+				float: none !important;
+				display: block;
+				margin: 1rem auto !important;
+				max-width: 250px;
+			}
+
+			table {
+				font-size: 0.85rem;
+			}
+
+			h1 {
+				font-size: 1.5rem;
+			}
+
+			h2 {
+				font-size: 1.25rem;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.navbar-custom .nav-link {
+				padding: 0.25rem 0.4rem;
+				font-size: 0.7rem;
+			}
+		}
+
+		/* ========== Print Styles ========== */
+		@media print {
+			.navbar-custom,
+			.back-to-top,
+			.theme-toggle,
+			#spotify-section,
+			.footer {
+				display: none !important;
+			}
+
+			body {
+				background: white !important;
+				color: black !important;
+			}
+
+			#main {
+				padding-top: 0 !important;
+			}
+
+			a {
+				color: black !important;
+				text-decoration: underline;
+			}
+
+			details {
+				border: 1px solid #ccc;
+			}
+
+			details[open] {
+				break-inside: avoid;
+			}
+
+			img {
+				max-width: 100% !important;
+				opacity: 1 !important;
+			}
+
+			code, pre {
+				background: #f5f5f5 !important;
+				color: black !important;
+			}
 		}
 	</style>
 </head>
 
 <body>
+	<!-- Navigation Bar -->
+	<nav class="navbar-custom" role="navigation" aria-label="Main navigation">
+		<div class="nav-links">
+			<a href="#-whoami" class="nav-link">whoami</a>
+			<span class="nav-separator">|</span>
+			<a href="#-cat-resumetxt" class="nav-link">resume</a>
+			<span class="nav-separator">|</span>
+			<a href="#-ls--la-projects" class="nav-link">projects</a>
+			<span class="nav-separator">|</span>
+			<a href="#-cat-skillstxt" class="nav-link">skills</a>
+			<span class="nav-separator">|</span>
+			<a href="#-cat-lifetxt--grep-achievements" class="nav-link">achievements</a>
+			<span class="nav-separator">|</span>
+			<a href="#-git-show-stats" class="nav-link">stats</a>
+			<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light theme" title="Toggle theme">
+				🌙
+			</button>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
 	<div class="container" id="main">
 		<div class="row my-5">
 			<div class="col">
@@ -57,15 +477,22 @@
     <h3 align="center">💻 A passionate cybersecurity researcher, developer, engineer and hacker!</h3>
 
     <p align="center">
-      <a href="mailto:b00073615@aus.edu"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" /></a>
+      <a href="mailto:youssef@ctf.ae"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
       <a href="https://t.me/deadpackets"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white" /></a>
-      <a href="mailto:DeadPackets#5317"><img src="https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white" /></a>
+      <a href="https://discord.com/users/deadpackets"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white" /></a>
       <a href="https://instagram.com/deadpackets"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white" /></a>
-      <a href="https://twitter.com/dead_packets"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white" /></a>
+      <a href="https://x.com/deadpackets"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>
       <a href="https://www.linkedin.com/in/youssef-awad/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" /></a>
-      <a href="https://www.youtube.com/channel/UCdNjReL5xxOOvPtnnUgt_hQ"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" /></a>
       <a href="https://www.twitch.tv/deadpackets"><img src="https://img.shields.io/badge/Twitch-9146FF?style=flat&logo=twitch&logoColor=white" /></a>
       <a href="https://open.spotify.com/user/r876i9nhmpdg2qe0wrc9rsace?si=59a116007ba54bce"><img src="https://img.shields.io/badge/Spotify-1ED760?&style=flat&logo=spotify&logoColor=white" /></a>
+    </p>
+
+    <hr />
+    <p align="center">
+      Won <b>"Best Emirati Startup"</b> with <a href="https://ctf.ae">CTFae</a> @ GISEC UAE 2024<br/>
+      Head of Engineering & Co-Founder | Building world-class cybersecurity competitions<br/><br/>
+      <img src="https://img.shields.io/badge/Open_to_Opportunities-00C853?style=for-the-badge&logoColor=white" />
+      <img src="https://img.shields.io/badge/UAE_(GMT+4)-0A66C2?style=for-the-badge&logo=googlemaps&logoColor=white" />
     </p>
 
     <hr />
@@ -74,18 +501,47 @@
     <img align="right" src="me.jpg" width="300" />
 
     <ul>
-    <li><img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16" /> Graduate of Computer Engineering (with Comp Sci minor) from <a href="https://www.aus.edu">AUS</a></li>
+    <li><img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16" /> Computer Engineering graduate (+ CS minor) from <a href="https://www.aus.edu">AUS</a></li>
     <li><img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16" /> Head of Engineering &amp; Co-Founder at <a href="https://ctf.ae">CTFae</a></li>
-    <li><img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16" /> I enjoy playing CTFs and hacking (or breaking) things</li>
-    <li><img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> I absolutely love DevOps and building solutions</li>
-    <li><img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> Spreading knowledge in dev/cybersec is one of my many passions</li>
-    <li><img src="https://emojis.slackmojis.com/emojis/images/1620205202/35987/question-block.gif?" width="16" /> You can contact me anytime for questions, I love answering them</li>
-    <li><img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Forever faithful to Python &amp; Docker &lt;3</li>
-    <li>⭐ Over my <strong>10</strong> years on GitHub, I have opened <strong>150</strong> issues, opened <strong>132</strong> PRs, pushed <strong>4611</strong> commits, created <strong>44</strong> repositories, contributed to <strong>49</strong> projects, gathered <strong>84</strong> stars across all my repos and gists</li>
+    <li><img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16" /> Passionate about CTFs, red teaming, and breaking things</li>
+    <li><img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> DevOps enthusiast - I automate everything</li>
+    <li><img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> Cybersecurity educator and community builder</li>
+    <li><img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Python &amp; Docker evangelist</li>
+    <li>⭐ Over my <strong>10</strong> years on GitHub, I have opened <strong>150</strong> issues, opened <strong>132</strong> PRs, pushed <strong>4620</strong> commits, created <strong>44</strong> repositories, contributed to <strong>49</strong> projects, gathered <strong>84</strong> stars across all my repos and gists</li>
     </ul>
+    </section>
+    <section id="-cat-resumetxt" class="level2">
+    <h2><code>$&gt; cat resume.txt</code></h2>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Period</th>
+    <th>Company</th>
+    <th>Role</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>2021 - Present</td>
+    <td><a href="https://ctf.ae"><strong>CTFae</strong></a></td>
+    <td>Head of Engineering &amp; Co-Founder</td>
+    </tr>
+    <tr class="even">
+    <td>2022 - Dec 2024</td>
+    <td><a href="https://malcrove.com"><strong>Malcrove</strong></a></td>
+    <td>Senior Cyber Security Consultant</td>
+    </tr>
+    <tr class="odd">
+    <td>2019 - 2024</td>
+    <td><a href="https://gdi.foundation"><strong>GDI.Foundation</strong></a></td>
+    <td>Volunteer</td>
+    </tr>
+    </tbody>
+    </table>
     </section>
     <section id="-ls--la-projects" class="level2">
     <h2><code>$&gt; ls -la projects/</code></h2>
+    <p><sub><em>Most of my meaningful and impactful work lives in private repositories at CTFae due to the sensitive nature of our cybersecurity platforms and client engagements.</em></sub></p>
     <!-- START OF PROFILE STACK, DO NOT REMOVE -->
 
     <table>
@@ -98,35 +554,23 @@
     <tbody>
     <tr class="odd">
     <td><a href="https://www.python.org/"><img src="https://img.shields.io/static/v1?label=&amp;message=Python&amp;color=3C78A9&amp;logo=python&amp;logoColor=FFFFFF" alt="Python" /></a></td>
-    <td><a href="https://github.com/DeadPackets/pwnbox-cli"><img src="https://img.shields.io/static/v1?label=&amp;message=pwnbox-cli&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="pwnbox-cli" /></a> <a href="https://github.com/DeadPackets/EasyGuard"><img src="https://img.shields.io/static/v1?label=&amp;message=EasyGuard%20(WIP)&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="EasyGuard" /></a> <a href="https://github.com/DeadPackets/ctfd-discord-webhook-plugin"><img src="https://img.shields.io/static/v1?label=&amp;message=ctfd-discord-webhook-plugin&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="ctfd-discord-webhook-plugin" /></a> <a href="https://github.com/COE420Group4/Donation-Nation"><img src="https://img.shields.io/static/v1?label=&amp;message=Donation-Nation&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="Donation-Nation" /></a></td>
+    <td><a href="https://github.com/DeadPackets/pwnbox-cli"><img src="https://img.shields.io/static/v1?label=&amp;message=pwnbox-cli&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="pwnbox-cli" /></a> <a href="https://github.com/DeadPackets/AUSCrawl"><img src="https://img.shields.io/static/v1?label=&amp;message=AUSCrawl&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="AUSCrawl" /></a></td>
     </tr>
     <tr class="even">
-    <td><a href="https://nodejs.org/"><img src="https://img.shields.io/static/v1?label=&amp;message=NodeJS&amp;color=339933&amp;logo=node-dot-js&amp;logoColor=FFFFFF" alt="NodeJS" /></a></td>
-    <td><a href="https://github.com/DeadPackets/CRNotify"><img src="https://img.shields.io/static/v1?label=&amp;message=CRNotify&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="CRNotify" /></a> <a href="https://github.com/DeadPackets/AUSCrawl"><img src="https://img.shields.io/static/v1?label=&amp;message=AUSCrawl&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="AUSCrawl" /></a> <a href="https://github.com/DeadPackets/InfoSteal"><img src="https://img.shields.io/static/v1?label=&amp;message=InfoSteal&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="InfoSteal" /></a> <a href="https://github.com/DeadPackets/Phishing_Catcher.js"><img src="https://img.shields.io/static/v1?label=&amp;message=Phishing_Catcher.js&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="Phishing_Catcher.js" /></a> <a href="https://github.com/DeadPackets/iPwn"><img src="https://img.shields.io/static/v1?label=&amp;message=iPwn&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="iPwn" /></a> <a href="https://github.com/DeadPackets/HackPi"><img src="https://img.shields.io/static/v1?label=&amp;message=HackPi&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="HackPi" /></a></td>
+    <td><a href="https://nodejs.org/"><img src="https://img.shields.io/static/v1?label=&amp;message=NodeJS&amp;color=339933&amp;logo=nodedotjs&amp;logoColor=FFFFFF" alt="NodeJS" /></a></td>
+    <td><a href="https://github.com/DeadPackets/CRNotify"><img src="https://img.shields.io/static/v1?label=&amp;message=CRNotify&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="CRNotify" /></a> <a href="https://github.com/DeadPackets/AUSCrawl"><img src="https://img.shields.io/static/v1?label=&amp;message=AUSCrawl&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="AUSCrawl" /></a></td>
     </tr>
     <tr class="odd">
     <td><a href="https://github.com/DeadPackets/DOSArchive"><img src="https://img.shields.io/static/v1?label=&amp;message=Puppeteer&amp;color=40B5A4&amp;logo=puppeteer&amp;logoColor=FFFFFF" alt="Puppeteer" /></a></td>
     <td><a href="https://github.com/DeadPackets/CRNotify"><img src="https://img.shields.io/static/v1?label=&amp;message=CRNotify&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="CRNotify" /></a> <a href="https://github.com/DeadPackets/AUSCrawl"><img src="https://img.shields.io/static/v1?label=&amp;message=AUSCrawl&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="AUSCrawl" /></a></td>
     </tr>
     <tr class="even">
-    <td><a href="https://reactnative.dev"><img src="https://img.shields.io/static/v1?label=&amp;message=React-Native&amp;color=61DAFB&amp;logo=react&amp;logoColor=FFFFFF" alt="React-Native" /></a></td>
-    <td><a href="https://github.com/DeadPackets/Rumi"><img src="https://img.shields.io/static/v1?label=&amp;message=Rumi%20(WIP)&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="Rumi" /></a> <a href="https://github.com/DeadPackets/CRNotify-App"><img src="https://img.shields.io/static/v1?label=&amp;message=CRNotify-App&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="CRNotify-App" /></a> <a href="https://github.com/DeadPackets/Aiko"><img src="https://img.shields.io/static/v1?label=&amp;message=Aiko&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="Aiko" /></a></td>
+    <td><a href="https://www.docker.com"><img src="https://img.shields.io/static/v1?label=&amp;message=Docker&amp;color=2496ED&amp;logo=docker&amp;logoColor=FFFFFF" alt="Docker" /></a></td>
+    <td><a href="https://github.com/DeadPackets/pwnbox"><img src="https://img.shields.io/static/v1?label=&amp;message=pwnbox&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="pwnbox" /></a></td>
     </tr>
     <tr class="odd">
-    <td><a href="https://www.docker.com"><img src="https://img.shields.io/static/v1?label=&amp;message=Docker&amp;color=2496ED&amp;logo=docker&amp;logoColor=FFFFFF" alt="Docker" /></a></td>
-    <td><a href="https://github.com/DeadPackets/pwnbox"><img src="https://img.shields.io/static/v1?label=&amp;message=pwnbox&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="pwnbox" /></a> <a href="https://github.com/DeadPackets/EasyGuard"><img src="https://img.shields.io/static/v1?label=&amp;message=EasyGuard&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="EasyGuard" /></a> <a href="https://github.com/DeadPackets/AUSCTF-S19"><img src="https://img.shields.io/static/v1?label=&amp;message=AUSCTF-S19&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="AUSCTF-S19" /></a></td>
-    </tr>
-    <tr class="even">
     <td><a href="https://www.javascript.com"><img src="https://img.shields.io/static/v1?label=&amp;message=JavaScript&amp;color=F7DF1E&amp;logo=javascript&amp;logoColor=FFFFFF" alt="JavaScript" /></a></td>
     <td><a href="https://github.com/DeadPackets/DOSArchive"><img src="https://img.shields.io/static/v1?label=&amp;message=DOSArchive&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="DOSArchive" /></a> <a href="https://github.com/DeadPackets/CrackTheHack"><img src="https://img.shields.io/static/v1?label=&amp;message=CrackTheHack&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="CrackTheHack" /></a> <a href="https://github.com/DeadPackets/EmailCheck"><img src="https://img.shields.io/static/v1?label=&amp;message=EmailCheck&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="EmailCheck" /></a> <a href="https://github.com/DeadPackets/HistoryThief"><img src="https://img.shields.io/static/v1?label=&amp;message=HistoryThief&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="HistoryThief" /></a></td>
-    </tr>
-    <tr class="odd">
-    <td><a href="https://www.java.com"><img src="https://img.shields.io/static/v1?label=&amp;message=Java&amp;color=F89820&amp;logo=java&amp;logoColor=FFFFFF" alt="Java" /></a></td>
-    <td><a href="https://github.com/DanaOsama/The-Mansion-Game"><img src="https://img.shields.io/static/v1?label=&amp;message=The-Mansion-Game&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="The-Mansion-Game" /></a></td>
-    </tr>
-    <tr class="even">
-    <td><a href="https://www.cplusplus.com"><img src="https://img.shields.io/static/v1?label=&amp;message=C%2B%2B&amp;color=00599C&amp;logo=c%2B%2B&amp;logoColor=FFFFFF" alt="C%2B%2B" /></a></td>
-    <td><a href="https://github.com/DeadPackets/CMP220Project"><img src="https://img.shields.io/static/v1?label=&amp;message=CMP220Project&amp;color=000605&amp;logo=github&amp;logoColor=FFFFFF&amp;labelColor=000605" alt="CMP220Project" /></a></td>
     </tr>
     </tbody>
     </table>
@@ -138,122 +582,334 @@
     <section id="languages" class="level4">
     <h4>Languages</h4>
     <p align="left">
-      <img src="https://skillicons.dev/icons?i=nodejs,js,html,css,py,c,cpp,java,bash,md,regex" />
+      <img src="https://skillicons.dev/icons?i=py,ts,nodejs,js,html,css,bash,md,regex" />
     </p>
 
     </section>
     <section id="technologies" class="level4">
     <h4>Technologies</h4>
     <p align="left">
-      <img src="https://skillicons.dev/icons?i=arduino,docker,firebase,git,linux,mysql,nginx,postgres,raspberrypi,redis,sqlite,webpack" />
+      <img src="https://skillicons.dev/icons?i=docker,firebase,git,linux,mysql,nginx,postgres,rabbitmq,redis,sqlite,celery" />
     </p>
 
     </section>
     <section id="frameworks" class="level4">
     <h4>Frameworks</h4>
     <p align="left">
-      <img src="https://skillicons.dev/icons?i=bootstrap,django,express,fastapi,flask,jquery,react,selenium" />
+      <img src="https://skillicons.dev/icons?i=django,express,fastapi,flask,jquery,selenium" />
     </p>
 
     </section>
     <section id="devops" class="level4">
     <h4>DevOps</h4>
     <p align="left">
-      <img src="https://skillicons.dev/icons?i=ansible,aws,cloudflare,gcp,github,githubactions,gitlab" />
+      <img src="https://skillicons.dev/icons?i=ansible,aws,cloudflare,gcp,github,githubactions,gitlab,terraform,packer" />
     </p>
 
     </section>
     </section>
     <section id="-cat-lifetxt--grep-achievements" class="level2">
     <h2><code>$&gt; cat life.txt | grep "Achievements"</code></h2>
+    <details open>
+    <summary><b>🏆 Awards & Recognition</b></summary>
+
     <ul>
-    <li><strong>[2025]</strong> 💻 Hosted the first ever Bug Bounty CTF at DEFCON with CTFae @ DEFCON 33 2025 (<a href="https://x.com/CTFae/status/1955398456899670141">link</a>)</li>
-    <li><strong>[2025]</strong> 💻 Hosted the Dubai Cyber Security Challenge with CTFae @ GITEX 2025 (<a href="https://www.linkedin.com/posts/descofficial_dubai-cybersecurity-gisec2025-ugcPost-7323753058398535680-vfpl?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACxS7LUBeMVRAZ2tfDb2baNiaYt5UTYsuRc">link</a>)</li>
-    <li><strong>[2025]</strong> 🏆 Won "Best Community Engagement" with CTFae @ UAE CyberSecurity Awards and Recognition 2025 (<a href="https://www.linkedin.com/posts/ctfae_in-light-of-the-national-initiatives-that-activity-7341558348380524544-0lXN?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACxS7LUBeMVRAZ2tfDb2baNiaYt5UTYsuRc">link</a>)</li>
-    <li><strong>[2025]</strong> 💻 Hosted the Bahrain National CTF with CTFae @ Bahrain National CTF 2025 (<a href="https://www.linkedin.com/posts/fatma-ali-2a845928a_ctfbahrain-cybersecurity-ctfae-ugcPost-7354140444613652481-DJm6?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACxS7LUBeMVRAZ2tfDb2baNiaYt5UTYsuRc">link</a>)</li>
-    <li><strong>[2025]</strong> 💻 Hosted BSides Nashville CTF for the second year in a row with CTFae @ BSides Nashville 2025 (<a href="https://bsidesnash.org/ctf">link</a>)</li>
-    <li><strong>[2024]</strong> 🏆 Won the Guinness World Record for the largest CTF in the world with CTFae @ BlackHat 2024 (<a href="https://x.com/Blackhatmea/status/1862171555683320251">link</a>)</li>
-    <li><strong>[2024]</strong> 🎤 Gave CTFae's first Cyber Drill workshop at HITB SecConf in Thailand @ HITB SecConf 2024 (<a href="https://x.com/CTFae/status/1832755293404500239">link</a>)</li>
-    <li><strong>[2024]</strong> 💻 Hosted a CTF at GITEX GLOBAL with CTFae showcasing our new Cyber Drill technology @ GITEX GLOBAL 2024 (<a href="https://www.linkedin.com/posts/ctfae_after-a-week-of-online-qualifiers-20-elite-activity-7252717762324668416-N_PK">link</a>)</li>
-    <li><strong>[2024]</strong> 💻 Hosted the CTF for BSides Nashville with CTFae (our first USA CTF!) @ BSides Nashville 2024 (<a href="https://x.com/bsidesnash/status/1755003862102990952">link</a>)</li>
-    <li><strong>[2024]</strong> 🏆 Won "Best Emarati Startup" with CTFae @ GISEC UAE 2024 (<a href="https://www.instagram.com/gisecglobal/p/C6Q2Ycbrejv">link</a>)</li>
+    <li><strong>[2024]</strong> 🏆 <strong>Guinness World Record</strong> for the largest CTF in the world with CTFae @ BlackHat MEA 2024 (<a href="https://x.com/Blackhatmea/status/1862171555683320251">link</a>)</li>
+    <li><strong>[2025]</strong> 🏆 Won "Best Community Engagement" with CTFae @ UAE CyberSecurity Awards 2025 (<a href="https://www.linkedin.com/posts/ctfae_in-light-of-the-national-initiatives-that-activity-7341558348380524544-0lXN">link</a>)</li>
+    <li><strong>[2024]</strong> 🏆 Won "Best Emirati Startup" with CTFae @ GISEC UAE 2024 (<a href="https://www.instagram.com/gisecglobal/p/C6Q2Ycbrejv">link</a>)</li>
     <li><strong>[2024]</strong> 🏆 Became the Official CTF Partner for GISEC UAE (<a href="https://twitter.com/CTFae/status/1662279732287746051">link</a>)</li>
-    <li><strong>[2024]</strong> 🎤 Gave a talk about CTFae's story and success @ CPX CyberAlley 2024 (<a href="https://www.linkedin.com/posts/cpxholding_cyberalley-entrepreneurship-ai-ugcPost-7244338301061500929-0ZCS">link</a>)</li>
-    <li><strong>[2023]</strong> 💻 Hosted the ADQ CTF with CTFae @ ADQ CTF 2023 (<a href="https://www.linkedin.com/posts/ctfae_adq-in-partnership-with-malcrove-powered-activity-7151238726067593217-UpwB">link</a>)</li>
-    <li><strong>[2023]</strong> 💻 Hosted the CTF for BlackHat in Saudi Arabia with CTFae @ BlackHat 2023 (<a href="https://x.com/Blackhatmea/status/1724806987886874656">link</a>)</li>
-    <li><strong>[2023]</strong> 💻 Hosted the CTF for GITEX Africa in Morocco with CTFae @ GITEX Africa 2023 (<a href="https://twitter.com/CTFae/status/1662279732287746051">link</a>)</li>
-    <li><strong>[2023]</strong> 💻 Hosted the CTF for the last HITB in Amsterdam with CTFae @ HITBAMS 2023 (<a href="https://twitter.com/CTFae/status/1649553232904048640">link</a>)</li>
-    <li><strong>[2022]</strong> 💻 Hosted a CTF for the return of Dubai Police CTF in the UAE with CTFae @ DPCTF 2022 (<a href="https://twitter.com/CTFae/status/1631349255330734080">link</a>)</li>
-    <li><strong>[2022]</strong> 💻 Hosted the CTF for the first ever BlackHat in Saudi Arabia with CTFae @ BlackHat 2022 (<a href="https://twitter.com/SAFCSP/status/1589351916286287872">link</a>)</li>
-    <li><strong>[2022]</strong> 💻 Hosted a CTF for the Government of Thailand with CTFae @ TBCERT 2022 (<a href="https://twitter.com/CTFae/status/1571053661564076040">link</a>)</li>
-    <li><strong>[2021]</strong> 💻 Hosted the largest CTF in the Middle East with CTFae @ AtHack 2021 (<a href="https://athack.com/capture-the-flag">link</a>)</li>
-    <li><strong>[2021]</strong> 💻 Hosted the official jeopardy CTF with CTFae @ HITB CyberWeek 2021 (<a href="https://cyberweek.ae/2021/jeopardy-ctf/">link</a>)</li>
-    <li><strong>[2021]</strong> 🎤 Gave a 2-day long training in Attack Defense CTFs @ HITB SECCONF (<a href="https://www.youtube.com/watch?v=u9ypv7wY9o0">link_1</a>) (<a href="https://www.youtube.com/watch?v=sGk4trFj5sU">link_2</a>)</li>
-    <li><strong>[2021]</strong> 🥇 1st Place Winner at The Hunt SOCathon hosted at GISEC (<a href="https://www.linkedin.com/posts/cyberunittech_cyberunittech-socathon-gisec2021-activity-6806306706688118784-SogR">link</a>)</li>
-    <li><strong>[2021]</strong> 🏆 Created &amp; hosted the longest CTF in UAE with CTFae (<a href="https://ramadan.ctf.ae">link</a>)</li>
     <li><strong>[2021]</strong> 🏆 Awarded the "Outstanding CSE Student Talent Award" at AUS (<a href="https://www.aus.edu/media/news/outstanding-computer-science-and-engineering-students-recognized-at-cse-annual-awards">link</a>)</li>
-    <li><strong>[2020]</strong> 🎤 Demonstrated a password stealing Windows attack @ GISEC (<a href="https://www.youtube.com/watch?v=EKp4WVupukY">link</a>)</li>
-    <li><strong>[2020]</strong> 🥇 1st Place Winner at CyberKnight CTF (<a href="https://www.linkedin.com/feed/update/urn:li:activity:6709742565509369856/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6709742565509369856%29">link</a>)</li>
-    <li><strong>[2020]</strong> 🥇 1st Place Winner at CyberTalents UAE Regional CTF (<a href="https://cybertalents.com/competitions/uae-national-cybersecurity-ctf-2020/teams">link</a>)</li>
-    <li><strong>[2020]</strong> 🥇 1st Place Winner at HITB Lockdown CTF (<a href="https://www.ctftech.com/events/open-battle-ctf/">link</a>)</li>
-    <li><strong>[2019]</strong> 🎤 Invited to give a talk at DESC UAE</li>
-    <li><strong>[2019]</strong> 🥇 1st Place Winner at CyberBattle Of The Emirates (<a href="https://www.eyeofriyadh.com/news/details/cyber-battle-of-the-emirates-victors-crowned-as-future-cyber-warriors-turn-up-the-heat-in-abu-dhabi-during-hitb-cyberweek-2019">link</a>)</li>
-    <li><strong>[2019]</strong> 🥈 2nd Place Winner at HITB AI Challenge (<a href="https://www.aus.edu/media/news/team-led-by-aus-computer-engineering-student-wins-2nd-place-in-ai-competition">link</a>)</li>
-    <li><strong>[2019]</strong> 🥉 3rd Place Winner at CyberTalents Arab Regional CTF (<a href="https://cybertalents.com/competitions/arab-regional-cyber-security-ctf-2019/teams">link</a>)</li>
-    <li><strong>[2019]</strong> 🥇 1st Place Winner at CyberTalents UAE Regional CTF (<a href="https://cybertalents.com/competitions/final-uae-national-cyber-security-ctf-2019/teams">link</a>)</li>
-    <li><strong>[2019]</strong> 🥇 1st Place Winner at Dubai Police CTF (<a href="https://trendingbusinessinsights.com/2019/02/25/three-winners-from-the-same-nationality-win-dubai-police-ctf-cybersecurity-challenge/">link</a>)</li>
-    <li><strong>[2018]</strong> 🥇 1st Place Winner at CyberQuest Attack &amp; Defence (<a href="https://twitter.com/UAECyberQuest/status/1049276160876658688">link</a>)</li>
-    <li><strong>[2016]</strong> 🥇 1st Place Winner at CyberQuest CTF (<a href="https://gulfnews.com/uae/education/cyber-warriors-needed-to-protect-online-security-in-uae-1.1816234">link</a>)</li>
-    <li><strong>[2016]</strong> 🥈 2nd Place Winner at NYU CSAW Forensics CTF (<a href="https://sites.nyuad.nyu.edu/ccs-ad/csaw/">link</a>)</li>
+    <li><strong>[2021]</strong> 🏆 Created &amp; hosted the longest CTF in UAE with CTFae (<a href="https://ramadan.ctf.ae">link</a>)</li>
     </ul>
+    </details>
+
+    <details>
+    <summary><b>💻 Events Hosted with CTFae</b></summary>
+
+    <ul>
+    <li><strong>[2025]</strong> Hosted the first ever Bug Bounty CTF @ DEFCON 33 (<a href="https://x.com/CTFae/status/1955398456899670141">link</a>)</li>
+    <li><strong>[2025]</strong> Hosted the Dubai Cyber Security Challenge @ GITEX 2025 (<a href="https://www.linkedin.com/posts/descofficial_dubai-cybersecurity-gisec2025-ugcPost-7323753058398535680-vfpl">link</a>)</li>
+    <li><strong>[2025]</strong> Hosted the Bahrain National CTF (<a href="https://www.linkedin.com/posts/fatma-ali-2a845928a_ctfbahrain-cybersecurity-ctfae-ugcPost-7354140444613652481-DJm6">link</a>)</li>
+    <li><strong>[2025]</strong> Hosted BSides Nashville CTF (2nd year) (<a href="https://bsidesnash.org/ctf">link</a>)</li>
+    <li><strong>[2024]</strong> Hosted CTF @ GITEX GLOBAL showcasing Cyber Drill technology (<a href="https://www.linkedin.com/posts/ctfae_after-a-week-of-online-qualifiers-20-elite-activity-7252717762324668416-N_PK">link</a>)</li>
+    <li><strong>[2024]</strong> Hosted CTF for BSides Nashville (first USA CTF!) (<a href="https://x.com/bsidesnash/status/1755003862102990952">link</a>)</li>
+    <li><strong>[2023]</strong> Hosted the ADQ CTF (<a href="https://www.linkedin.com/posts/ctfae_adq-in-partnership-with-malcrove-powered-activity-7151238726067593217-UpwB">link</a>)</li>
+    <li><strong>[2023]</strong> Hosted CTF for BlackHat Saudi Arabia (<a href="https://x.com/Blackhatmea/status/1724806987886874656">link</a>)</li>
+    <li><strong>[2023]</strong> Hosted CTF for GITEX Africa in Morocco (<a href="https://twitter.com/CTFae/status/1662279732287746051">link</a>)</li>
+    <li><strong>[2023]</strong> Hosted CTF for HITB Amsterdam (<a href="https://twitter.com/CTFae/status/1649553232904048640">link</a>)</li>
+    <li><strong>[2022]</strong> Hosted Dubai Police CTF (<a href="https://twitter.com/CTFae/status/1631349255330734080">link</a>)</li>
+    <li><strong>[2022]</strong> Hosted CTF for the first BlackHat in Saudi Arabia (<a href="https://twitter.com/SAFCSP/status/1589351916286287872">link</a>)</li>
+    <li><strong>[2022]</strong> Hosted CTF for Government of Thailand @ TBCERT (<a href="https://twitter.com/CTFae/status/1571053661564076040">link</a>)</li>
+    <li><strong>[2021]</strong> Hosted the largest CTF in the Middle East @ AtHack (<a href="https://athack.com/capture-the-flag">link</a>)</li>
+    <li><strong>[2021]</strong> Hosted jeopardy CTF @ HITB CyberWeek (<a href="https://cyberweek.ae/2021/jeopardy-ctf/">link</a>)</li>
+    </ul>
+    </details>
+
+    <details>
+    <summary><b>🎤 Speaking & Training</b></summary>
+
+    <ul>
+    <li><strong>[2024]</strong> Gave CTFae's first Cyber Drill workshop @ HITB SecConf Thailand (<a href="https://x.com/CTFae/status/1832755293404500239">link</a>)</li>
+    <li><strong>[2024]</strong> Talk about CTFae's story and success @ CPX CyberAlley (<a href="https://www.linkedin.com/posts/cpxholding_cyberalley-entrepreneurship-ai-ugcPost-7244338301061500929-0ZCS">link</a>)</li>
+    <li><strong>[2021]</strong> 2-day training in Attack Defense CTFs @ HITB SECCONF (<a href="https://www.youtube.com/watch?v=u9ypv7wY9o0">link_1</a>) (<a href="https://www.youtube.com/watch?v=sGk4trFj5sU">link_2</a>)</li>
+    <li><strong>[2020]</strong> Demonstrated password stealing Windows attack @ GISEC (<a href="https://www.youtube.com/watch?v=EKp4WVupukY">link</a>)</li>
+    <li><strong>[2019]</strong> Invited speaker @ DESC UAE</li>
+    </ul>
+    </details>
+
+    <details>
+    <summary><b>🥇 CTF Competition Wins</b></summary>
+
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Year</th>
+    <th>Place</th>
+    <th>Competition</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>2021</td>
+    <td>🥇 1st</td>
+    <td>The Hunt SOCathon @ GISEC (<a href="https://www.linkedin.com/posts/cyberunittech_cyberunittech-socathon-gisec2021-activity-6806306706688118784-SogR">link</a>)</td>
+    </tr>
+    <tr class="even">
+    <td>2020</td>
+    <td>🥇 1st</td>
+    <td>CyberKnight CTF (<a href="https://www.linkedin.com/feed/update/urn:li:activity:6709742565509369856">link</a>)</td>
+    </tr>
+    <tr class="odd">
+    <td>2020</td>
+    <td>🥇 1st</td>
+    <td>CyberTalents UAE Regional CTF (<a href="https://cybertalents.com/competitions/uae-national-cybersecurity-ctf-2020/teams">link</a>)</td>
+    </tr>
+    <tr class="even">
+    <td>2020</td>
+    <td>🥇 1st</td>
+    <td>HITB Lockdown CTF (<a href="https://www.ctftech.com/events/open-battle-ctf/">link</a>)</td>
+    </tr>
+    <tr class="odd">
+    <td>2019</td>
+    <td>🥇 1st</td>
+    <td>CyberBattle Of The Emirates (<a href="https://www.eyeofriyadh.com/news/details/cyber-battle-of-the-emirates-victors-crowned-as-future-cyber-warriors-turn-up-the-heat-in-abu-dhabi-during-hitb-cyberweek-2019">link</a>)</td>
+    </tr>
+    <tr class="even">
+    <td>2019</td>
+    <td>🥈 2nd</td>
+    <td>HITB AI Challenge (<a href="https://www.aus.edu/media/news/team-led-by-aus-computer-engineering-student-wins-2nd-place-in-ai-competition">link</a>)</td>
+    </tr>
+    <tr class="odd">
+    <td>2019</td>
+    <td>🥉 3rd</td>
+    <td>CyberTalents Arab Regional CTF (<a href="https://cybertalents.com/competitions/arab-regional-cyber-security-ctf-2019/teams">link</a>)</td>
+    </tr>
+    <tr class="even">
+    <td>2019</td>
+    <td>🥇 1st</td>
+    <td>CyberTalents UAE Regional CTF (<a href="https://cybertalents.com/competitions/final-uae-national-cyber-security-ctf-2019/teams">link</a>)</td>
+    </tr>
+    <tr class="odd">
+    <td>2019</td>
+    <td>🥇 1st</td>
+    <td>Dubai Police CTF (<a href="https://trendingbusinessinsights.com/2019/02/25/three-winners-from-the-same-nationality-win-dubai-police-ctf-cybersecurity-challenge/">link</a>)</td>
+    </tr>
+    <tr class="even">
+    <td>2018</td>
+    <td>🥇 1st</td>
+    <td>CyberQuest Attack &amp; Defence (<a href="https://twitter.com/UAECyberQuest/status/1049276160876658688">link</a>)</td>
+    </tr>
+    <tr class="odd">
+    <td>2016</td>
+    <td>🥇 1st</td>
+    <td>CyberQuest CTF (<a href="https://gulfnews.com/uae/education/cyber-warriors-needed-to-protect-online-security-in-uae-1.1816234">link</a>)</td>
+    </tr>
+    <tr class="even">
+    <td>2016</td>
+    <td>🥈 2nd</td>
+    <td>NYU CSAW Forensics CTF (<a href="https://sites.nyuad.nyu.edu/ccs-ad/csaw/">link</a>)</td>
+    </tr>
+    </tbody>
+    </table>
+    </details>
+
     </section>
     <section id="-git-show-stats" class="level2">
     <h2><code>$&gt; git show stats</code></h2>
     <p align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
-      <img src="http://github-readme-streak-stats.herokuapp.com?user=DeadPackets&theme=react" alt="deadpackets" />
-      <img src="https://github-profile-trophy.vercel.app/?username=DeadPackets&theme=nord" />
+      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
+      <img src="https://streak-stats.demolab.com?user=DeadPackets&theme=react" alt="deadpackets" />
+      <img src="https://github-trophies.vercel.app/?username=DeadPackets&theme=nord" />
     </p>
 
     </section>
     <section id="-spotify_cli---currently-playing" class="level2">
     <h2><code>$&gt; spotify_cli --currently-playing</code></h2>
     <p align="center">
-      <a href="https://spotify-github-profile.vercel.app/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&redirect=true">
-        <img src="https://spotify-github-profile.vercel.app/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&cover_image=false&theme=default" />
+      <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&redirect=true">
+        <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=r876i9nhmpdg2qe0wrc9rsace&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true&mode=dark" alt="spotify-github-profile" />
       </a>
-    </p>
     </p>
 
     <p align="center">
-      <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 1:20:50.</i>
+      <i>This README generates every 3 hours. It was last generated Wednesday, January 14th 2026, 2:08:38.</i>
     </p>
 
     </section>
 			</div>
 		</div>
 	</div>
-	<!-- JS, Popper.js, and jQuery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+
+	<!-- Back to Top Button -->
+	<button class="back-to-top" onclick="scrollToTop()" aria-label="Scroll to top" title="Back to top">
+		↑
+	</button>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Youssef Awad. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap 5 Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-		crossorigin="anonymous"></script>
+
 	<script>
-		/* Bootstrap styles */
-		ScrollReveal().reveal('section', {mobile: false});
-		function bootstrapFixes() {
-			$('tr.header').parent('thead').parent('table').addClass('table table-dark table-condensed');
-			$('h2').addClass('mb-2').append('<hr />');
-			$('img[align="right"]').addClass('mx-3 img-fluid');
-			$('section').addClass('mb-5');
-			$('li').addClass('py-1');
+		// ========== Theme Toggle ==========
+		function getPreferredTheme() {
+			const stored = localStorage.getItem('theme');
+			if (stored) return stored;
+			return 'dark'; // Default to dark
 		}
-		$(document).ready(function () { bootstrapFixes(); });
+
+		function setTheme(theme) {
+			document.documentElement.setAttribute('data-theme', theme);
+			localStorage.setItem('theme', theme);
+			updateThemeIcon(theme);
+		}
+
+		function updateThemeIcon(theme) {
+			const btn = document.querySelector('.theme-toggle');
+			if (btn) {
+				btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+			}
+		}
+
+		function toggleTheme() {
+			const current = document.documentElement.getAttribute('data-theme');
+			const next = current === 'dark' ? 'light' : 'dark';
+			setTheme(next);
+		}
+
+		// Initialize theme
+		setTheme(getPreferredTheme());
+
+		// ========== Back to Top Button ==========
+		const backToTop = document.querySelector('.back-to-top');
+
+		function handleScroll() {
+			if (window.scrollY > 300) {
+				backToTop.classList.add('visible');
+			} else {
+				backToTop.classList.remove('visible');
+			}
+		}
+
+		function scrollToTop() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+
+		window.addEventListener('scroll', handleScroll, { passive: true });
+
+		// ========== Image Loading Animation ==========
+		function handleImageLoad() {
+			document.querySelectorAll('img').forEach(img => {
+				if (img.complete) {
+					img.classList.add('loaded');
+				} else {
+					img.addEventListener('load', () => img.classList.add('loaded'));
+					img.addEventListener('error', () => img.classList.add('loaded')); // Show even if error
+				}
+			});
+		}
+
+		// ========== ScrollReveal Animations ==========
+		function initScrollReveal() {
+			ScrollReveal().reveal('section', {
+				delay: 100,
+				distance: '20px',
+				duration: 600,
+				easing: 'ease-out',
+				origin: 'bottom',
+				mobile: true
+			});
+		}
+
+		// ========== Bootstrap Fixes ==========
+		function bootstrapFixes() {
+			// Add table classes
+			document.querySelectorAll('tr.header').forEach(el => {
+				const table = el.closest('table');
+				if (table) {
+					table.classList.add('table', 'table-dark', 'table-condensed');
+					// Wrap table for responsive scrolling
+					if (!table.parentElement.classList.contains('table-responsive-wrapper')) {
+						const wrapper = document.createElement('div');
+						wrapper.className = 'table-responsive-wrapper';
+						table.parentNode.insertBefore(wrapper, table);
+						wrapper.appendChild(table);
+					}
+				}
+			});
+
+			// Add heading styles
+			document.querySelectorAll('h2').forEach(el => {
+				el.classList.add('mb-2');
+				if (!el.querySelector('hr')) {
+					el.insertAdjacentHTML('beforeend', '<hr />');
+				}
+			});
+
+			// Add image classes
+			document.querySelectorAll('img[align="right"]').forEach(el => {
+				el.classList.add('mx-3', 'img-fluid');
+			});
+
+			// Add section classes
+			document.querySelectorAll('section').forEach(el => {
+				el.classList.add('mb-5');
+			});
+
+			// Add list item classes
+			document.querySelectorAll('li').forEach(el => {
+				el.classList.add('py-1');
+			});
+
+			// Mark Spotify section for print hiding
+			const spotifySection = document.querySelector('[id*="spotify"]');
+			if (spotifySection) {
+				spotifySection.id = 'spotify-section';
+			}
+		}
+
+		// ========== Dynamic Copyright Year ==========
+		function updateCopyrightYear() {
+			const yearEl = document.getElementById('year');
+			if (yearEl) {
+				yearEl.textContent = new Date().getFullYear();
+			}
+		}
+
+		// ========== Initialize Everything ==========
+		document.addEventListener('DOMContentLoaded', function() {
+			bootstrapFixes();
+			handleImageLoad();
+			initScrollReveal();
+			updateCopyrightYear();
+		});
 	</script>
 </body>
 
