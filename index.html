@@ -73,6 +73,9 @@
 	</script>
 
 	<link rel="stylesheet" href="https://bootswatch.com/5/slate/bootstrap.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
 	<script src="https://unpkg.com/scrollreveal@4"></script>
 
 	<style>
@@ -144,7 +147,7 @@
 
 		/* ========== Code & Pre Styles ========== */
 		code, pre {
-			font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+			font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
 		}
 
 		code {
@@ -572,6 +575,129 @@
 			}
 			.proj-grid td:empty {
 				display: none;
+			}
+		}
+
+		/* ========== Refined Typography & Feel ========== */
+		body {
+			font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			letter-spacing: -0.003em;
+			background-image: radial-gradient(900px 520px at 50% -8%, rgba(91, 192, 222, 0.10), transparent 62%);
+		}
+		[data-theme="light"] body {
+			background-image: radial-gradient(900px 520px at 50% -8%, rgba(13, 110, 253, 0.07), transparent 62%);
+		}
+
+		/* Hero name */
+		#main h1 {
+			font-weight: 800;
+			font-size: clamp(2rem, 5.2vw, 3.4rem);
+			letter-spacing: -0.02em;
+			line-height: 1.12;
+			margin-bottom: 1.1rem;
+		}
+
+		/* Terminal-style section headers (prompt chips) */
+		#main h2 {
+			font-weight: 700;
+			letter-spacing: -0.01em;
+			margin-top: 0.5rem;
+		}
+		#main h2 > code {
+			background: linear-gradient(180deg, var(--bg-tertiary), var(--bg-secondary));
+			border: 1px solid var(--border-color);
+			border-left: 3px solid var(--accent-color);
+			padding: 0.4rem 0.75rem;
+			border-radius: 8px;
+			font-size: 0.88em;
+			color: var(--text-primary);
+			box-shadow: var(--shadow);
+		}
+		#main h2 hr {
+			border: none;
+			height: 1px;
+			background: linear-gradient(90deg, var(--accent-color), var(--border-color) 30%, transparent);
+			opacity: 0.7;
+			margin: 0.7rem 0 0;
+		}
+
+		/* Generous section rhythm */
+		#main section {
+			margin-bottom: 4rem !important;
+			scroll-margin-top: 84px;
+		}
+
+		/* Animated underline for text links (excludes badge/image links) */
+		#main a:not(:has(img)) {
+			text-decoration: none;
+			background-image: linear-gradient(var(--accent-color), var(--accent-color));
+			background-size: 0% 1.5px;
+			background-position: 0 100%;
+			background-repeat: no-repeat;
+			transition: background-size 0.25s ease, color 0.2s ease;
+		}
+		#main a:not(:has(img)):hover {
+			background-size: 100% 1.5px;
+		}
+
+		/* Card hover depth */
+		.appcard,
+		.compcard,
+		.proj-grid td {
+			transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.25s ease;
+		}
+		.appcard:hover,
+		.compcard:hover,
+		.proj-grid td:hover {
+			box-shadow: 0 14px 34px -16px rgba(0, 0, 0, 0.55);
+		}
+
+		/* Header social badge hover lift */
+		#main p[align="center"] a img {
+			transition: transform 0.18s ease, filter 0.18s ease;
+		}
+		#main p[align="center"] a:hover img {
+			transform: translateY(-2px);
+			filter: brightness(1.08);
+		}
+
+		/* Visible keyboard focus */
+		a:focus-visible,
+		button:focus-visible,
+		summary:focus-visible,
+		[tabindex]:focus-visible {
+			outline: 2px solid var(--accent-color);
+			outline-offset: 3px;
+			border-radius: 6px;
+		}
+
+		/* Active nav item (scrollspy) */
+		.navbar-custom .nav-link.active {
+			color: var(--accent-color);
+			background: var(--bg-tertiary);
+		}
+
+		/* Respect reduced motion */
+		@media (prefers-reduced-motion: reduce) {
+			*,
+			*::before,
+			*::after {
+				animation-duration: 0.001ms !important;
+				transition-duration: 0.001ms !important;
+				scroll-behavior: auto !important;
+			}
+			html {
+				scroll-behavior: auto;
+			}
+			section,
+			.fade-in {
+				opacity: 1 !important;
+				transform: none !important;
+			}
+			img {
+				opacity: 1 !important;
 			}
 		}
 	</style>
@@ -1048,14 +1174,39 @@
 
 		// ========== ScrollReveal Animations ==========
 		function initScrollReveal() {
+			if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 			ScrollReveal().reveal('section', {
 				delay: 100,
-				distance: '20px',
+				distance: '24px',
 				duration: 600,
-				easing: 'ease-out',
+				easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
 				origin: 'bottom',
+				interval: 40,
 				mobile: true
 			});
+		}
+
+		// ========== Scrollspy: highlight active nav item ==========
+		function initScrollSpy() {
+			const links = Array.from(document.querySelectorAll('.navbar-custom .nav-link'))
+				.filter(a => (a.getAttribute('href') || '').startsWith('#'));
+			if (!links.length || !('IntersectionObserver' in window)) return;
+			const map = new Map();
+			links.forEach(a => {
+				const sec = document.getElementById(a.getAttribute('href').slice(1));
+				if (sec) map.set(sec, a);
+			});
+			if (!map.size) return;
+			const obs = new IntersectionObserver(entries => {
+				entries.forEach(e => {
+					if (e.isIntersecting) {
+						links.forEach(l => l.classList.remove('active'));
+						const a = map.get(e.target);
+						if (a) a.classList.add('active');
+					}
+				});
+			}, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+			map.forEach((a, sec) => obs.observe(sec));
 		}
 
 		// ========== Bootstrap Fixes ==========
@@ -1118,6 +1269,7 @@
 			bootstrapFixes();
 			handleImageLoad();
 			initScrollReveal();
+			initScrollSpy();
 			updateCopyrightYear();
 		});
 	</script>
