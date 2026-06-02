@@ -578,6 +578,12 @@
     <p><sub><em>A curated set below: LLM-powered agentic systems, security tooling, and a few things I built for fun. The most ambitious work lives in private repos, described here.</em></sub></p>
     <section id="-featured" class="level4">
     <h4>🌟 Featured</h4>
+    <p><strong>Platform &amp; Infrastructure</strong></p>
+    <ul>
+    <li><strong>Challenge Deployment API</strong> <em>(private)</em> — Provisions containerized CTF challenges to AWS ECS on demand and auto-scales; ran the world's largest CTF at 10,000+ concurrent users (BlackHat MEA, Guinness World Record). <code>Python · FastAPI</code></li>
+    <li><strong>CyberRanges</strong> <em>(private)</em> — IaC platform that spins up multi-VM attack-defense environments across AWS and GCP. <code>Terraform · Packer · Ansible</code></li>
+    <li><strong>Attack-Defense Checksystem</strong> <em>(private)</em> — Real-time scoring for 100+ teams at once, with Celery workers and PgCat-pooled PostgreSQL. <code>Python · Celery · Redis</code></li>
+    </ul>
     <p><strong>Agentic AI &amp; LLMs</strong></p>
     <ul>
     <li><strong>ProjectHailMary</strong> <em>(private)</em> — Solo-operated agentic vulnerability finder for bug bounties. One orchestrator drives 60+ charter-bearing subagents through a validation gauntlet (trace → PoC → CVSS → dedup → devil's-advocate) into a deterministic CLEAR / HOLD / REJECT verdict. 23 modules, 465+ tests, built on one rule: <em>Honest &gt; Helpful</em>. <code>Python</code></li>

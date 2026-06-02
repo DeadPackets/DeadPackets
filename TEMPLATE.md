@@ -52,6 +52,12 @@
 
 #### 🌟 Featured
 
+**Platform & Infrastructure**
+
+- **Challenge Deployment API** *(private)* — Provisions containerized CTF challenges to AWS ECS on demand and auto-scales; ran the world's largest CTF at 10,000+ concurrent users (BlackHat MEA, Guinness World Record). `Python · FastAPI`
+- **CyberRanges** *(private)* — IaC platform that spins up multi-VM attack-defense environments across AWS and GCP. `Terraform · Packer · Ansible`
+- **Attack-Defense Checksystem** *(private)* — Real-time scoring for 100+ teams at once, with Celery workers and PgCat-pooled PostgreSQL. `Python · Celery · Redis`
+
 **Agentic AI & LLMs**
 
 - **ProjectHailMary** *(private)* — Solo-operated agentic vulnerability finder for bug bounties. One orchestrator drives 60+ charter-bearing subagents through a validation gauntlet (trace → PoC → CVSS → dedup → devil's-advocate) into a deterministic CLEAR / HOLD / REJECT verdict. 23 modules, 465+ tests, built on one rule: *Honest > Helpful*. `Python`
