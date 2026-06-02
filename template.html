@@ -23,7 +23,6 @@
 	<link rel="preconnect" href="https://skillicons.dev" crossorigin>
 	<link rel="preconnect" href="https://github-readme-stats-sigma-five.vercel.app" crossorigin>
 	<link rel="preconnect" href="https://streak-stats.demolab.com" crossorigin>
-	<link rel="preconnect" href="https://github-trophies.vercel.app" crossorigin>
 	<link rel="preconnect" href="https://spotify-github-profile.kittinanx.com" crossorigin>
 	<link rel="preconnect" href="https://bootswatch.com" crossorigin>
 
@@ -472,6 +471,107 @@
 			code, pre {
 				background: #f5f5f5 !important;
 				color: black !important;
+			}
+		}
+
+		/* ========== Projects: Badge Grid ========== */
+		.proj-grid .cat {
+			color: var(--accent-color);
+			font-weight: 700;
+			font-size: .95rem;
+			letter-spacing: .4px;
+			text-transform: uppercase;
+			margin: 1.3rem 0 .5rem;
+		}
+		.proj-grid table {
+			width: 100%;
+			border-collapse: separate;
+			border-spacing: 10px;
+			margin: 0;
+		}
+		.proj-grid td {
+			width: 50%;
+			background: var(--bg-secondary);
+			border: 1px solid var(--border-color);
+			border-radius: 10px;
+			padding: .85rem 1rem;
+			vertical-align: top;
+			transition: border-color .2s ease, transform .2s ease;
+		}
+		.proj-grid td:hover {
+			border-color: var(--accent-color);
+			transform: translateY(-2px);
+		}
+		.proj-grid td:empty {
+			background: none;
+			border: none;
+		}
+		.proj-name {
+			font-weight: 700;
+			font-size: 1.02rem;
+		}
+		.proj-desc {
+			color: var(--text-secondary);
+			font-size: .9rem;
+			margin: .35rem 0 .55rem;
+		}
+		.proj-grid .badges img {
+			margin: 2px 3px 2px 0;
+			vertical-align: middle;
+		}
+		.status-badge {
+			vertical-align: middle;
+			margin-right: .35rem;
+		}
+
+		/* ========== Skills: Competency Cards ========== */
+		.compcard {
+			background: var(--bg-secondary);
+			border: 1px solid var(--border-color);
+			border-radius: 12px;
+			padding: 1.1rem 1.2rem;
+			height: 100%;
+			transition: transform .2s ease, border-color .2s ease;
+		}
+		.compcard:hover {
+			transform: translateY(-4px);
+			border-color: var(--accent-color);
+		}
+		.compcard h5 {
+			margin: 0 0 .2rem;
+			font-size: 1rem;
+			display: flex;
+			align-items: center;
+			gap: .5rem;
+		}
+		.compcard .sub {
+			color: var(--text-muted);
+			font-size: .8rem;
+			margin-bottom: .7rem;
+		}
+		.compcard .icons {
+			margin-bottom: .4rem;
+		}
+		.compcard .icons img {
+			margin: 2px 4px 2px 0;
+			vertical-align: middle;
+		}
+		.compcard .txt {
+			color: var(--text-secondary);
+			font-size: .85rem;
+		}
+
+		/* Badge Grid: stack to one column on mobile */
+		@media (max-width: 768px) {
+			.proj-grid table,
+			.proj-grid tbody,
+			.proj-grid tr,
+			.proj-grid td {
+				display: block;
+				width: 100%;
+			}
+			.proj-grid td:empty {
+				display: none;
 			}
 		}
 	</style>

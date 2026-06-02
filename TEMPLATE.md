@@ -30,7 +30,6 @@
 
 <img align="right" src="me.jpg" width="300" />
 
-- <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Building production agentic systems on top of LLMs: multi-agent orchestration, RAG, evals, and autonomous agents (live: [LLMChessArena](https://llmchess.deadpackets.pw))
 - <img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16" /> Head of Engineering & Co-Founder at [CTFae](https://ctf.ae)
 - <img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16" /> OSCP-certified. I ship AI and break it like an attacker (5+ years in offensive security)
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> DevOps enthusiast. I automate everything
@@ -48,64 +47,150 @@
 
 ## `$> ls -la projects/`
 
-<sub>*A curated set below: LLM-powered agentic systems, security tooling, and a few things I built for fun. The most ambitious work lives in private repos, described here.*</sub>
-
-#### 🌟 Featured
-
-**Platform & Infrastructure**
-
-- **Challenge Deployment API** *(private)* — Provisions containerized CTF challenges to AWS ECS on demand and auto-scales; ran the world's largest CTF at 10,000+ concurrent users (BlackHat MEA, Guinness World Record). `Python · FastAPI`
-- **CyberRanges** *(private)* — IaC platform that spins up multi-VM attack-defense environments across AWS and GCP. `Terraform · Packer · Ansible`
-- **Attack-Defense Checksystem** *(private)* — Real-time scoring for 100+ teams at once, with Celery workers and PgCat-pooled PostgreSQL. `Python · Celery · Redis`
-
-**Agentic AI & LLMs**
-
-- **ProjectHailMary** *(private)* — Solo-operated agentic vulnerability finder for bug bounties. One orchestrator drives 60+ charter-bearing subagents through a validation gauntlet (trace → PoC → CVSS → dedup → devil's-advocate) into a deterministic CLEAR / HOLD / REJECT verdict. 23 modules, 465+ tests, built on one rule: *Honest > Helpful*. `Python`
-- **LLM-AD-Defense** *(private)* — Autonomous SOC analyst on Gemini 2.5 Pro. It ingests Wazuh EDR alerts, reasons about the threat, and runs its own remediation, down to isolating a compromised Active Directory account. FastAPI backend, with alert dedup to keep API cost down. `Python`
-- **[LLMChessArena](https://llmchess.deadpackets.pw)** — Any LLM vs any LLM, Stockfish, or a human, over OpenRouter. Real-time WebSocket streaming, move-by-move Stockfish evals, an ELO leaderboard, and per-move token/cost tracking. ([code](https://github.com/DeadPackets/LLMChessArena)) `TypeScript`
-- **[BuzzerMinds](https://trivia.deadpackets.pw)** *(private)* — A live multiplayer trivia party game (University Challenge meets Jackbox). Players join a room from their phones; every question is LLM-generated and grounded against real sources via SearXNG, with fact cards and strict schemas to keep the AI honest, plus theatrical ElevenLabs narration. Next.js + Python + Postgres, real-time rooms with buzzing, scoring, and reconnection handling. `Python · Next.js`
-- **[PiCodeReview](https://github.com/DeadPackets/PiCodeReview)** — A 30-minute take-home challenge: a multi-tier agentic code reviewer on the Pi SDK. Four hunter agents on a cheap model over-report; a frontier-model judge re-reads the code and throws out the false positives. `TypeScript`
-
-**Data & web**
-
-- **[VisualizeAUS](https://projects.deadpackets.pw/VisualizeAUS/)** — 20 years of my university's course data turned into an interactive exploration (Plotly + Quarto). `Python`
-- **[AUSCrawl](https://github.com/DeadPackets/AUSCrawl)** — The crawler behind it: pulls AUS's Banner registration system into a clean, analyzable dataset. `Python`
-- **[DOSArchive](https://projects.deadpackets.pw/DOSArchive/)** — My dad's (Yasser Awad) old DOS programs, emulated so you can run them right in your browser. `Astro`
-
-<!-- START OF PROFILE STACK, DO NOT REMOVE -->
-| 💻 **Technology** | 🚀 **Projects** |
-| - | - |
-| [![Agentic AI / LLMs](https://img.shields.io/static/v1?label=&message=Agentic%20AI%20%2F%20LLMs&color=412991&logo=openai&logoColor=FFFFFF)](https://openrouter.ai/) | [![LLMChessArena](https://img.shields.io/static/v1?label=&message=LLMChessArena&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/LLMChessArena) [![PiCodeReview](https://img.shields.io/static/v1?label=&message=PiCodeReview&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/PiCodeReview) [![LLMCompanionCord](https://img.shields.io/static/v1?label=&message=LLMCompanionCord&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/LLMCompanionCord) |
-| [![TypeScript](https://img.shields.io/static/v1?label=&message=TypeScript&color=3178C6&logo=typescript&logoColor=FFFFFF)](https://www.typescriptlang.org/) | [![LLMChessArena](https://img.shields.io/static/v1?label=&message=LLMChessArena&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/LLMChessArena) [![PiCodeReview](https://img.shields.io/static/v1?label=&message=PiCodeReview&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/PiCodeReview) |
-| [![Python](https://img.shields.io/static/v1?label=&message=Python&color=3C78A9&logo=python&logoColor=FFFFFF)](https://www.python.org/) | [![LLMCompanionCord](https://img.shields.io/static/v1?label=&message=LLMCompanionCord&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/LLMCompanionCord) [![pwnbox-cli](https://img.shields.io/static/v1?label=&message=pwnbox-cli&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/pwnbox-cli) |
-| [![Docker](https://img.shields.io/static/v1?label=&message=Docker&color=2496ED&logo=docker&logoColor=FFFFFF)](https://www.docker.com) | [![pwnbox](https://img.shields.io/static/v1?label=&message=pwnbox&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/pwnbox) |
-| [![Offensive Security](https://img.shields.io/static/v1?label=&message=Offensive%20Security&color=9FEF00&logo=hackthebox&logoColor=000000)](https://github.com/DeadPackets/RedCrucible) | [![RedCrucible](https://img.shields.io/static/v1?label=&message=RedCrucible&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/RedCrucible) [![HackPi](https://img.shields.io/static/v1?label=&message=HackPi&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/HackPi) |
-<!-- END OF PROFILE STACK, DO NOT REMOVE -->
+<div class="proj-grid">
+<div class="cat">⚙️ Platform &amp; Infrastructure</div>
+<table>
+<tr>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Private-484f58?style=flat-square" alt="Private" />
+<span class="proj-name">Challenge Deployment API</span>
+<div class="proj-desc">Provisions containerized CTF challenges to AWS ECS on demand and auto-scales. Ran the world's largest CTF at 10,000+ concurrent users (BlackHat MEA, Guinness World Record).</div>
+<div class="badges"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/AWS_ECS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS ECS" /></div>
+</td>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Private-484f58?style=flat-square" alt="Private" />
+<span class="proj-name">CyberRanges</span>
+<div class="proj-desc">IaC platform that spins up multi-VM attack-defense environments across AWS and GCP.</div>
+<div class="badges"><img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" /> <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" alt="Ansible" /> <img src="https://img.shields.io/badge/Packer-02A8EF?style=flat-square&logo=packer&logoColor=white" alt="Packer" /></div>
+</td>
+</tr>
+<tr>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Private-484f58?style=flat-square" alt="Private" />
+<span class="proj-name">Attack-Defense Checksystem</span>
+<div class="proj-desc">Real-time scoring for 100+ teams at once, with Celery workers and PgCat-pooled PostgreSQL.</div>
+<div class="badges"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" alt="Celery" /> <img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white" alt="Redis" /></div>
+</td>
+<td></td>
+</tr>
+</table>
+<div class="cat">🤖 Agentic AI &amp; LLMs</div>
+<table>
+<tr>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Private-484f58?style=flat-square" alt="Private" />
+<span class="proj-name">ProjectHailMary</span>
+<div class="proj-desc">Solo-operated agentic vulnerability finder. One orchestrator drives 60+ charter-bearing subagents through a validation gauntlet into a deterministic CLEAR / HOLD / REJECT verdict. 23 modules, 465+ tests.</div>
+<div class="badges"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /></div>
+</td>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Private-484f58?style=flat-square" alt="Private" />
+<span class="proj-name">LLM-AD-Defense</span>
+<div class="proj-desc">Autonomous SOC analyst on Gemini 2.5 Pro. It ingests Wazuh EDR alerts, reasons about the threat, and runs its own remediation, down to isolating a compromised Active Directory account.</div>
+<div class="badges"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /></div>
+</td>
+</tr>
+<tr>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Live-3fb950?style=flat-square" alt="Live" />
+<a class="proj-name" href="https://llmchess.deadpackets.pw">LLMChessArena</a>
+<div class="proj-desc">Any LLM vs any LLM, Stockfish, or a human, over OpenRouter. Real-time WebSocket streaming, move-by-move Stockfish evals, and a live leaderboard. (<a href="https://github.com/DeadPackets/LLMChessArena">code</a>)</div>
+<div class="badges"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /></div>
+</td>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Live-3fb950?style=flat-square" alt="Live" />
+<a class="proj-name" href="https://trivia.deadpackets.pw">BuzzerMinds</a>
+<div class="proj-desc">A live multiplayer trivia party game. Every question is LLM-generated and grounded against real sources via SearXNG, with fact cards and strict schemas to keep the AI honest.</div>
+<div class="badges"><img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /></div>
+</td>
+</tr>
+<tr>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Code-1f6feb?style=flat-square&logo=github&logoColor=white" alt="Code" />
+<a class="proj-name" href="https://github.com/DeadPackets/PiCodeReview">PiCodeReview</a>
+<div class="proj-desc">Multi-tier agentic code reviewer on the Pi SDK: cheap-model hunters over-report, a frontier-model judge re-reads the code and prunes the false positives. A 30-minute take-home challenge.</div>
+<div class="badges"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></div>
+</td>
+<td></td>
+</tr>
+</table>
+<div class="cat">📊 Data &amp; Web</div>
+<table>
+<tr>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Live-3fb950?style=flat-square" alt="Live" />
+<a class="proj-name" href="https://projects.deadpackets.pw/VisualizeAUS/">VisualizeAUS</a>
+<div class="proj-desc">20 years of my university's course data turned into an interactive exploration (Plotly + Quarto).</div>
+<div class="badges"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter" /></div>
+</td>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Code-1f6feb?style=flat-square&logo=github&logoColor=white" alt="Code" />
+<a class="proj-name" href="https://github.com/DeadPackets/AUSCrawl">AUSCrawl</a>
+<div class="proj-desc">The crawler behind it: pulls AUS's Banner registration system into a clean, analyzable dataset.</div>
+<div class="badges"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /></div>
+</td>
+</tr>
+<tr>
+<td>
+<img class="status-badge" src="https://img.shields.io/badge/Live-3fb950?style=flat-square" alt="Live" />
+<a class="proj-name" href="https://projects.deadpackets.pw/DOSArchive/">DOSArchive</a>
+<div class="proj-desc">My dad's (Yasser Awad) old DOS programs, emulated so you can run them right in your browser.</div>
+<div class="badges"><img src="https://img.shields.io/badge/Astro-FF5D01?style=flat-square&logo=astro&logoColor=white" alt="Astro" /></div>
+</td>
+<td></td>
+</tr>
+</table>
+</div>
 
 ## `$> cat skills.txt`
 
-<table>
-  <tr>
-    <td>🤖 <b>Applied AI / LLMs</b></td>
-    <td>Multi-agent orchestration · RAG · Evals &amp; guardrails · Prompt engineering · OpenRouter · Claude · Gemini</td>
-  </tr>
-  <tr>
-    <td>💬 <b>Languages</b></td>
-    <td><img src="https://skillicons.dev/icons?i=py,ts,js,go,bash" height="32" /></td>
-  </tr>
-  <tr>
-    <td>🔧 <b>Backend</b></td>
-    <td><img src="https://skillicons.dev/icons?i=fastapi,django,flask,express,react,postgres,redis,rabbitmq,celery,nginx" height="32" /></td>
-  </tr>
-  <tr>
-    <td>☁️ <b>Cloud / DevOps</b></td>
-    <td><img src="https://skillicons.dev/icons?i=docker,terraform,ansible,aws,gcp,githubactions,cloudflare" height="32" /></td>
-  </tr>
-  <tr>
-    <td>🛡️ <b>Security</b></td>
-    <td>Penetration testing · Red teaming · Active Directory · Vulnerability assessment · OSCP</td>
-  </tr>
-</table>
+<div class="row g-3 skills-grid">
+<div class="col-md-6">
+<div class="compcard">
+<h5>🤖 Applied AI / LLMs</h5>
+<div class="sub">I build systems that use LLMs, not train them</div>
+<div class="icons"><img src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Claude" /> <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini" /> <img src="https://img.shields.io/badge/OpenRouter-6566F1?style=flat-square" alt="OpenRouter" /></div>
+<div class="txt">Multi-agent orchestration, RAG, evals &amp; guardrails, prompt engineering.</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="compcard">
+<h5>🛡️ Security</h5>
+<div class="sub">OSCP · 5+ years offensive</div>
+<div class="icons"><img src="https://img.shields.io/badge/OSCP-9FEF00?style=flat-square&logo=offensivesecurity&logoColor=black" alt="OSCP" /></div>
+<div class="txt">Penetration testing, red teaming, Active Directory, vulnerability assessment.</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="compcard">
+<h5>💬 Languages</h5>
+<div class="sub">Daily drivers</div>
+<div class="icons"><img src="https://skillicons.dev/icons?i=py,ts,js,bash" height="36" alt="Python, TypeScript, JavaScript, Bash" /></div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="compcard">
+<h5>🎨 Frontend</h5>
+<div class="sub">Type-safe and modern</div>
+<div class="icons"><img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind" height="36" alt="React, Next.js, Vite, Tailwind CSS" /></div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="compcard">
+<h5>🔧 Backend &amp; APIs</h5>
+<div class="sub">Async, typed, queue-driven</div>
+<div class="icons"><img src="https://skillicons.dev/icons?i=fastapi,express,flask,postgres,redis,rabbitmq,nginx" height="36" alt="FastAPI, Express, Flask, PostgreSQL, Redis, RabbitMQ, Nginx" /></div>
+<div class="txt">Hono · Celery · Pydantic · SQLAlchemy</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="compcard">
+<h5>☁️ Cloud / DevOps</h5>
+<div class="sub">Ship it and automate it</div>
+<div class="icons"><img src="https://skillicons.dev/icons?i=docker,terraform,ansible,aws,gcp,githubactions,cloudflare" height="36" alt="Docker, Terraform, Ansible, AWS, GCP, GitHub Actions, Cloudflare" /></div>
+</div>
+</div>
+</div>
 
 ## `$> cat life.txt | grep "Achievements"`
 
@@ -177,7 +262,7 @@
 
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=deadpackets&show_icons=true&cache_seconds=1800&count_private=true&theme=react" alt="deadpackets" />
-  <img src="https://github-trophies.vercel.app/?username=DeadPackets&theme=nord" />
+  <img src="https://streak-stats.demolab.com/?user=DeadPackets&theme=react" alt="GitHub contribution streak" />
 </p>
 
 ## `$> spotify_cli --currently-playing`
