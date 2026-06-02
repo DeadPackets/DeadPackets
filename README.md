@@ -16,7 +16,7 @@
 
 <p align="center">
   Won <b>"Best Emirati Startup"</b> with <a href="https://ctf.ae">CTFae</a> @ GISEC UAE 2024<br/>
-  Head of Engineering & Co-Founder @ CTFae | Building agentic, LLM-powered systems + the infrastructure behind the world's largest CTF<br/><br/>
+  Head of Engineering @ CTFae · Full-stack, DevOps &amp; security engineer who builds and ships with agentic AI · OSCP · Guinness World Record (largest CTF)<br/><br/>
   <a href="resume/Youssef-Awad-CV.pdf"><img src="https://img.shields.io/badge/Download_CV-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/Open_to_Opportunities-00C853?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/UAE_(GMT+4)-0A66C2?style=for-the-badge&logo=googlemaps&logoColor=white" />
