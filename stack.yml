@@ -1,26 +1,27 @@
+- name: Agentic AI / LLMs
+  logo: openai
+  url: https://openrouter.ai/
+  color: '#412991'
+  projects:
+    - url: https://github.com/DeadPackets/LLMChessArena
+    - url: https://github.com/DeadPackets/PiCodeReview
+    - url: https://github.com/DeadPackets/LLMCompanionCord
+
+- name: TypeScript
+  logo: typescript
+  url: https://www.typescriptlang.org/
+  color: '#3178C6'
+  projects:
+    - url: https://github.com/DeadPackets/LLMChessArena
+    - url: https://github.com/DeadPackets/PiCodeReview
+
 - name: Python
   logo: python
   url: https://www.python.org/
   color: '#3C78A9'
   projects:
+    - url: https://github.com/DeadPackets/LLMCompanionCord
     - url: https://github.com/DeadPackets/pwnbox-cli
-    - url: https://github.com/DeadPackets/AUSCrawl
-
-- name: NodeJS
-  logo: nodedotjs
-  url: https://nodejs.org/
-  color: '#339933'
-  projects:
-    - url: https://github.com/DeadPackets/CRNotify
-    - url: https://github.com/DeadPackets/AUSCrawl
-
-- name: Puppeteer
-  logo: puppeteer
-  url: https://github.com/DeadPackets/DOSArchive
-  color: '#40B5A4'
-  projects:
-    - url: https://github.com/DeadPackets/CRNotify
-    - url: https://github.com/DeadPackets/AUSCrawl
 
 - name: Docker
   logo: docker
@@ -29,12 +30,10 @@
   projects:
     - url: https://github.com/DeadPackets/pwnbox
 
-- name: JavaScript
-  logo: javascript
-  url: https://www.javascript.com
-  color: '#F7DF1E'
+- name: Offensive Security
+  logo: hackthebox
+  url: https://github.com/DeadPackets/RedCrucible
+  color: '#9FEF00'
   projects:
-    - url: https://github.com/DeadPackets/DOSArchive
-    - url: https://github.com/DeadPackets/CrackTheHack
-    - url: https://github.com/DeadPackets/EmailCheck
-    - url: https://github.com/DeadPackets/HistoryThief
+    - url: https://github.com/DeadPackets/RedCrucible
+    - url: https://github.com/DeadPackets/HackPi

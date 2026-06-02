@@ -1,6 +1,6 @@
 <h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"> Hi, I'm DeadPackets (Youssef Awad)!</h1>
 
-<h3 align="center">💻 A passionate cybersecurity researcher, developer, engineer and hacker!</h3>
+<h3 align="center">🤖 I build agentic AI systems and threat-model them like an attacker.</h3>
 
 <p align="center">
   <a href="mailto:youssef@ctf.ae"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
@@ -18,7 +18,7 @@
 
 <p align="center">
   Won <b>"Best Emirati Startup"</b> with <a href="https://ctf.ae">CTFae</a> @ GISEC UAE 2024<br/>
-  Head of Engineering & Co-Founder | Building world-class cybersecurity competitions<br/><br/>
+  Head of Engineering & Co-Founder @ CTFae | Building agentic AI systems + the infrastructure behind the world's largest CTF<br/><br/>
   <a href="resume/Youssef-Awad-CV.pdf"><img src="https://img.shields.io/badge/Download_CV-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/Open_to_Opportunities-00C853?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/UAE_(GMT+4)-0A66C2?style=for-the-badge&logo=googlemaps&logoColor=white" />
@@ -30,12 +30,12 @@
 
 <img align="right" src="me.jpg" width="300" />
 
-- <img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16" /> Computer Engineering graduate (+ CS minor) from [AUS](https://www.aus.edu)
+- <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Building production agentic-AI systems: multi-agent orchestration, RAG, evals, and autonomous agents (live: [LLMChessArena](https://llmchess.deadpackets.pw))
 - <img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16" /> Head of Engineering & Co-Founder at [CTFae](https://ctf.ae)
-- <img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16" /> Passionate about CTFs, red teaming, and breaking things
-- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> DevOps enthusiast - I automate everything
+- <img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16" /> OSCP-certified. I ship AI and break it like an attacker (5+ years in offensive security)
+- <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> DevOps enthusiast. I automate everything
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/nerd-life/matrix.gif" width="16" /> Cybersecurity educator and community builder
-- <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Python & Docker evangelist
+- <img src="https://emojis.slackmojis.com/emojis/images/1596524176/9908/blobhelp.png" width="16" /> Computer Engineering graduate (+ CS minor) from [AUS](https://www.aus.edu)
 - ⭐ Over my **{{ ACCOUNT_AGE }}** years on GitHub, I have opened **{{ ISSUES }}** issues, opened **{{ PULL_REQUESTS }}** PRs, pushed **{{ COMMITS }}** commits, created **{{ REPOSITORIES }}** repositories, contributed to **{{ REPOSITORIES_CONTRIBUTED_TO }}** projects, gathered **{{ STARS }}** stars across all my repos and gists
 
 ## `$> cat resume.txt`
@@ -48,43 +48,58 @@
 
 ## `$> ls -la projects/`
 
-<sub>*Most of my meaningful and impactful work lives in private repositories at CTFae due to the sensitive nature of our cybersecurity platforms and client engagements.*</sub>
+<sub>*A curated set below: agentic-AI systems, security tooling, and a few things I built for fun. The most ambitious work lives in private repos, described here.*</sub>
+
+#### 🌟 Featured
+
+**Agentic AI & LLMs**
+
+- **ProjectHailMary** *(private)* — Solo-operated agentic vulnerability finder for bug bounties. One orchestrator drives 60+ charter-bearing subagents through a validation gauntlet (trace → PoC → CVSS → dedup → devil's-advocate) into a deterministic CLEAR / HOLD / REJECT verdict. 23 modules, 465+ tests, built on one rule: *Honest > Helpful*. `Python`
+- **LLM-AD-Defense** *(private)* — Autonomous SOC analyst on Gemini 2.5 Pro. It ingests Wazuh EDR alerts, reasons about the threat, and runs its own remediation, down to isolating a compromised Active Directory account. FastAPI backend, with alert dedup to keep API cost down. `Python`
+- **[LLMChessArena](https://llmchess.deadpackets.pw)** — Any LLM vs any LLM, Stockfish, or a human, over OpenRouter. Real-time WebSocket streaming, move-by-move Stockfish evals, an ELO leaderboard, and per-move token/cost tracking. ([code](https://github.com/DeadPackets/LLMChessArena)) `TypeScript`
+- **[BuzzerMinds](https://trivia.deadpackets.pw)** *(private)* — A live multiplayer trivia party game (University Challenge meets Jackbox). Players join a room from their phones; every question is LLM-generated and grounded against real sources via SearXNG, with fact cards and strict schemas to keep the AI honest, plus theatrical ElevenLabs narration. Next.js + Python + Postgres, real-time rooms with buzzing, scoring, and reconnection handling. `Python · Next.js`
+- **[PiCodeReview](https://github.com/DeadPackets/PiCodeReview)** — A 30-minute take-home challenge: a multi-tier agentic code reviewer on the Pi SDK. Four hunter agents on a cheap model over-report; a frontier-model judge re-reads the code and throws out the false positives. `TypeScript`
+
+**Data & web**
+
+- **[VisualizeAUS](https://projects.deadpackets.pw/VisualizeAUS/)** — 20 years of my university's course data turned into an interactive exploration (Plotly + Quarto). `Python`
+- **[AUSCrawl](https://github.com/DeadPackets/AUSCrawl)** — The crawler behind it: pulls AUS's Banner registration system into a clean, analyzable dataset. `Python`
+- **[DOSArchive](https://projects.deadpackets.pw/DOSArchive/)** — My dad's (Yasser Awad) old DOS programs, emulated so you can run them right in your browser. `Astro`
 
 <!-- START OF PROFILE STACK, DO NOT REMOVE -->
 | 💻 **Technology** | 🚀 **Projects** |
 | - | - |
-| [![Python](https://img.shields.io/static/v1?label=&message=Python&color=3C78A9&logo=python&logoColor=FFFFFF)](https://www.python.org/) | [![pwnbox-cli](https://img.shields.io/static/v1?label=&message=pwnbox-cli&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/pwnbox-cli) [![AUSCrawl](https://img.shields.io/static/v1?label=&message=AUSCrawl&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/AUSCrawl) |
-| [![NodeJS](https://img.shields.io/static/v1?label=&message=NodeJS&color=339933&logo=nodedotjs&logoColor=FFFFFF)](https://nodejs.org/) | [![CRNotify](https://img.shields.io/static/v1?label=&message=CRNotify&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/CRNotify) [![AUSCrawl](https://img.shields.io/static/v1?label=&message=AUSCrawl&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/AUSCrawl) |
-| [![Puppeteer](https://img.shields.io/static/v1?label=&message=Puppeteer&color=40B5A4&logo=puppeteer&logoColor=FFFFFF)](https://github.com/DeadPackets/DOSArchive) | [![CRNotify](https://img.shields.io/static/v1?label=&message=CRNotify&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/CRNotify) [![AUSCrawl](https://img.shields.io/static/v1?label=&message=AUSCrawl&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/AUSCrawl) |
+| [![Agentic AI / LLMs](https://img.shields.io/static/v1?label=&message=Agentic%20AI%20%2F%20LLMs&color=412991&logo=openai&logoColor=FFFFFF)](https://openrouter.ai/) | [![LLMChessArena](https://img.shields.io/static/v1?label=&message=LLMChessArena&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/LLMChessArena) [![PiCodeReview](https://img.shields.io/static/v1?label=&message=PiCodeReview&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/PiCodeReview) [![LLMCompanionCord](https://img.shields.io/static/v1?label=&message=LLMCompanionCord&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/LLMCompanionCord) |
+| [![TypeScript](https://img.shields.io/static/v1?label=&message=TypeScript&color=3178C6&logo=typescript&logoColor=FFFFFF)](https://www.typescriptlang.org/) | [![LLMChessArena](https://img.shields.io/static/v1?label=&message=LLMChessArena&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/LLMChessArena) [![PiCodeReview](https://img.shields.io/static/v1?label=&message=PiCodeReview&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/PiCodeReview) |
+| [![Python](https://img.shields.io/static/v1?label=&message=Python&color=3C78A9&logo=python&logoColor=FFFFFF)](https://www.python.org/) | [![LLMCompanionCord](https://img.shields.io/static/v1?label=&message=LLMCompanionCord&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/LLMCompanionCord) [![pwnbox-cli](https://img.shields.io/static/v1?label=&message=pwnbox-cli&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/pwnbox-cli) |
 | [![Docker](https://img.shields.io/static/v1?label=&message=Docker&color=2496ED&logo=docker&logoColor=FFFFFF)](https://www.docker.com) | [![pwnbox](https://img.shields.io/static/v1?label=&message=pwnbox&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/pwnbox) |
-| [![JavaScript](https://img.shields.io/static/v1?label=&message=JavaScript&color=F7DF1E&logo=javascript&logoColor=FFFFFF)](https://www.javascript.com) | [![DOSArchive](https://img.shields.io/static/v1?label=&message=DOSArchive&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/DOSArchive) [![CrackTheHack](https://img.shields.io/static/v1?label=&message=CrackTheHack&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/CrackTheHack) [![EmailCheck](https://img.shields.io/static/v1?label=&message=EmailCheck&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/EmailCheck) [![HistoryThief](https://img.shields.io/static/v1?label=&message=HistoryThief&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/HistoryThief) |
+| [![Offensive Security](https://img.shields.io/static/v1?label=&message=Offensive%20Security&color=9FEF00&logo=hackthebox&logoColor=000000)](https://github.com/DeadPackets/RedCrucible) | [![RedCrucible](https://img.shields.io/static/v1?label=&message=RedCrucible&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/RedCrucible) [![HackPi](https://img.shields.io/static/v1?label=&message=HackPi&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/DeadPackets/HackPi) |
 <!-- END OF PROFILE STACK, DO NOT REMOVE -->
 
 ## `$> cat skills.txt`
 
-#### Languages
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=py,ts,nodejs,js,html,css,bash,md,regex" />
-</p>
-
-#### Technologies
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=docker,firebase,git,linux,mysql,nginx,postgres,rabbitmq,redis,sqlite,celery" />
-</p>
-
-#### Frameworks
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=django,express,fastapi,flask,jquery,selenium" />
-</p>
-
-#### DevOps
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=ansible,aws,cloudflare,gcp,github,githubactions,gitlab,terraform,packer" />
-</p>
+<table>
+  <tr>
+    <td>🤖 <b>AI / LLM</b></td>
+    <td>Multi-agent orchestration · RAG · Evals &amp; guardrails · Prompt engineering · OpenRouter · Claude · Gemini</td>
+  </tr>
+  <tr>
+    <td>💬 <b>Languages</b></td>
+    <td><img src="https://skillicons.dev/icons?i=py,ts,js,go,bash" height="32" /></td>
+  </tr>
+  <tr>
+    <td>🔧 <b>Backend</b></td>
+    <td><img src="https://skillicons.dev/icons?i=fastapi,django,flask,express,react,postgres,redis,rabbitmq,celery,nginx" height="32" /></td>
+  </tr>
+  <tr>
+    <td>☁️ <b>Cloud / DevOps</b></td>
+    <td><img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,ansible,aws,gcp,githubactions,cloudflare" height="32" /></td>
+  </tr>
+  <tr>
+    <td>🛡️ <b>Security</b></td>
+    <td>Penetration testing · Red teaming · Active Directory · Vulnerability assessment · OSCP</td>
+  </tr>
+</table>
 
 ## `$> cat life.txt | grep "Achievements"`
 
