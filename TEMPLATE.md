@@ -1,7 +1,5 @@
 <h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"> Hi, I'm DeadPackets (Youssef Awad)!</h1>
 
-<h3 align="center">🤖 I build agentic, LLM-powered systems and threat-model them like an attacker.</h3>
-
 <p align="center">
   <a href="mailto:youssef@ctf.ae"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
   <a href="https://deadpackets.pw/pgp"><img src="https://img.shields.io/badge/PGP-4D4D4D?style=flat&logo=gnuprivacyguard&logoColor=white" /></a>
