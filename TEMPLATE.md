@@ -1,6 +1,6 @@
 <h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"> Hi, I'm DeadPackets (Youssef Awad)!</h1>
 
-<h3 align="center">🤖 I build agentic AI systems and threat-model them like an attacker.</h3>
+<h3 align="center">🤖 I build agentic, LLM-powered systems and threat-model them like an attacker.</h3>
 
 <p align="center">
   <a href="mailto:youssef@ctf.ae"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
@@ -18,7 +18,7 @@
 
 <p align="center">
   Won <b>"Best Emirati Startup"</b> with <a href="https://ctf.ae">CTFae</a> @ GISEC UAE 2024<br/>
-  Head of Engineering & Co-Founder @ CTFae | Building agentic AI systems + the infrastructure behind the world's largest CTF<br/><br/>
+  Head of Engineering & Co-Founder @ CTFae | Building agentic, LLM-powered systems + the infrastructure behind the world's largest CTF<br/><br/>
   <a href="resume/Youssef-Awad-CV.pdf"><img src="https://img.shields.io/badge/Download_CV-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/Open_to_Opportunities-00C853?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/UAE_(GMT+4)-0A66C2?style=for-the-badge&logo=googlemaps&logoColor=white" />
@@ -30,7 +30,7 @@
 
 <img align="right" src="me.jpg" width="300" />
 
-- <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Building production agentic-AI systems: multi-agent orchestration, RAG, evals, and autonomous agents (live: [LLMChessArena](https://llmchess.deadpackets.pw))
+- <img src="https://emojis.slackmojis.com/emojis/images/1600706728/10521/meow_code.gif" width="16" /> Building production agentic systems on top of LLMs: multi-agent orchestration, RAG, evals, and autonomous agents (live: [LLMChessArena](https://llmchess.deadpackets.pw))
 - <img src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif" width="16" /> Head of Engineering & Co-Founder at [CTFae](https://ctf.ae)
 - <img src="https://emojis.slackmojis.com/emojis/images/1579644131/7581/elmofire.gif?" width="16" /> OSCP-certified. I ship AI and break it like an attacker (5+ years in offensive security)
 - <img src="https://meritt-gifs.s3-us-west-1.amazonaws.com/reaction/heart-pixel-spin.gif" width="16" /> DevOps enthusiast. I automate everything
@@ -48,7 +48,7 @@
 
 ## `$> ls -la projects/`
 
-<sub>*A curated set below: agentic-AI systems, security tooling, and a few things I built for fun. The most ambitious work lives in private repos, described here.*</sub>
+<sub>*A curated set below: LLM-powered agentic systems, security tooling, and a few things I built for fun. The most ambitious work lives in private repos, described here.*</sub>
 
 #### 🌟 Featured
 
@@ -80,7 +80,7 @@
 
 <table>
   <tr>
-    <td>🤖 <b>AI / LLM</b></td>
+    <td>🤖 <b>Applied AI / LLMs</b></td>
     <td>Multi-agent orchestration · RAG · Evals &amp; guardrails · Prompt engineering · OpenRouter · Claude · Gemini</td>
   </tr>
   <tr>
