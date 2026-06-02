@@ -39,7 +39,7 @@
 
 %---------- SUMMARY ----------
 \section{Summary}
-{\small OSCP-certified cybersecurity engineer with 8+ years in offensive security, DevOps, and platform engineering. Co-founded CTFae, achieving a Guinness World Record for the world's largest CTF and winning Best Emirati Startup at GISEC 2024. Architected infrastructure serving 10,000+ concurrent users for BlackHat, DEFCON, HITB, and government agencies.}
+{\small AI engineer who ships production agentic systems (multi-agent orchestration, RAG, evals, and autonomous agents), backed by an offensive-security foundation (OSCP). Co-founded CTFae and built the infrastructure behind the world's largest CTF: 10,000+ concurrent users, a Guinness World Record, and Best Emirati Startup at GISEC 2024. I build AI and threat-model it like an attacker.}
 
 %---------- EXPERIENCE ----------
 \section{Professional Experience}
@@ -47,9 +47,8 @@
 {\small\textbf{Head of Engineering \& Co-Founder} | \textbf{CTFae} -- Dubai, UAE \hfill 2021 -- Present}
 \begin{itemize}
     \item {\small Architected Challenge Deployment API (Python/FastAPI) for on-demand provisioning of containerized challenges to AWS ECS with auto-scaling, serving 10,000+ concurrent participants at BlackHat MEA (Guinness World Record 2024).}
-    \item {\small Built CyberRanges IaC platform using Terraform, Packer, and Ansible for automated provisioning of multi-VM attack-defense environments across AWS and GCP.}
-    \item {\small Developed Attack-Defense checksystem with Python/Celery workers, PostgreSQL (PgCat pooling), and Redis for real-time scoring of 100+ teams simultaneously.}
-    \item {\small Created CI/CD pipelines with GitHub Actions for challenge validation, Docker builds, and AWS ECR/ECS deployment with OIDC authentication.}
+    \item {\small Built CyberRanges IaC platform (Terraform, Packer, Ansible) for automated multi-VM attack-defense environments across AWS and GCP, plus CI/CD pipelines with GitHub Actions and OIDC.}
+    \item {\small Developed Attack-Defense checksystem with Python/Celery, PostgreSQL (PgCat pooling), and Redis for real-time scoring of 100+ teams simultaneously.}
     \item {\small Led engineering for DEFCON 33 Bug Bounty CTF, GITEX Dubai, Bahrain National CTF, BSides Nashville, HITB, and Dubai Police CTF.}
 \end{itemize}
 
@@ -57,20 +56,27 @@
 
 {\small\textbf{Senior Cyber Security Consultant} | \textbf{Malcrove} -- Dubai, UAE \hfill 2022 -- Dec 2025}
 \begin{itemize}
-    \item {\small Conducted penetration testing for UAE government entities and critical infrastructure, including web/mobile applications, internal/external networks, and wireless systems.}
-    \item {\small Achieved over 90\% success rate in obtaining Domain Admin privileges across 100+ Active Directory penetration testing engagements.}
-    \item {\small Automated deployment of advanced red teaming infrastructure including phishing scenarios, redirect domains, and C2 frameworks for simulated adversary campaigns.}
-    \item {\small Delivered cybersecurity awareness workshops and guided client technical teams through remediation of findings; presented executive summaries to non-technical leadership.}
-    \item {\small Authored detailed vulnerability reports with CVSS scoring, proof-of-concept exploits, and remediation guidance for technical and executive stakeholders.}
+    \item {\small Conducted penetration testing for UAE government and critical-infrastructure clients across web/mobile applications, internal/external networks, and wireless systems.}
+    \item {\small Achieved over 90\% success rate in obtaining Domain Admin privileges across 100+ Active Directory engagements.}
+    \item {\small Authored CVSS-scored vulnerability reports with proof-of-concept exploits and remediation guidance; presented executive summaries to non-technical leadership.}
+\end{itemize}
+
+%---------- AI / AGENTIC PROJECTS ----------
+\section{AI \& Agentic Projects}
+\begin{itemize}
+    \item {\small \textbf{ProjectHailMary} -- Solo-operated agentic vulnerability finder: one orchestrator drives 60+ charter-bearing subagents through a validation gauntlet (trace, PoC, CVSS, dedup) into a deterministic CLEAR/HOLD/REJECT verdict. 23 modules, 465+ tests. (Python)}
+    \item {\small \textbf{LLM-AD-Defense} -- Autonomous SOC analyst on Gemini 2.5 Pro: ingests Wazuh EDR alerts and executes its own remediation, including isolating compromised Active Directory accounts. (Python/FastAPI)}
+    \item {\small \textbf{LLMChessArena} (live) -- Any LLM vs any LLM over OpenRouter, with real-time WebSocket streaming, move-by-move Stockfish evaluation, and per-move token/cost tracking. (TypeScript)}
 \end{itemize}
 
 %---------- SKILLS ----------
 \section{Technical Skills}
 {\small
-\textbf{Security:} Penetration Testing, Red Teaming, Active Directory Attacks, Web/Network Security, Vulnerability Assessment, CTF Development\\
+\textbf{AI/LLM:} Multi-agent orchestration, RAG, Evals \& Guardrails, Prompt Engineering, OpenRouter, Claude, Gemini\\
 \textbf{Languages:} Python, TypeScript, JavaScript, Bash, SQL, Go\\
-\textbf{Cloud/DevOps:} Docker, Kubernetes, Terraform, Ansible, Packer, GitHub Actions, AWS (ECS, ECR, S3, IAM), GCP\\
-\textbf{Backend:} FastAPI, Django, Flask, Express, Celery, PostgreSQL, Redis, RabbitMQ, Nginx, Linux
+\textbf{Cloud/DevOps:} Docker, Kubernetes, Terraform, Ansible, Packer, GitHub Actions, AWS (ECS, ECR, IAM), GCP\\
+\textbf{Backend:} FastAPI, Django, Flask, Express, React, PostgreSQL, Redis, RabbitMQ, Nginx, Linux\\
+\textbf{Security:} Penetration Testing, Red Teaming, Active Directory, Vulnerability Assessment, CTF Development
 }
 
 %---------- EDUCATION ----------
@@ -85,9 +91,7 @@
 {\small
 \begin{itemize}
     \item \textbf{Guinness World Record (2024):} Largest CTF competition in the world -- BlackHat MEA
-    \item \textbf{Best Community Engagement (2025):} UAE CyberSecurity Awards
-    \item \textbf{Best Emirati Startup (2024):} GISEC UAE
-    \item \textbf{Outstanding CSE Student Award (2021):} American University of Sharjah
+    \item \textbf{Best Community Engagement (2025):} UAE CyberSecurity Awards \quad $\bullet$ \quad \textbf{Best Emirati Startup (2024):} GISEC UAE
     \item \textbf{12+ CTF Wins:} CyberBattle of Emirates, Dubai Police CTF, CyberTalents UAE, HITB Lockdown, CyberQuest
 \end{itemize}
 }
