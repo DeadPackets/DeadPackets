@@ -639,6 +639,66 @@
 			filter: brightness(1.08);
 		}
 
+		/* Public-projects gallery callout — subtle banner, text left / button right */
+		.gallery-callout {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1.5rem;
+			margin: 2.5rem 0 1rem;
+			padding: 1.05rem 1.35rem;
+			background: var(--bg-secondary);
+			border: 1px solid var(--border-color);
+			border-radius: 12px;
+		}
+		.gallery-callout-text {
+			line-height: 1.55;
+		}
+		.gallery-callout-text strong {
+			font-weight: 600;
+			font-size: 1rem;
+			color: var(--text-primary);
+		}
+		.gallery-callout-text span {
+			font-size: 0.875rem;
+			color: var(--text-secondary);
+		}
+		#main a.gallery-cta {
+			flex-shrink: 0;
+			display: inline-flex;
+			align-items: center;
+			gap: 0.45rem;
+			padding: 0.55rem 1.15rem;
+			font-weight: 600;
+			font-size: 0.9rem;
+			color: var(--accent-color);
+			background: transparent;
+			border: 1px solid color-mix(in srgb, var(--accent-color) 45%, transparent);
+			border-radius: 8px;
+			text-decoration: none;
+			background-image: none;
+			white-space: nowrap;
+			transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+		}
+		#main a.gallery-cta:hover {
+			background-color: color-mix(in srgb, var(--accent-color) 12%, transparent);
+			border-color: var(--accent-color);
+			transform: translateY(-1px);
+		}
+		.gallery-cta-arrow {
+			transition: transform 0.2s ease;
+		}
+		#main a.gallery-cta:hover .gallery-cta-arrow {
+			transform: translateX(3px);
+		}
+		@media (max-width: 600px) {
+			.gallery-callout {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.9rem;
+			}
+		}
+
 		/* Visible keyboard focus */
 		a:focus-visible,
 		button:focus-visible,
@@ -688,6 +748,8 @@
 			<a href="#-cat-resumetxt" class="nav-link">resume</a>
 			<span class="nav-separator">|</span>
 			<a href="#-ls--la-projects" class="nav-link">projects</a>
+			<span class="nav-separator">|</span>
+			<a href="https://projects.deadpackets.pw" class="nav-link" target="_blank" rel="noopener">gallery ↗</a>
 			<span class="nav-separator">|</span>
 			<a href="#-cat-skillstxt" class="nav-link">skills</a>
 			<span class="nav-separator">|</span>
@@ -867,6 +929,11 @@
     <td></td>
     </tr>
     </table>
+    </div>
+
+    <div class="gallery-callout">
+    <div class="gallery-callout-text"><strong>See all my public projects</strong><br/><span>Source code, live demos, and more, over in the gallery.</span></div>
+    <a class="gallery-cta" href="https://projects.deadpackets.pw">Open gallery <span class="gallery-cta-arrow">&rarr;</span></a>
     </div>
 
     </section>

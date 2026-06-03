@@ -140,6 +140,11 @@
 </table>
 </div>
 
+<div class="gallery-callout">
+<div class="gallery-callout-text"><strong>See all my public projects</strong><br/><span>Source code, live demos, and more, over in the gallery.</span></div>
+<a class="gallery-cta" href="https://projects.deadpackets.pw">Open gallery <span class="gallery-cta-arrow">&rarr;</span></a>
+</div>
+
 ## `$> cat skills.txt`
 
 <div class="row g-3 skills-grid">
