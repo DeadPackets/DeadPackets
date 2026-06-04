@@ -140,6 +140,11 @@
 </table>
 </div>
 
+<div class="gallery-callout">
+<div class="gallery-callout-text"><strong>See all my public projects</strong><br/><span>Source code, live demos, and more, over in the gallery.</span></div>
+<a class="gallery-cta" href="https://projects.deadpackets.pw">Open gallery <span class="gallery-cta-arrow">&rarr;</span></a>
+</div>
+
 ## `$> cat skills.txt`
 
 <div class="row g-3 skills-grid">
@@ -272,5 +277,5 @@
 </p>
 
 <p align="center">
-  <i>This README generates every 3 hours. It was last generated Wednesday, June 3rd 2026, 1:06:12.</i>
+  <i>This README generates every 3 hours. It was last generated Thursday, June 4th 2026, 1:05:31.</i>
 </p>
