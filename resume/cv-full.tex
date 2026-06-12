@@ -1,0 +1,152 @@
+%-------------------------
+% Extended CV for Youssef Awad (2-page "maximized" showcase)
+% Sources: resume/cv.tex, deadpackets.pw, projects.deadpackets.pw
+% Pillars: Software Engineering | Cybersecurity | Agentic AI | Problem Solving
+%-------------------------
+
+\documentclass[10pt,a4paper]{article}
+
+% Packages - minimal for ATS compatibility
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+% ATS-friendly formatting
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section formatting
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\vspace{-0.6em}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{7pt}{3pt}
+
+% Tight list spacing
+\setlist[itemize]{leftmargin=1.2em, noitemsep, topsep=1pt, parsep=0pt}
+
+% Hyperlink setup - no colors for ATS
+\hypersetup{colorlinks=false, pdfborder={0 0 0}}
+
+\newcommand{\dotsep}{\;\textperiodcentered\;}
+
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+    {\Large \textbf{Youssef Awad}}\\[2pt]
+    {\small youssef-awad@outlook.com $\mid$ +971507399008 $\mid$ UAE (GMT+4)}\\[2pt]
+    {\small \href{https://www.linkedin.com/in/youssef-awad/}{linkedin.com/in/youssef-awad} $\mid$ \href{https://github.com/DeadPackets}{github.com/DeadPackets} $\mid$ \href{https://deadpackets.pw}{deadpackets.pw} $\mid$ \href{https://projects.deadpackets.pw}{projects.deadpackets.pw}}
+\end{center}
+
+%---------- SUMMARY ----------
+\section{Summary}
+{\small Software engineer whose work spans the full stack, DevOps, and security, with a strong focus on agentic AI and an offensive-security background (OSCP). I co-founded CTFae and built the infrastructure behind the world's largest CTF: 10,000+ concurrent users, a Guinness World Record, and Best Emirati Startup at GISEC 2024. I solve real problems with code, move between cloud infrastructure, backend, frontend, and exploit development, automate the boring parts, and threat-model everything I build like an attacker.}
+
+\vspace{3pt}
+{\small \textbf{Core strengths:} full-stack engineering and platforms at scale, offensive security (OSCP), agentic AI systems, and solving hard problems end to end.}
+
+%---------- EXPERIENCE ----------
+\section{Professional Experience}
+
+{\small\textbf{Head of Engineering \& Co-Founder} $\mid$ \textbf{CTFae} -- Dubai, UAE \hfill 2021 -- Present}
+\begin{itemize}
+    \item {\small Architected the Challenge Deployment API (Python/FastAPI) for on-demand provisioning of containerized challenges to AWS ECS with auto-scaling, serving 10,000+ concurrent participants at BlackHat MEA (Guinness World Record, 2024).}
+    \item {\small Built the CyberRanges IaC platform (Terraform, Packer, Ansible) for automated multi-VM attack-defense environments across AWS and GCP, with GitHub Actions CI/CD and OIDC-based cloud authentication.}
+    \item {\small Developed an attack-defense checksystem (Python, Celery, PostgreSQL with PgCat pooling, Redis) for real-time scoring of 100+ teams simultaneously.}
+    \item {\small Owned full-stack platforms (FastAPI, Next.js) end to end: infrastructure, backend, frontend, and observability, all kept reliable under live event load.}
+    \item {\small Led engineering for 30+ global events, including the first Bug Bounty CTF at DEFCON 33, GITEX Dubai, the Bahrain National CTF, BSides Nashville (USA), HITB, and Dubai Police CTF.}
+\end{itemize}
+
+\vspace{3pt}
+
+{\small\textbf{Senior Cyber Security Consultant} $\mid$ \textbf{Malcrove} -- Dubai, UAE \hfill 2022 -- Dec 2025}
+\begin{itemize}
+    \item {\small Led penetration testing for UAE government and critical-infrastructure clients across web/mobile applications, internal/external networks, and wireless systems.}
+    \item {\small Achieved a 90\%+ success rate in obtaining Domain Admin privileges across 100+ Active Directory engagements.}
+    \item {\small Authored CVSS-scored vulnerability reports with proof-of-concept exploits and remediation guidance, and briefed non-technical executive leadership on risk.}
+\end{itemize}
+
+\vspace{3pt}
+
+{\small\textbf{Volunteer} $\mid$ \textbf{GDI.Foundation} -- Remote \hfill 2019 -- 2024}
+\begin{itemize}
+    \item {\small Contributed to responsible-disclosure and large-scale internet vulnerability remediation efforts for a non-profit focused on internet security.}
+\end{itemize}
+
+%---------- SELECTED PROJECTS ----------
+\section{Selected Projects}
+
+{\small\textbf{Agentic AI \& LLM Systems}}
+\begin{itemize}
+    \item {\small \textbf{ProjectHailMary} -- Solo-operated agentic vulnerability finder: one orchestrator drives 60+ charter-bearing subagents through a validation gauntlet (trace, PoC, CVSS, dedup) into a deterministic CLEAR/HOLD/REJECT verdict. 23 modules, 465+ tests. (Python)}
+    \item {\small \textbf{LLM-AD-Defense} -- Autonomous SOC analyst on Gemini 2.5 Pro: ingests Wazuh EDR alerts, reasons about the threat, and executes its own remediation, down to isolating a compromised Active Directory account. (Python/FastAPI)}
+    \item {\small \textbf{PiCodeReview} -- Multi-tier agentic code reviewer: cheap-model specialist hunters over-report, then a frontier-model judge re-reads the code and prunes the false positives. Built as a 30-minute take-home. (TypeScript)}
+    \item {\small \textbf{LLMChessArena} (live) -- Any LLM vs any LLM, Stockfish, or a human over OpenRouter, with real-time WebSocket streaming, move-by-move Stockfish evaluation, and per-move token/cost tracking. (TypeScript/React)}
+    \item {\small \textbf{BuzzerMinds} (live) -- Live multiplayer trivia game where every question is LLM-generated and grounded against real sources via SearXNG, with fact cards and strict schemas to keep the AI honest. (Next.js/FastAPI)}
+\end{itemize}
+
+\vspace{2pt}
+{\small\textbf{Platform, Infrastructure \& Security Tooling}}
+\begin{itemize}
+    \item {\small \textbf{Challenge Deployment API, CyberRanges, Attack-Defense Checksystem} -- production CTFae platforms operating at 10,000+ user scale (see Experience).}
+    \item {\small \textbf{pwnbox} -- Kali-based Docker container pre-loaded with offensive tooling, ZSH, and SSH for instant, reproducible pentest environments. (Shell/Docker)}
+    \item {\small \textbf{InfoSteal, HistoryThief, EmailCheck} -- browser-based security demos showing client-side information leakage, browser-history exfiltration via JS/CSS tricks, and multi-API breach checking. (JavaScript)}
+\end{itemize}
+
+\vspace{2pt}
+{\small\textbf{Data, Web \& Open Source}}
+\begin{itemize}
+    \item {\small \textbf{VisualizeAUS} (live) -- 20 years of university course data turned into an interactive exploration. (Python, Plotly, Quarto)}
+    \item {\small \textbf{AUSCrawl} -- crawler that pulls a Banner registration system into a clean, analyzable dataset, and a solid data-science playground. (Python)}
+    \item {\small \textbf{DOSArchive} (live) -- preserved my father's old DOS programs, emulated to run directly in the browser. (Astro)}
+\end{itemize}
+
+%---------- SKILLS ----------
+\section{Technical Skills}
+{\small
+\textbf{Applied AI / LLMs:} Multi-agent orchestration, RAG, evals \& guardrails, prompt engineering; Claude, Gemini, Codex, OpenRouter\\
+\textbf{Languages:} Python, TypeScript, JavaScript, Bash, SQL\\
+\textbf{Backend \& APIs:} FastAPI, Hono, Flask, Express, PostgreSQL, Redis, RabbitMQ, Celery, Pydantic, SQLAlchemy, Nginx\\
+\textbf{Frontend:} React, Next.js, Vite, Tailwind\\
+\textbf{Cloud \& DevOps:} Docker, Terraform, Ansible, Packer, GitHub Actions, AWS (ECS, ECR, IAM), GCP, Cloudflare, Linux\\
+\textbf{Security:} Penetration testing, red teaming, Active Directory, vulnerability assessment, exploit development, CTF design
+}
+
+%---------- EDUCATION ----------
+\section{Education \& Certifications}
+{\small
+\textbf{B.Sc. Computer Engineering} (Minor: Computer Science) -- American University of Sharjah, UAE \hfill 2017 -- 2022\\
+\textbf{OSCP} -- Offensive Security Certified Professional (Score: 90/100)
+}
+
+%---------- SPEAKING ----------
+\section{Speaking, Training \& Community}
+\begin{itemize}
+    \item {\small \textbf{HITB SecConf (Thailand, 2024):} delivered CTFae's first Cyber Drill workshop.}
+    \item {\small \textbf{CPX CyberAlley (2024):} invited talk on CTFae's story, growth, and engineering.}
+    \item {\small \textbf{HITB SECCONF (2021):} ran a two-day hands-on training on building Attack-Defense CTFs.}
+    \item {\small \textbf{GISEC (2020):} live demonstration of a Windows credential-stealing attack.}
+    \item {\small Cybersecurity educator and community builder; created the CrackTheHack educational series of interactive security demos.}
+\end{itemize}
+
+%---------- AWARDS ----------
+\section{Awards \& Recognition}
+\begin{itemize}
+    \item {\small \textbf{Guinness World Record (2024)} -- largest CTF competition in the world, BlackHat MEA.}
+    \item {\small \textbf{Best Community Engagement (2025)} -- UAE CyberSecurity Awards.}
+    \item {\small \textbf{Best Emirati Startup (2024)} -- GISEC, UAE \quad $\bullet$ \quad \textbf{Official CTF Partner for GISEC UAE (2024)}.}
+    \item {\small \textbf{Outstanding CSE Student Talent Award (2021)} -- American University of Sharjah.}
+\end{itemize}
+
+%---------- EVENTS & WINS ----------
+\section{Competition Wins \& Events Engineered}
+\begin{itemize}
+    \item {\small \textbf{Events engineered and hosted:} the first Bug Bounty CTF at DEFCON 33 (2025), the Dubai Cyber Security Challenge at GITEX (2025), the Bahrain National CTF (2025), BSides Nashville (2024--2025, first USA CTFs), BlackHat Saudi Arabia, HITB Amsterdam, GITEX Africa, the Dubai Police CTF, and the largest CTF in the Middle East at AtHack.}
+    \item {\small \textbf{First-place wins:} The Hunt SOCathon @ GISEC (2021), CyberKnight CTF (2020), CyberTalents UAE Regional (2019--2020), HITB Lockdown (2020), CyberBattle of the Emirates (2019), Dubai Police CTF (2019), and CyberQuest Attack \& Defence (2016, 2018).}
+    \item {\small \textbf{Additional placements:} 2nd, HITB AI Challenge (2019); 2nd, NYU CSAW Forensics (2016); 3rd, CyberTalents Arab Regional (2019).}
+\end{itemize}
+
+\end{document}
