@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /stories.html
+Sitemap: https://deadpackets.pw/sitemap.xml

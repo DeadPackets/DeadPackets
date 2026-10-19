@@ -1,0 +1,279 @@
+{
+ "old:localhost": {
+  "where": "DEF CON 33",
+  "story": "127.0.0.1 is still the safest place on the internet."
+ },
+ "old:elastic-logo": {
+  "where": "DEF CON 33",
+  "story": "Half of the Elastic pair. Both stickers came off the same booth."
+ },
+ "old:first-blood": {
+  "where": "BlackHat MEA 2024"
+ },
+ "old:elastic": {
+  "where": "DEF CON 33",
+  "story": "The other half of the Elastic pair."
+ },
+ "old:saikou-ctf": {
+  "where": "SaikoCTF @ HITBSecConf Thailand 2025",
+  "story": "1st place in Saiko CTF!"
+ },
+ "old:malcrove-ctf": {
+  "where": "Malcrove CTF",
+  "story": "From my Malcrove years, 2022 to 2025, as a senior security consultant."
+ },
+ "old:hitb-cyberweek": {
+  "where": "HITB CyberWeek 2021"
+ },
+ "old:first-blood-small": {
+  "where": "BlackHat MEA 2024",
+  "story": "The small First Blood. The big one is on this lid too."
+ },
+ "old:how-is-everyone": {
+  "where": "BlackHat MEA 2024",
+  "story": "The most honest sticker on this lid."
+ },
+ "old:red-beetle": {
+  "where": "HITBSecConf Thailand 2025"
+ },
+ "old:pixel-pirate": {
+  "where": "HITBSecConf Thailand 2025"
+ },
+ "old:game-over-dino": {
+  "where": "DEF CON 33",
+  "story": "The Chrome dino, out of lives."
+ },
+ "old:error-404": {
+  "where": "DEF CON 33",
+  "story": "Accurate for most of that week."
+ },
+ "old:saikou": {
+  "where": "SaikoCTF @ HITBSecConf Thailand 2025",
+  "story": "1st place!"
+ },
+ "old:no-comment": {
+  "where": "DEF CON 33",
+  "story": "No further comments."
+ },
+ "old:h1-bug": {
+  "where": "GISEC 2024",
+  "story": "HackerOne's bug, next to its 1 on the other laptop."
+ },
+ "old:fastly": {
+  "where": "GISEC 2024"
+ },
+ "old:cve-connoisseur": {
+  "where": "DEF CON 33"
+ },
+ "old:view-source": {
+  "where": "DEF CON 33",
+  "story": "Where every web challenge starts."
+ },
+ "old:strike-first": {
+  "where": "DEF CON 33",
+  "story": "Good advice for anyone still writing C."
+ },
+ "old:retro-computer": {
+  "where": "DEF CON Bahrain 2025"
+ },
+ "old:athack-2021": {
+  "where": "@Hack 2021",
+  "story": "One of the oldest stickers on this lid."
+ },
+ "old:nullcon-heart": {
+  "where": "BSides Nashville 2025",
+  "story": "A nullcon heart that I picked up in Nashville."
+ },
+ "old:live-waf-love": {
+  "where": "GISEC 2024"
+ },
+ "old:hitb-cube": {
+  "where": "HITB 2021",
+  "story": "From HITB, the same year as the CyberWeek training."
+ },
+ "old:hack-make-build-break": {
+  "where": "HITB 2021",
+  "story": "Four verbs. I do all of them, in that order on a good week."
+ },
+ "old:capture-the-signal": {
+  "where": "DEF CON 33",
+  "story": "From the radio CTF at DEF CON."
+ },
+ "old:ctrl-z": {
+  "where": "BSides Nashville 2024"
+ },
+ "old:elite-first-blood": {
+  "where": "Malcrove CTF"
+ },
+ "old:everything-ctrl": {
+  "where": "BSides Nashville 2024",
+  "story": "It goes with the Ctrl+Z one."
+ },
+ "old:hack-the-earth": {
+  "where": "DEF CON 33"
+ },
+ "old:gone-phishing": {
+  "where": "BSides Nashville 2024"
+ },
+ "old:blackhat-square": {
+  "where": "BlackHat MEA 2024",
+  "story": "The square one, from the same BlackHat MEA as the big one."
+ },
+ "old:blackhat": {
+  "where": "BlackHat MEA 2024"
+ },
+ "old:hex-cube": {
+  "where": "HITBSecConf Thailand 2025"
+ },
+ "new:octopus": {
+  "story": "Our mascot for xenoptic, the challenge we built for DEF CON 34 BugBounty CTF!",
+  "link": "https://ctf.ae/stories/defcon-bbv-2026/",
+  "where": "DEF CON 34"
+ },
+ "new:dreamhack": {
+  "title": "Miku",
+  "where": "DreamHack Dallas 2025"
+ },
+ "new:death-mountain": {
+  "where": "DreamHack Dallas 2025",
+  "story": "Zelda. Death Mountain, Eldin region."
+ },
+ "new:d20-red": {
+  "where": "DreamHack Dallas 2025",
+  "story": "One of a pair of d20s. The blue one is here too."
+ },
+ "new:d20-blue": {
+  "where": "DreamHack Dallas 2025",
+  "story": "One of a pair of d20s. The red one is here too."
+ },
+ "new:computer-noise": {
+  "where": "DEF CON 34"
+ },
+ "new:trash-fire": {
+  "where": "DEF CON 34",
+  "story": "Every incident channel, as a sticker."
+ },
+ "new:terrible-idea": {
+  "where": "DEF CON 34"
+ },
+ "new:star": {
+  "where": "DEF CON 34",
+  "story": "Typo included."
+ },
+ "new:skull": {
+  "where": "DEF CON 34"
+ },
+ "new:sheikah-slate": {
+  "where": "DreamHack Dallas 2025",
+  "story": "More Zelda. The Sheikah Slate."
+ },
+ "new:serum-x": {
+  "where": "DEF CON 33"
+ },
+ "new:oregon-trail": {
+  "where": "DEF CON 33"
+ },
+ "new:eat-the-rich": {
+  "where": "DEF CON 34"
+ },
+ "new:bbv-2025-ctf": {
+  "where": "DEF CON 33"
+ },
+ "new:anti-hacker-club": {
+  "where": "DEF CON 33"
+ },
+ "new:wink-smiley": {
+  "where": "DreamHack Dallas 2025"
+ },
+ "new:wash-hands": {
+  "where": "DEF CON 33"
+ },
+ "new:try-harder": {
+  "where": "DEF CON 33"
+ },
+ "new:ship-it": {
+  "where": "DEF CON 34"
+ },
+ "new:pig-key": {
+  "where": "DEF CON 34"
+ },
+ "new:liveoverflow": {
+  "where": "DEF CON 33",
+  "story": "One of my favorite YouTubers!"
+ },
+ "new:hylian-crest": {
+  "where": "DreamHack Dallas 2025",
+  "story": "The Zelda set keeps growing."
+ },
+ "new:http-must-die": {
+  "where": "DEF CON 33",
+  "story": "HTTP/1.1 desync bugs are still everywhere."
+ },
+ "new:hitb-genequest": {
+  "where": "DEF CON 33"
+ },
+ "new:hack-the-desert": {
+  "where": "DEF CON Bahrain 2025"
+ },
+ "new:h1": {
+  "where": "DEF CON 33",
+  "story": "HackerOne's 1, next to its bug on the other laptop."
+ },
+ "new:dice-pile": {
+  "where": "DreamHack Dallas 2025"
+ },
+ "new:defcon32-hotline": {
+  "where": "DEF CON 33",
+  "story": "A DEF CON 32 sticker that I picked up at DEF CON 33."
+ },
+ "new:defcon": {
+  "where": "DEF CON 34"
+ },
+ "new:cuh": {
+  "where": "DEF CON 34",
+  "story": "Certified, unethically."
+ },
+ "new:bbv-green": {
+  "where": "DEF CON 34",
+  "story": "From the Bug Bounty Village. We built a challenge for its CTF that year."
+ },
+ "new:dns": {
+  "where": "DEF CON 33",
+  "story": "The counter is always at zero."
+ },
+ "old:capture-the-flag": {
+  "link": "https://www.linkedin.com/posts/descofficial_dubai-cybersecurity-gisec2025-ugcPost-7323753058398535680-vfpl",
+  "where": "Dubai Cyber Security Challenge @ GITEX 2025"
+ },
+ "old:ctf-dot": {
+  "where": "ADQ CTF",
+  "link": "https://www.linkedin.com/posts/adq-in-partnership-with-malcrove-powered-ugcPost-7151238606244720640-2FQk/"
+ },
+ "new:pink-crystal": {
+  "where": "DreamHack Dallas 2025",
+  "title": "Kirby Down Special"
+ },
+ "old:astronaut": {
+  "where": "DEF CON 34"
+ },
+ "old:seniors-2023": {
+  "where": "Brother's Graduation",
+  "story": "My brother's class of 2023."
+ },
+ "new:ctfae-wide": {
+  "where": "CTF.ae Rebranding",
+  "story": "Made for the CTF.ae rebrand."
+ },
+ "old:ctfae-flag-blue": {
+  "where": "CTF.ae",
+  "story": "The blue version of our flag."
+ },
+ "old:ctfae-light": {
+  "where": "CTF.ae",
+  "story": "One of ours. I co-founded CTFae in 2021."
+ },
+ "new:ctfae-flag": {
+  "where": "CTF.ae",
+  "story": "The CTF.ae flag made it onto the new laptop too."
+ }
+}
