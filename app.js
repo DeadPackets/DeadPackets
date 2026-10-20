@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import Lenis from 'lenis';
 import { FLAG, LAPTOP } from './ui.js';
@@ -14,7 +15,7 @@ const LIT = qs.get('lit') === '1';
 const OG = qs.get('og') === '1'; // social card: both laptops + title, screenshot by qa/og.mjs
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const mobile = matchMedia('(max-width: 820px)').matches;
-// old lid pose in the stage photo (me-2400.jpg): cv2.solvePnP on the fitted lid quad, f = 2800 px
+// old lid pose in the stage photo (me-2400.webp): cv2.solvePnP on the fitted lid quad, f = 2800 px
 const PHOTO = { w: 1600, h: 1066, f: 2800, quad: [[700, 566], [1119.5, 588.6], [1136.4, 874], [715.1, 876.7]],
   m: [0.966401, -0.040314, -0.253859, 0, -0.039127, 0.953042, -0.300299, 0, 0.254045, 0.300142, 0.919443, 0, 0.941265, -1.475743, -21.636253, 1] }; // real MateBook D16 lid (356.7 x 248 mm): 3.5 px max reprojection error
 const LIDW = { old: 3.4, new: 3.1 }; // world units; the old 15.6" lid is wider than the new 14"
@@ -165,7 +166,7 @@ async function start() {
   const camera = new THREE.PerspectiveCamera(THREE.MathUtils.radToDeg(FOVP), PHOTO.w / PHOTO.h, 0.5, 400);
 
   // ---------- laptops ----------
-  const gltfLoader = new GLTFLoader(), models = Object.fromEntries(Object.entries({ old: 'matebook-d16', new: 'macbook-pro-16' }).map(([k, f]) => [k, Promise.all([fetch(`models/${f}.json`).then((r) => r.json()), gltfLoader.loadAsync(`models/${f}.glb`)])]));
+  const gltfLoader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder), models = Object.fromEntries(Object.entries({ old: 'matebook-d16', new: 'macbook-pro-16' }).map(([k, f]) => [k, Promise.all([fetch(`models/${f}.json`).then((r) => r.json()), gltfLoader.loadAsync(`models/${f}.glb`)])])); // glb: models/build.py output, then gltfpack -c -kn -km -kv -ke -vtf (meshopt; -vtf: the key legends are drawn in code, so UVs stay float, ~85% smaller over the wire)
   const printerM = Promise.all([fetch('models/printer.json').then((r) => r.json()), gltfLoader.loadAsync('models/printer.glb'), loadTex('screens/ticket.webp')]);
   const shots = {}; const shotTex = (n) => (shots[n] ||= loadTex(`screens/${n}.webp`).then((t) => { t.anisotropy = maxAniso; renderer.initTexture(t); return t; })); // uploaded on arrival, not on the transition frame that first shows it
   async function buildLaptop(k) {
@@ -411,7 +412,7 @@ async function start() {
     return s;
   }
   shotList = secs.filter((s) => s.dataset.shot).map((s) => s.dataset.shot);
-  const shotTexs = await Promise.all(shotList.map(shotTex));
+  const shotTexs = shotList.map(() => null), shotK = shotList.map((n) => secs.findIndex((s) => s.dataset.shot === n)); // fetched as their moment comes near, like the videos
   // LLMChessArena: a real finished game from production, stepped move by move (recorded by qa, 15 s loop); plays only while its moment is on screen
   const vids = ['llmchess', 'dosarchive'].map((k) => { // looping screen recordings, fetched only as their moment comes near (SUN.EXE: one tour of the real program, not a live emulator)
     const o = { i: shotList.indexOf(k), k: secs.findIndex((s) => s.dataset.shot === k), v: Object.assign(document.createElement('video'), { muted: true, loop: true, playsInline: true, preload: 'none', src: `screens/${k}.mp4` }), fresh: false };
@@ -513,7 +514,6 @@ async function start() {
     bzTex.needsUpdate = phTex.needsUpdate = true;
   }
   bzDraw(0); Promise.all([document.fonts?.load(disp(800, 40)), document.fonts?.load(sans(700, 40))]).then(() => bzDraw(0));
-  // SUN.EXE (Yasser Awad, 1993) live on the MacBook screen, on autopilot: it boots in the background from page load (about 20 s at the bundle's 300 cycles), then runs only while its moment is on screen
   let states = [], tops = [];
   const lvhEl = document.createElement('div'); lvhEl.style.cssText = 'position:absolute;top:0;width:0;height:100lvh;visibility:hidden;pointer-events:none'; document.body.append(lvhEl);
   const lvh = () => lvhEl.offsetHeight || innerHeight; // the stage keeps the large viewport: a phone toolbar showing or hiding never re-lays out the scene
@@ -521,10 +521,10 @@ async function start() {
     Wc = innerWidth; Hc = lvh(); portrait = matchMedia('(max-width: 820px), (max-aspect-ratio: 19/20)').matches && Hc > 500; // same test as the CSS phone layout; short landscape uses the desktop poses
     renderer.setSize(Wc, Hc, false);
     const pins = secs.map((s) => (s.classList.contains('step') && s.dataset.scene !== 'hero' ? s.querySelector('.inner') : null));
-    pins.forEach((el) => el && Object.assign(el.style, { position: '', top: '', bottom: '', left: '', width: '' })); // poses read the copy's place in the flow: measure before pinning
+    pins.forEach((el) => el && (el.classList.remove('pin'), Object.assign(el.style, { position: '', top: '', bottom: '', left: '', width: '' }))); // poses read the copy's place in the flow: measure before pinning
     states = secs.map(stateOf); tops = secs.map((s) => s.getBoundingClientRect().top + scrollY);
     const r = pins.map((el) => el && el.getBoundingClientRect()), sr = secs.map((s) => s.getBoundingClientRect());
-    pins.forEach((el, n) => { if (!el) return; const up = r[n].top - sr[n].top, down = sr[n].bottom - r[n].bottom; // the copy stays put while you read; a phone card sits on the bottom of the visible screen
+    pins.forEach((el, n) => { if (!el) return; const up = r[n].top - sr[n].top, down = sr[n].bottom - r[n].bottom; el.classList.add('pin'); // the copy stays put while you read; a phone card sits on the bottom of the visible screen
       Object.assign(el.style, { position: 'fixed', left: r[n].left + 'px', width: r[n].width + 'px', zIndex: 3 }, root.classList.contains('gl') ? {} : { visibility: 'hidden' }, portrait && down < up ? { top: 'auto', bottom: down + 'px' } : { top: up + 'px', bottom: 'auto' }); }); // hidden until the loop runs: stacked copy before the reveal
     tops = secs.map((s) => s.getBoundingClientRect().top + scrollY); // a section can shrink once its copy leaves the flow
   }
@@ -811,11 +811,12 @@ async function start() {
     for (const tr of terms) { const near = tr.k >= 0 && Math.abs(Ps - tr.k) < 0.8; if (near && !tr.on) tr.t0 = now; tr.on = near; if (near && frameN % 2 === 0) { tr.tm.draw((now - tr.t0) / 1000); tr.tex.needsUpdate = true; } }
     if (buzzK >= 0 && Math.abs(Ps - buzzK) < 0.8 && frameN === 0) bzDraw((now / 1000) % 12);
     // screens: cross-fade between the two scenes' screenshots, lit only once the lid is open
+    shotList.forEach((n, i) => { if (!shotTexs[i] && !shots[n] && Math.abs(Ps - shotK[i]) < 2.5) shotTex(n).then((t) => { shotTexs[i] ||= t; shownShot[0] = shownShot[1] = -2; }); });
     for (const o of vids) { if (o.fresh) { o.fresh = false; shownShot[0] = shownShot[1] = -2; } if (o.v.preload === 'none' && Math.abs(Ps - o.k) < 2.5) { o.v.preload = 'auto'; o.v.load(); }
       const see = o.k >= 0 && Math.abs(Ps - o.k) < 0.6 && !document.hidden; if (see === o.v.paused) see ? o.v.play().catch(() => {}) : o.v.pause(); }
     const dsp = lps.new.displays, on = sstep(-0.6, 0.1, lps.new.pivot.rotation.x);
     for (const [n, shot] of [[0, a.shot], [1, b.shot]]) {
-      if (shownShot[n] !== shot) { shownShot[n] = shot; dsp[n].material.map = shot >= 0 ? shotTexs[shot] : null; dsp[n].material.color.set(shot >= 0 ? 0xffffff : 0x000000); dsp[n].material.needsUpdate = true; }
+      if (shownShot[n] !== shot) { shownShot[n] = shot; dsp[n].material.map = shot >= 0 ? shotTexs[shot] : null; dsp[n].material.color.set(dsp[n].material.map ? 0xffffff : 0x000000); dsp[n].material.needsUpdate = true; }
     }
     dsp[0].material.opacity = (a.shot >= 0 ? 1 : 0) * on; dsp[1].material.opacity = (b.shot >= 0 ? h : 0) * on;
     film.classList.toggle('on', Ps > stripK[0] - 0.5 && Ps < stripK[1] + 0.5); const sn = beats.indexOf(secs[Math.round(Ps)]);

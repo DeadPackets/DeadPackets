@@ -291,6 +291,7 @@ footer p { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 .static .hero { min-height: 90svh; }
 html:not(.gl) .shot { display: block; margin-top: 8px; } /* static path, and the stand-in while the laptops load */
 html:not(.gl):not(.static) .shot { max-height: 34vh; width: auto; max-width: 100%; }
+.inner.pin .shot { display: none; } /* pinned copy stays hidden until the reveal; a shown stand-in there counts as on screen and every lazy image loads */
 .static .finale .lidpair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px auto 0; max-width: 1180px; }
 .static .finale { flex-direction: column; align-items: center; }
 .static .lidpair img { width: 100%; height: auto; border-radius: 12px; }
