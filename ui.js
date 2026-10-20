@@ -37,7 +37,8 @@ async function initCards() {
   for (const b of document.querySelectorAll('[data-sticker]')) { // the canvas stickers as buttons: keyboard and screen-reader users reach every story; shown when focused
     const ks = [b.dataset.sticker, ...(b.dataset.swarm || '').split(',')].filter((k) => E[k]); if (!ks.length) continue;
     const g = document.createElement('div'); g.className = 'swarm'; g.setAttribute('role', 'group'); g.setAttribute('aria-label', 'Stickers in this story');
-    const ls = ks.map(name); g.innerHTML = ks.map((k, i) => `<button type="button" data-show="${k}">${ls.indexOf(ls[i]) !== ls.lastIndexOf(ls[i]) ? E[k].name.replace(/[<&"]/g, '') : ls[i]}</button>`).join(''); // two "Blackhat"s: keep the full names g.addEventListener('click', (ev) => { const t = ev.target.closest('[data-show]'); if (t) window.openCard(t.dataset.show); });
+    const ls = ks.map(name); g.innerHTML = ks.map((k, i) => `<button type="button" data-show="${k}">${ls.indexOf(ls[i]) !== ls.lastIndexOf(ls[i]) ? E[k].name.replace(/[<&"]/g, '') : ls[i]}</button>`).join(''); // two "Blackhat"s: keep the full names
+    g.addEventListener('click', (ev) => { const t = ev.target.closest('[data-show]'); if (t) window.openCard(t.dataset.show); });
     b.querySelector('.inner').append(g);
   }
   if (!idx) return;
