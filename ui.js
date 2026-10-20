@@ -97,13 +97,13 @@ function initShell() {
   document.querySelector('.tilde').addEventListener('click', open);
 }
 
-// CV: blocks ease in as they arrive and the numbers count up; without this script everything is already in place
+// CV: numbers count up as they arrive (the blocks fade in from style.css); without this script everything is already in place
 if (document.querySelector('.cv-sec') && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const ease = 'cubic-bezier(0.22, 1, 0.36, 1)';
-  const count = (el) => { const m = el.textContent.match(/^([\d,]+)(.*)$/), n = m && +m[1].replace(/,/g, ''); if (!m || (n > 1900 && n < 2100)) return; const t0 = performance.now(); // years stay put
-    const step = (t) => { const k = Math.min(1, (t - t0) / 900); el.textContent = Math.round(n * (1 - (1 - k) ** 4)).toLocaleString('en-US') + m[2]; if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); };
-  const io = new IntersectionObserver((es) => es.forEach((e) => { if (!e.isIntersecting) return; io.unobserve(e.target);
-    e.target.animate([{ opacity: 0, transform: 'translateY(14px)' }, { opacity: 1, transform: 'none' }], { duration: 600, easing: ease, delay: (+e.target.dataset.i || 0) * 50, fill: 'backwards' });
-    e.target.querySelectorAll('.facts b').forEach(count); }), { rootMargin: '0px 0px -8% 0px' });
-  document.querySelectorAll('.cv-sec > h3, .cv-role, .cv-rec > div, .cv-stack > div, .cv-edu li, .cv-built li').forEach((el, i) => { el.dataset.i = i % 6; io.observe(el); });
+  const count = (el, n, sfx) => { const t0 = performance.now(); const step = (t) => { const k = Math.min(1, (t - t0) / 900); el.textContent = Math.round(n * (1 - (1 - k) ** 4)).toLocaleString('en-US') + sfx; if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); };
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { io.unobserve(e.target); count(e.target, ...e.target._n); } }));
+  for (const el of document.querySelectorAll('.cv .facts b')) {
+    const m = el.textContent.match(/^([\d,]+)(.*)$/), n = m && +m[1].replace(/,/g, '');
+    if (!m || (n > 1900 && n < 2100) || el.getBoundingClientRect().top < innerHeight) continue; // years stay put; a number already on screen never resets
+    el._n = [n, m[2]]; el.textContent = '0' + m[2]; io.observe(el);
+  }
 }

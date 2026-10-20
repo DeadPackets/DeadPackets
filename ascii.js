@@ -35,7 +35,7 @@ export function asciiBg() {
   size(); addEventListener('resize', size);
   // m, l: cursor and laptop in 0..1, y up; pool: how lit the laptop's pool is; k: tint (rgb, linear-ish)
   return function draw(now, m, l, pool, k, still) {
-    if (now - last < 33 && !still) return; last = now; const t = still ? 0 : now / 1000; // 30 fps is plenty for drifting light
+    if (now - last < (innerWidth < 821 ? 66 : 33) && !still) return; last = now; const t = still ? 0 : now / 1000; // drifting light: 30 fps is plenty, 15 on a phone
     gl.bindFramebuffer(gl.FRAMEBUFFER, fb); gl.viewport(0, 0, cols, rows); gl.useProgram(pf);
     gl.uniform2f(u(pf, 'C'), cols, rows); gl.uniform1f(u(pf, 'T'), t); gl.uniform1f(u(pf, 'A'), W / H); gl.uniform1f(u(pf, 'P'), pool); gl.uniform2f(u(pf, 'M'), m.x, m.y); gl.uniform2f(u(pf, 'L'), l.x, l.y);
     gl.drawArrays(gl.TRIANGLES, 0, 3);

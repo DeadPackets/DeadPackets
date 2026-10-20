@@ -3,7 +3,6 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import Lenis from 'lenis';
-import Snap from 'lenis/snap';
 import { FLAG, LAPTOP } from './ui.js';
 import { asciiBg } from './ascii.js';
 import { makeTerm, AD } from './term.js';
@@ -167,9 +166,8 @@ async function start() {
 
   // ---------- laptops ----------
   const gltfLoader = new GLTFLoader(), models = Object.fromEntries(Object.entries({ old: 'matebook-d16', new: 'macbook-pro-16' }).map(([k, f]) => [k, Promise.all([fetch(`models/${f}.json`).then((r) => r.json()), gltfLoader.loadAsync(`models/${f}.glb`)])]));
-  const dosBundle = fetch('https://projects.deadpackets.pw/DOSArchive/bundles/brave-sun.jsdos').then((r) => r.ok ? r.arrayBuffer() : null).catch(() => null); // SUN.EXE: fetched with everything else
   const printerM = Promise.all([fetch('models/printer.json').then((r) => r.json()), gltfLoader.loadAsync('models/printer.glb'), loadTex('screens/ticket.webp')]);
-  const shots = {}; const shotTex = (n) => (shots[n] ||= loadTex(`screens/${n}.webp`).then((t) => { t.anisotropy = maxAniso; return t; }));
+  const shots = {}; const shotTex = (n) => (shots[n] ||= loadTex(`screens/${n}.webp`).then((t) => { t.anisotropy = maxAniso; renderer.initTexture(t); return t; })); // uploaded on arrival, not on the transition frame that first shows it
   async function buildLaptop(k) {
     const data = all[k], lid = data.lid, [info, gltf] = await models[k], { W, H, D } = info, s = W / lid.w, dark = k === 'new';
     const alu = new THREE.MeshPhysicalMaterial({ color: srgbColor(lid.base_rgb), metalness: 0.7, roughness: dark ? 0.42 : 0.34, clearcoat: 0.2, clearcoatRoughness: 0.3 });
@@ -399,7 +397,7 @@ async function start() {
     if (sc === 'built') return { ...s, new: P ? { x: 0, y: 0.14, z: fit(n, 0.86, 0.4), rx: 0.42, ry: 0.15, a: -Math.PI / 2 + 0.035 } : { x: 0, y: -0.03, z: fit(n, 0.6, 0.7), rx: 0.42, ry: 0.42, a: -Math.PI / 2 + 0.035 } }; // closed, seen from the hinge side: the stickers read upright, the edge shows its ports
     if (sc === 'project' && sec.dataset.shot === 'buzzerminds' && !P) return { ...s, buzz: 1, new: { x: 0.03, y: 0.07, z: fit(n, 0.36, 0.56), rx: 0.12, ry: Math.PI - 0.12, a: 0.14 }, shot: shotList.indexOf('buzzerminds') }; // room for the phone
     if (sc === 'project' && sec.dataset.shot === 'faxmemaybe' && !P) return { ...s, fax: 1, new: { x: 0.03, y: 0.07, z: fit(n, 0.36, 0.56), rx: 0.16, ry: Math.PI - 0.16, a: 0.12 }, shot: shotList.indexOf('faxmemaybe') }; // room for the printer
-    if (sc === 'project') return { ...s, new: P ? (() => { const t = Math.max(0.3, (sec.querySelector('.inner').offsetTop - sec.offsetTop) / Hc - 0.02), b = 64 / Hc; const fx = sec.dataset.shot === 'faxmemaybe' || sec.dataset.shot === 'buzzerminds'; return { x: fx ? -0.16 : 0, y: 0.5 - (b + (t - b) / 2), z: fit(n, fx ? 0.66 : 0.94, (t - b) * 0.8), rx: 0.1, ry: Math.PI, a: 0.22 }; })() : (document.querySelectorAll('[data-shot]').length && [...document.querySelectorAll('[data-shot]')].indexOf(sec) % 2 ? { x: 0.15, y: 0.05, z: fit(n, 0.45, 0.66), rx: 0.16, ry: Math.PI - 0.16, a: 0.12 } : { x: 0.13, y: 0.03, z: fit(n, 0.47, 0.7), rx: 0.08, ry: Math.PI + 0.05, a: 0.2 }), shot: shotList.indexOf(sec.dataset.shot), fax: sec.dataset.shot === 'faxmemaybe' ? 1 : 0, buzz: sec.dataset.shot === 'buzzerminds' ? 1 : 0 }; // phone: the MacBook fills the space above the copy card
+    if (sc === 'project') return { ...s, new: P ? (() => { const t = Math.max(0.3, (sec.querySelector('.inner').offsetTop - sec.offsetTop) / Hc - 0.02), b = 64 / Hc; const fx = sec.dataset.shot === 'faxmemaybe' || sec.dataset.shot === 'buzzerminds'; return { x: fx ? -0.16 : 0, y: 0.5 - (b + (t - b) / 2), z: fit(n, fx ? 0.66 : 0.94, (t - b) * 1.1), rx: 0.1, ry: Math.PI, a: 0.22 }; })() : (document.querySelectorAll('[data-shot]').length && [...document.querySelectorAll('[data-shot]')].indexOf(sec) % 2 ? { x: 0.15, y: 0.05, z: fit(n, 0.45, 0.66), rx: 0.16, ry: Math.PI - 0.16, a: 0.12 } : { x: 0.13, y: 0.03, z: fit(n, 0.47, 0.7), rx: 0.08, ry: Math.PI + 0.05, a: 0.2 }), shot: shotList.indexOf(sec.dataset.shot), fax: sec.dataset.shot === 'faxmemaybe' ? 1 : 0, buzz: sec.dataset.shot === 'buzzerminds' ? 1 : 0 }; // phone: the MacBook fills the space above the copy card
     if (sc === 'cv') return { ...s, co: 0, new: { x: 0.2, y: -0.04, z: zn * 1.3, rx: 0.08, ry: Math.PI + 0.32, a: 0.26 } };
     if (sc === 'finale') {
       if (OG) { const zg = Math.max(fit(o, 0.42, 0.62), fit(n, 0.42, 0.62)); return { ...s, old: { x: -0.22, y: -0.14, z: zg, rx: 0.16, ry: 0.3, a: 0.2 }, new: { x: 0.22, y: -0.14, z: zg, rx: 0.16, ry: -0.3, a: 0.2 } }; }
@@ -415,8 +413,10 @@ async function start() {
   shotList = secs.filter((s) => s.dataset.shot).map((s) => s.dataset.shot);
   const shotTexs = await Promise.all(shotList.map(shotTex));
   // LLMChessArena: a real finished game from production, stepped move by move (recorded by qa, 15 s loop); plays only while its moment is on screen
-  const chessI = shotList.indexOf('llmchess'), chessK = secs.findIndex((s) => s.dataset.shot === 'llmchess'), chessV = Object.assign(document.createElement('video'), { muted: true, loop: true, playsInline: true, preload: 'none', src: 'screens/llmchess.mp4' }); let chessNew = false;
-  if (chessI >= 0) chessV.addEventListener('loadeddata', () => { const t = new THREE.VideoTexture(chessV); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = maxAniso; shotTexs[chessI] = t; chessNew = true; }, { once: true });
+  const vids = ['llmchess', 'dosarchive'].map((k) => { // looping screen recordings, fetched only as their moment comes near (SUN.EXE: one tour of the real program, not a live emulator)
+    const o = { i: shotList.indexOf(k), k: secs.findIndex((s) => s.dataset.shot === k), v: Object.assign(document.createElement('video'), { muted: true, loop: true, playsInline: true, preload: 'none', src: `screens/${k}.mp4` }), fresh: false };
+    if (o.i >= 0) o.v.addEventListener('loadeddata', () => { const t = new THREE.VideoTexture(o.v); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = maxAniso; shotTexs[o.i] = t; o.fresh = true; }, { once: true });
+    return o; });
   // PHM and LLM-AD-Defense: each session plays live from its first keystroke when its moment comes on screen (term.js)
   const terms = [['ad', AD]].map(([nm, sess]) => { const i = shotList.indexOf(nm), tm = makeTerm(sess), tex = new THREE.CanvasTexture(tm.canvas); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = maxAniso; tm.draw(sess.dur - 0.6); if (i >= 0) shotTexs[i] = tex; return { k: secs.findIndex((s) => s.dataset.shot === nm), tm, tex, t0: 0, on: false }; });
   // BuzzerMinds: the MacBook is the room's big screen with a live question, a phone beside it is one player answering; both drawn each frame, an 11 s loop
@@ -514,43 +514,19 @@ async function start() {
   }
   bzDraw(0); Promise.all([document.fonts?.load(disp(800, 40)), document.fonts?.load(sans(700, 40))]).then(() => bzDraw(0));
   // SUN.EXE (Yasser Awad, 1993) live on the MacBook screen, on autopilot: it boots in the background from page load (about 20 s at the bundle's 300 cycles), then runs only while its moment is on screen
-  const dosI = shotList.indexOf('dosarchive'), dosK = secs.findIndex((s) => s.dataset.shot === 'dosarchive');
-  const dosCv = Object.assign(document.createElement('canvas'), { width: 1280, height: 800 }), dctx = dosCv.getContext('2d'), raw = document.createElement('canvas'), rctx = raw.getContext('2d', { willReadFrequently: true }), dosTex = new THREE.CanvasTexture(dosCv);
-  dosTex.colorSpace = THREE.SRGBColorSpace; let ci = null, dosOn = false, dosImg = null;
-  const DOS = { phase: 'pre', t: 0, i: 0, wait: 0 }; // pre: DOSBox banner, then 5 s of black; boot: verse, splash, sunset; sync: back to menu item 1; loop: the tour
-  const TOUR = { boot: [[1500, 257], [6500, 257], [13500, 257]], bootMs: 20000, loopMs: 48000, // js-dos keys: 257 Enter, 256 Esc, 264 Down, 265 Up; a key sent while a page draws can be lost, so the gaps are wide
-    loop: [[0, 257], [3000, 257], [13000, 256], [19500, 264], [20500, 257], [24000, 257], [28000, 257], [32000, 257], [41000, 256]] }; // planets orbiting the sun, then sun over the sea, Earth's orbit, the seasons
-  const press = (c) => { ci.sendKeyEvent(c, true); setTimeout(() => ci?.sendKeyEvent(c, false), 90); };
-  const menuRow = () => { // the highlighted (red) row of the main menu, -1 when the menu is not up
-    if (raw.height !== 480) return -1; const d = rctx.getImageData(370, 160, 230, 240).data; let best = -1, bn = 40;
-    for (let r = 0; r < 5; r++) { let n = 0; for (let y = r * 48; y < r * 48 + 36; y++) for (let x = 0; x < 230; x++) { const i = (y * 230 + x) * 4; if (d[i] > 190 && d[i + 1] < 90 && d[i + 2] < 90) n++; } if (n > bn) { bn = n; best = r; } }
-    return best;
-  };
-  const dosStep = (ms) => {
-    DOS.t += ms;
-    if (DOS.phase === 'boot' || DOS.phase === 'loop') {
-      const keys = DOS.phase === 'boot' ? TOUR.boot : TOUR.loop; while (DOS.i < keys.length && DOS.t >= keys[DOS.i][0]) press(keys[DOS.i++][1]);
-      if (DOS.t >= (DOS.phase === 'boot' ? TOUR.bootMs : TOUR.loopMs)) Object.assign(DOS, { phase: 'sync', t: 0, i: 0, wait: 0 });
-    } else if (DOS.phase === 'sync' && DOS.t >= DOS.wait) { const r = menuRow(); if (r === 0) Object.assign(DOS, { phase: 'loop', t: 0, i: 0 }); else { press(r > 0 ? 265 : 256); DOS.wait = DOS.t + (r > 0 ? 700 : 6000); } } // Up from rows 2-5 only: Up on row 1 wraps to Exit
-  };
-  if (dosI >= 0 && window.emulators) (async () => {
-    emulators.pathPrefix = 'https://cdn.jsdelivr.net/npm/js-dos@8.4.1/dist/emulators/';
-    const bundle = await dosBundle; if (!bundle) return;
-    ci = await emulators.dosboxWorker(new Uint8Array(bundle)); dosOn = true;
-    const size = (w, h) => { if (!w || !h) return; raw.width = w; raw.height = h; dosImg = rctx.createImageData(w, h); if (h === 480 && DOS.phase === 'pre') DOS.phase = 'boot'; }; // 0x0 happens at start
-    ci.events().onFrameSize(size); size(ci.width(), ci.height());
-    ci.events().onFrame((rgb, rgba) => {
-      if (!dosImg) return; const d = dosImg.data; if (rgba) d.set(rgba); else for (let i = 0, j = 0; i < rgb.length; i += 3, j += 4) { d[j] = rgb[i]; d[j + 1] = rgb[i + 1]; d[j + 2] = rgb[i + 2]; d[j + 3] = 255; }
-      rctx.putImageData(dosImg, 0, 0); dctx.fillStyle = '#000'; dctx.fillRect(0, 0, 1280, 800); dctx.imageSmoothingEnabled = false;
-      const k = Math.min(1280 / raw.width, 800 / raw.height), w = raw.width * k, h = raw.height * k; dctx.drawImage(raw, (1280 - w) / 2, (800 - h) / 2, w, h);
-      dosTex.needsUpdate = true; if (shotTexs[dosI] !== dosTex && raw.height === 480) { shotTexs[dosI] = dosTex; shownShot[0] = shownShot[1] = -2; } // keep the screenshot until SUN.EXE itself draws (640x480), not DOSBox's banner
-    });
-  })().catch(() => {}); // archive or CDN down: the screenshot stays
   let states = [], tops = [];
+  const lvhEl = document.createElement('div'); lvhEl.style.cssText = 'position:absolute;top:0;width:0;height:100lvh;visibility:hidden;pointer-events:none'; document.body.append(lvhEl);
+  const lvh = () => lvhEl.offsetHeight || innerHeight; // the stage keeps the large viewport: a phone toolbar showing or hiding never re-lays out the scene
   function layout() {
-    Wc = innerWidth; Hc = innerHeight; portrait = matchMedia('(max-width: 820px), (max-aspect-ratio: 19/20)').matches && Hc > 500; // same test as the CSS phone layout; short landscape uses the desktop poses
+    Wc = innerWidth; Hc = lvh(); portrait = matchMedia('(max-width: 820px), (max-aspect-ratio: 19/20)').matches && Hc > 500; // same test as the CSS phone layout; short landscape uses the desktop poses
     renderer.setSize(Wc, Hc, false);
+    const pins = secs.map((s) => (s.classList.contains('step') && s.dataset.scene !== 'hero' ? s.querySelector('.inner') : null));
+    pins.forEach((el) => el && Object.assign(el.style, { position: '', top: '', bottom: '', left: '', width: '' })); // poses read the copy's place in the flow: measure before pinning
     states = secs.map(stateOf); tops = secs.map((s) => s.getBoundingClientRect().top + scrollY);
+    const r = pins.map((el) => el && el.getBoundingClientRect()), sr = secs.map((s) => s.getBoundingClientRect());
+    pins.forEach((el, n) => { if (!el) return; const up = r[n].top - sr[n].top, down = sr[n].bottom - r[n].bottom; // the copy stays put while you read; a phone card sits on the bottom of the visible screen
+      Object.assign(el.style, { position: 'fixed', left: r[n].left + 'px', width: r[n].width + 'px', zIndex: 3 }, root.classList.contains('gl') ? {} : { visibility: 'hidden' }, portrait && down < up ? { top: 'auto', bottom: down + 'px' } : { top: up + 'px', bottom: 'auto' }); }); // hidden until the loop runs: stacked copy before the reveal
+    tops = secs.map((s) => s.getBoundingClientRect().top + scrollY); // a section can shrink once its copy leaves the flow
   }
 
   // photo / camera frames (S: px per photo px, T: offset of the photo's top-left), one mapping shared by the <img> and the camera
@@ -576,10 +552,10 @@ async function start() {
     P = i + (i < tops.length - 1 ? Math.min(1, (y - tops[i]) / Math.max(1, tops[i + 1] - tops[i])) : 0);
   }
   addEventListener('scroll', readScroll, { passive: true });
-  // Lenis: weighted wheel scrolling (touch stays native), proximity snap to each moment's top
+  // Lenis: weighted wheel scrolling; touch stays native
   const fts = []; let lastF = 0;
   const PERF = qs.has('perf') && (window.__perf = { ft: [], q: [], ext: renderer.getContext().getExtension('EXT_disjoint_timer_query_webgl2') }); // qa: GPU ms per frame
-  const lenis = new Lenis({ lerp: 0.085, wheelMultiplier: 1, autoRaf: false }), snap = new Snap(lenis, { type: 'proximity', distanceThreshold: '18%', debounce: 260, duration: 0.7, easing: (t) => 1 - Math.pow(1 - t, 4) }); // free scroll; only settles onto a moment when you stop close to it
+  const lenis = new Lenis({ lerp: 0.085, wheelMultiplier: 1, autoRaf: false }); // free scroll: each moment holds still while you read it, so nothing needs to snap
   // progress strip: the 8 beats as a filmstrip; the current one is lit, a click goes to its moment
   const film = document.createElement('nav'); film.className = 'strip'; film.setAttribute('aria-label', 'Sticker moments');
   film.innerHTML = beats.map((bt) => { const st = byKey[bt.dataset.sticker]; return `<button type="button" aria-label="${st.name}"><img src="${st.file.replace('stickers/', 'stickers/m/')}" alt=""></button>`; }).join('') + '<span class="cnt"></span>';
@@ -588,8 +564,8 @@ async function start() {
   document.querySelectorAll('.top a[href^="#"]').forEach((a) => a.addEventListener('click', (e) => { // nav: glide to the section instead of jumping
     const el = document.querySelector(a.getAttribute('href')); if (!el) return; e.preventDefault(); history.pushState(null, '', a.hash);
     lenis.scrollTo(el, { duration: reduce ? 0 : Math.min(2.2, 0.9 + Math.abs(el.getBoundingClientRect().top) / Hc * 0.08), immediate: reduce, easing: (t) => (t < 0.5 ? 8 * t ** 4 : 1 - (-2 * t + 2) ** 4 / 2), onComplete: () => el.focus({ preventScroll: true }) }); }));
-  const snaps = [], snapYs = []; const setSnaps = () => { snaps.splice(0).forEach((rm) => rm()); snapYs.length = 0; if (!qs.has('nosnap')) tops.forEach((t, k) => {
-      const lo = k < tops.length - 1 ? tops[k + 1] - Hc : t, add = (y, kb) => { if (!kb) snaps.push(snap.add(y)); snapYs.push(y); };
+  const snapYs = []; const setSnaps = () => { snapYs.length = 0; tops.forEach((t, k) => {
+      const lo = k < tops.length - 1 ? tops[k + 1] - Hc : t, add = (y) => snapYs.push(y);
       add(t); if (lo <= t + 2) return;
       // tall sections (CV, a phone hero): steps of at most 0.85 screen, landing on a block or row top just below the nav
       const marks = [...secs[k].querySelectorAll('h3, .rows > li, .block')].map((el) => el.getBoundingClientRect().top + scrollY - 84);
@@ -602,9 +578,10 @@ async function start() {
     const y = lenis.targetScroll, t = dir > 0 ? snapYs.find((v) => v > y + 2) : snapYs.findLast((v) => v < y - 2);
     if (t !== undefined) { e.preventDefault(); lenis.scrollTo(t); }
   });
-  new ResizeObserver(() => { layout(); setSnaps(); readScroll(); }).observe(document.querySelector('main'));
+  let lq = 0; const ro = new ResizeObserver(() => { lq ||= requestAnimationFrame(() => { lq = 0; layout(); setSnaps(); readScroll(); }); }); // once per frame: re-pinning inside the callback loops
+  ro.observe(document.querySelector('main')); for (const s of secs) { const el = s.querySelector('.inner'); if (el) ro.observe(el); } // pinned copy is out of the flow: main no longer grows when fonts or the reveal change it
   const sw = document.querySelector('.swaplid'); sw?.addEventListener('click', () => { finLid = 1 - finLid; sw.textContent = finLid ? 'Show the HUAWEI' : 'Show the MacBook'; }); // tops must follow late layout changes (.gl, fonts, images)
-  addEventListener('resize', () => { layout(); setSnaps(); readScroll(); });
+  addEventListener('resize', () => { if (innerWidth === Wc && lvh() === Hc) return; layout(); setSnaps(); readScroll(); }); // a toolbar-only resize changes nothing
   layout(); setSnaps(); readScroll(); Ps = P;
 
   // ---------- pose helpers ----------
@@ -624,7 +601,7 @@ async function start() {
   const PRES = { pos: new THREE.Vector3(), q: new THREE.Quaternion(), sc: new THREE.Vector3(), h0: new THREE.Vector3(), uq: new THREE.Quaternion(), fq: new THREE.Quaternion(), ax: new THREE.Vector3(), hb: new THREE.Vector3() };
   const SLOTS = [[-1, 0.9, 0.9], [1, 0.85, 0.84], [1.25, -0.25, 0.94], [0.85, -1, 0.88], [-0.1, -1.1, 0.96], [-1.05, -0.6, 0.86]]; // around the sticker on show, out from its edges; z < 1: always in front of it and the laptops
   function famPose(st, p, o, slot, now) { // Swarm: a neighbour peels up, then hangs in its slot facing the viewer, swaying a little
-    const lp = lps[st.lid], c = o.pc, f = ease(sstep(0.1 + 0.06 * slot, 0.72 + 0.04 * slot, p)), sy = lp.stk.scale.y; st.fb = f;
+    const lp = lps[st.lid], c = o.pc, f = ease(sstep(0.1 + 0.06 * slot, 0.72 + 0.04 * slot, p)), sy = lp.stk.scale.y; st.fb = st.lift = f;
     if (!c || f <= 0) { if (st.grp.parent !== lp.stk) lp.stk.add(st.grp); st.grp.position.copy(st.home); st.grp.quaternion.identity(); st.grp.scale.setScalar(1); st.mesh.renderOrder = st.ro; return; }
     if (st.grp.parent !== lp.lidG) lp.lidG.add(st.grp);
     const [sx, sy2, sz] = SLOTS[slot], z = c.z * sz, r = ((st.z + 1.3) * 0.618034) % 1, ks = c.size * (0.34 + 0.16 * r) * Math.min(1 / Math.sqrt(st.w * st.h), 1.5 / Math.max(st.w, st.h)), k = ks * sz, fw = ks * st.w / 2, fh = ks * st.h / 2;
@@ -642,6 +619,9 @@ async function start() {
   }
   let focusSt = null, grab = null; // the sticker on show in a beat: the visitor can turn it, click it for its story
   const SHM = new THREE.Matrix4();
+  function tint(st, dim) { // a sticker drawn over the lid's dim layer carries that dim itself until it has lifted off: no pop from dark to lit
+    const v = st.mesh.renderOrder >= 7990 ? 1 - dim * (1 - (st.lift ?? 1)) : 1; if (st.mesh.material.color.r !== v) { st.mesh.material.color.setScalar(v); st.fill?.material.color.setScalar(v); }
+  }
   function shade(st) {
     const on = st.peel > 1e-4 || st.pres > 0 || st.fb > 0; st.shadow.visible = on; st.mesh.material.depthWrite = on; // depth: the fold hides what it covers
     if (!on) return;
@@ -654,6 +634,7 @@ async function start() {
     const bi = beats.findIndex((b) => b.dataset.sticker === st.lid + ':' + st.id), off = bi >= 0 && !!beats[bi].querySelector('.side.off'), cx = Math.max(0, bi) % 2 ? -1 : 1; // alternate the starting corner
     const peelA = back ? 0 : 0.85 * sstep(0.02, off ? 0.4 : 0.48, a), fly = ease(sstep(back ? 0.25 : 0.42, 0.92, a)), rise = back ? fly : ease(sstep(off ? 0.3 : 0.36, 0.62, a)); // offense rips faster; it rises just before the last corner lets go
     const dir = new THREE.Vector2(-0.35 * cx, st.home.y > 0 ? -1 : 1).normalize(), ext = (Math.abs(dir.x) * st.w + Math.abs(dir.y) * st.h) / 2; // from the outer edge toward the lid centre: the folded sticker lands on the lid, not off its edge
+    st.lift = Math.max(0, rise); // how far it has left the dimmed lid (tint)
     const lift = back ? 0 : 2.5 * (1 - sstep(0.4, 0.55, a)), flip = back ? 0 : 2.5 - lift + (Math.PI * 2 - 2.5) * ease(sstep(0.45, 0.85, a)); // the curl stiffens into a sheet (flip takes over its angle), then turns on over: shiny back, then face
     st.u.uC.value.copy(dir).multiplyScalar(-ext); st.u.uD.value.copy(dir); st.u.uTh.value = Math.max(lift, 1e-3); st.u.uLift.value = 0.05 * lift / 2.5; st.u.uR.value = Math.min(st.w, st.h) * 0.1;
     st.u.uL.value = st.peel = st.peelTarget = peelA * 2 * ext;
@@ -703,7 +684,7 @@ async function start() {
   const nearSticker = (e) => { for (const r of [8, 16, 24]) for (let i = 0; i < 8; i++) { const h = hit({ clientX: e.clientX + r * Math.cos(i * Math.PI / 4), clientY: e.clientY + r * Math.sin(i * Math.PI / 4) }); if (h?.st) return h.st; } return null; }; // a click in a gap between stickers still means a sticker
   canvas.addEventListener('pointerdown', (e) => {
     if (!play) return; const h = hit(e); hov = null;
-    if (!h) { if (e.pointerType === 'touch') drag = { scroll: true, y: e.clientY, t: performance.now(), v: 0 }; return; } // empty canvas: a swipe scrolls
+    if (!h) return; // empty canvas: the browser scrolls (touch-action: pan-y)
     canvas.setPointerCapture(e.pointerId);
     if (h.st) {
       const st = h.st, lp = new THREE.Vector2((h.h.uv.x - 0.5) * st.w, (h.h.uv.y - 0.5) * st.h);
@@ -723,8 +704,7 @@ async function start() {
       if (edge && !hov && edge.peel < 1e-3) { const lp = new THREE.Vector2((h.h.uv.x - 0.5) * edge.w, (h.h.uv.y - 0.5) * edge.h); edge.u.uR.value = Math.min(edge.w, edge.h) * 0.07; pull(edge, lp, lp.clone().multiplyScalar(-1).normalize(), Math.hypot(edge.w, edge.h) * 0.11); hov = edge; } // the edge lifts a little in its own layer: raising it popped it over its neighbours
       canvas.style.cursor = h ? (edge || !h.st ? 'grab' : 'pointer') : ''; return;
     }
-    if (drag.scroll) { const dy = e.clientY - drag.y, t = performance.now(); scrollBy(0, -dy); drag.v = dy / Math.max(1, t - drag.t); drag.y = e.clientY; drag.t = t; return; }
-    if (drag.pending) { const dx = e.clientX - drag.x, dy = e.clientY - drag.y; if (Math.hypot(dx, dy) < 8) return; if (Math.abs(dy) > Math.abs(dx) && performance.now() - drag.t0 < 250) { drag = { scroll: true, y: e.clientY, t: performance.now(), v: 0 }; return; } drag.pending = false; } // quick vertical swipe: scroll the page ourselves (touch-action can't hand it back)
+    if (drag.pending) { const dx = e.clientX - drag.x, dy = e.clientY - drag.y; if (Math.hypot(dx, dy) < 8) return; if (Math.abs(dy) > Math.abs(dx) && performance.now() - drag.t0 < 250) { if (drag.st) drag.st.peelTarget = 0; drag = null; return; } drag.pending = false; } // quick vertical swipe: left to the browser's own scroll
     if (drag.lp) { tilt[drag.lp].tx = THREE.MathUtils.clamp(drag.tx + (e.clientX - drag.x) * 0.004, -0.6, 0.6); tilt[drag.lp].ty = THREE.MathUtils.clamp(drag.ty + (e.clientY - drag.y) * 0.003, -0.35, 0.35); return; }
     if (!drag.edge) { if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > 6) { const k = drag.st.lid; drag = { lp: k, x: e.clientX, y: e.clientY, tx: tilt[k].tx, ty: tilt[k].ty }; } return; } // mid-sticker drag tilts the laptop
     toNdc(e); ray.setFromCamera(ndc, camera);
@@ -735,7 +715,6 @@ async function start() {
   });
   const release = (e) => {
     if (!drag) return;
-    if (drag.scroll) { lenis.scrollTo(scrollY - drag.v * 260); drag = null; return; } // fling
     if (drag.st) { if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) < 6) showCard(drag.st); drag.st.peelTarget = 0; }
     else if (drag.near && Math.hypot(e.clientX - drag.x, e.clientY - drag.y) < 6) showCard(drag.near);
     drag = null; canvas.style.cursor = '';
@@ -773,7 +752,7 @@ async function start() {
     lenis.raf(now); Ps = P; // Lenis already carries the weight; a second spring only adds lag
     const i = Math.max(0, Math.min(states.length - 1, Math.floor(Ps))), f = clamp01(Ps - i), j = Math.min(states.length - 1, i + 1);
     const a = states[i], b = states[j], tsc = secs[i].dataset.scene, nsc = secs[j].dataset.scene;
-    let h = ease(sstep(0.12, 0.88, f));
+    let h = ease(sstep(0.45, 0.97, f)); // hold still for the first 45% of each moment, then move
     if (tsc === 'cv') h = ease(sstep(1 - Hc / Math.max(Hc, tops[j] - tops[i]), 1, f)); // the CV is several screens tall: keep the laptops away until its last screen
     const s = mix(a, b, h); s.old = mix(a.old, b.old, h); s.new = mix(a.new, b.new, h);
     if (tsc === 'cv') s.co = b.co * sstep(0.55, 1, h); // no half-faded laptop behind the CV text
@@ -785,10 +764,12 @@ async function start() {
       s.co = sstep(0.36, 0.42, f); s.po = 1 - sstep(0.42, 0.56, f); s.pk = 1 - x; s.old = b.old; // pk carries it from the photo to the reveal pose (mixing in the question's pose sent it off-screen left). The 3D laptop appears under its photo card, then the photo goes
       dimO = sstep(0.08, 0.38, f); cardO = 1 - sstep(0.45, 0.53, f);
     } else { fr = lerpFrame(frameOf(a.pm), frameOf(b.pm), h); dimO = cardO = 0; }
-    stageDim.style.transform = `translate(${fr.Tx}px, ${fr.Ty}px) scale(${fr.S})`; stageDim.style.opacity = dimO; card.visible = cardO > 0; cardMat.opacity = cardO;
-    photo.style.transform = `translate(${fr.Tx}px, ${fr.Ty}px) scale(${fr.S})`;
-    photoBox.style.clipPath = `inset(${fr.clip[0]}px ${fr.clip[1]}px ${fr.clip[2]}px ${fr.clip[3]}px round ${fr.clip[4]}px)`;
-    photoBox.style.opacity = s.po; photoBox.style.filter = s.po < 1 ? `blur(${(1 - s.po) * 8}px)` : '';
+    card.visible = cardO > 0; cardMat.opacity = cardO;
+    const photoOn = s.po > 0.001 || dimO > 0.001; photoBox.style.visibility = photoOn ? '' : 'hidden'; // an invisible photo is not restyled or composited every frame
+    if (photoOn) { stageDim.style.transform = `translate(${fr.Tx}px, ${fr.Ty}px) scale(${fr.S})`; stageDim.style.opacity = dimO;
+      photo.style.transform = `translate(${fr.Tx}px, ${fr.Ty}px) scale(${fr.S})`;
+      photoBox.style.clipPath = `inset(${fr.clip[0]}px ${fr.clip[1]}px ${fr.clip[2]}px ${fr.clip[3]}px round ${fr.clip[4]}px)`;
+      photoBox.style.opacity = s.po; photoBox.style.filter = s.po < 1 ? `blur(${(1 - s.po) * 8}px)` : ''; }
     canvas.style.opacity = s.co;
     camera.setViewOffset(PHOTO.w * fr.S, PHOTO.h * fr.S, -fr.Tx, -fr.Ty, Wc, Hc);
     // laptops
@@ -830,12 +811,8 @@ async function start() {
     for (const tr of terms) { const near = tr.k >= 0 && Math.abs(Ps - tr.k) < 0.8; if (near && !tr.on) tr.t0 = now; tr.on = near; if (near && frameN % 2 === 0) { tr.tm.draw((now - tr.t0) / 1000); tr.tex.needsUpdate = true; } }
     if (buzzK >= 0 && Math.abs(Ps - buzzK) < 0.8 && frameN === 0) bzDraw((now / 1000) % 12);
     // screens: cross-fade between the two scenes' screenshots, lit only once the lid is open
-    if (chessNew) { chessNew = false; shownShot[0] = shownShot[1] = -2; }
-    if (chessV.preload === 'none' && Math.abs(Ps - chessK) < 2.5) { chessV.preload = 'auto'; chessV.load(); } // 709 KB: fetched only as its moment comes near
-    const seeChess = chessK >= 0 && Math.abs(Ps - chessK) < 0.6 && !document.hidden; if (seeChess === chessV.paused) seeChess ? chessV.play().catch(() => {}) : chessV.pause();
-    const runDos = !!ci && ((dosK >= 0 && Math.abs(Ps - dosK) < 0.6) || DOS.phase === 'pre' || DOS.phase === 'boot'); // boots unseen, then runs only on screen
-    if (runDos !== dosOn) { dosOn = runDos; runDos ? ci.resume() : ci.pause(); }
-    if (dosOn && DOS.phase !== 'pre') dosStep(Math.min(dt, 0.1) * 1000);
+    for (const o of vids) { if (o.fresh) { o.fresh = false; shownShot[0] = shownShot[1] = -2; } if (o.v.preload === 'none' && Math.abs(Ps - o.k) < 2.5) { o.v.preload = 'auto'; o.v.load(); }
+      const see = o.k >= 0 && Math.abs(Ps - o.k) < 0.6 && !document.hidden; if (see === o.v.paused) see ? o.v.play().catch(() => {}) : o.v.pause(); }
     const dsp = lps.new.displays, on = sstep(-0.6, 0.1, lps.new.pivot.rotation.x);
     for (const [n, shot] of [[0, a.shot], [1, b.shot]]) {
       if (shownShot[n] !== shot) { shownShot[n] = shot; dsp[n].material.map = shot >= 0 ? shotTexs[shot] : null; dsp[n].material.color.set(shot >= 0 ? 0xffffff : 0x000000); dsp[n].material.needsUpdate = true; }
@@ -845,21 +822,22 @@ async function start() {
     if (sn >= 0 && sn !== stripN) { stripN = sn; stripB.forEach((bt, n) => bt.toggleAttribute('aria-current', n === sn)); stripC.textContent = `${String(sn + 1).padStart(2, '0')} / ${beats.length}`; }
     // beat stickers
     const famA = new Map(); for (const [n, sc] of [[i, a], [j, b]]) { const o = sc.pres && byKey[sc.pres]; if (o?.fam) { const p = 1 - sstep(0.08, 0.8, Math.abs(Ps - n)); o.fam.forEach((f, slot) => { if (p > (famA.get(f)?.p || 0)) famA.set(f, { p, o, slot }); }); } }
-    let dm = 0; for (const v of famA.values()) dm = Math.max(dm, v.p); for (const k in lidDim) { const o = 0.6 * ease(sstep(0.1, 0.6, dm)); lidDim[k].visible = o > 0.003; lidDim[k].material.opacity = o; } // both lids dim under the stickers on show
+    let dm = 0; for (const v of famA.values()) dm = Math.max(dm, v.p); const dimNow = 0.6 * ease(sstep(0.1, 0.6, dm)); for (const k in lidDim) { lidDim[k].visible = dimNow > 0.003; lidDim[k].material.opacity = dimNow; } // both lids dim under the stickers on show
     for (const st of stickers) {
       let pr = 0, back = false; for (const [n, sc] of [[i, a], [j, b]]) if (sc.pres === st.lid + ':' + st.id) { const p = 1 - sstep(0.08, 0.8, Math.abs(Ps - n)); if (p > pr) { pr = p; back = Ps > n; } }
-      if (pr > 0 || st.pres > 0) { present(st, pr, now, back); st.pres = pr; if (!pr) { st.peelTarget = 0; st.mesh.renderOrder = st.ro; } shade(st); continue; }
+      if (pr > 0 || st.pres > 0) { present(st, pr, now, back); st.pres = pr; if (!pr) { st.peelTarget = 0; st.mesh.renderOrder = st.ro; } shade(st); tint(st, dimNow); continue; }
       const fm = famA.get(st); if (fm) { st.fo = fm.o; st.fs = fm.slot; } if (fm || st.fb) famPose(st, fm ? fm.p : 0, st.fo, st.fs, now);
       if (st.peelTarget !== st.peel) {
         st.peel += (st.peelTarget - st.peel) * (1 - Math.exp(-dt * (st.peelTarget ? (st === hov ? 7 : 18) : 9)));
         if (Math.abs(st.peelTarget - st.peel) < 0.0005) st.peel = st.peelTarget;
         st.u.uL.value = st.peel; if (!st.peel) { st.mesh.renderOrder = st.ro; if (st.fill) st.fill.renderOrder = st.ro + 1; }
       }
-      st.u.uTilt.value = tilt[st.lid].x * 3 + tilt[st.lid].y * 2 + pp.x + Math.sin(now * 0.0004) * 0.15; shade(st);
+      st.u.uTilt.value = tilt[st.lid].x * 3 + tilt[st.lid].y * 2 + pp.x + Math.sin(now * 0.0004) * 0.15; shade(st); tint(st, dimNow);
     }
-    // text: each moment's copy is fully present at its snap point and dissolves between moments
+    // text: each moment's copy holds through its hold, fades out as the scene moves, and the next fades in as the scene arrives
     for (let n = 0; n < inners.length; n++) if (inners[n] && secs[n].dataset.scene !== 'cv') {
-      const d = Math.abs(Ps - n), o = 1 - sstep(0.3, 0.5, d); inners[n].style.opacity = o; inners[n].style.transform = `translateY(${(Ps - n) * -24}px)`;
+      const d = Ps - n, o = d >= 0 ? 1 - sstep(0.5, 0.64, d) : 1 - sstep(0.12, 0.26, -d), el = inners[n]; el.style.opacity = o;
+      if (el.style.position === 'fixed') { el.style.visibility = o < 0.01 ? 'hidden' : ''; el.style.pointerEvents = o < 0.5 ? 'none' : ''; } else el.style.transform = `translateY(${d * -24}px)`;
     }
     if (s.co > 0.001) {
       const gl = renderer.getContext(), tq = PERF && PERF.ext && gl.createQuery(); if (tq) gl.beginQuery(PERF.ext.TIME_ELAPSED_EXT, tq);
@@ -902,10 +880,12 @@ async function start() {
   addEventListener('click', (e) => { if (e.target.closest('a, button, input, textarea, select, .card, .top, .strip')) return; const st = overShow(e); if (st && st !== focusSt) showCard(st); }); // a swarm sticker opens its own story
   const letGo = (e) => { if (pgrab) { dropTicket(pgrab.t); pgrab = null; root.classList.remove('grabbing'); } if (!grab) return; if (e.type === 'pointerup' && grab.moved < 6) showCard(grab.st); grab = null; root.classList.remove('grabbing'); };
   addEventListener('pointerup', letGo); addEventListener('pointercancel', letGo);
-  document.addEventListener('visibilitychange', () => { if (document.hidden && ci) { ci.pause(); dosOn = false; } const was = running; running = !document.hidden; if (running && !was) { last = performance.now(); requestAnimationFrame(tick); } });
+  document.addEventListener('visibilitychange', () => { const was = running; running = !document.hidden; if (running && !was) { last = performance.now(); requestAnimationFrame(tick); } });
   if (OG) { root.classList.add('og'); document.body.insertAdjacentHTML('beforeend', '<div class="ogt"><h1>Youssef Awad</h1><p>DeadPackets</p></div>'); readScroll(); Ps = P; }
   { const hid = []; scene.traverse((o) => { if (!o.visible) { hid.push(o); o.visible = true; } }); // warm-up while the hero photo shows: compile every shader and upload every texture now, or the reveal stalls on its first draw
-    await renderer.compileAsync(scene, camera).catch(() => {}); scene.traverse((o) => { for (const m of o.material ? [].concat(o.material) : []) for (const k in m) if (m[k]?.isTexture && !m[k].isVideoTexture) renderer.initTexture(m[k]); });
+    const vd = lps.new.displays[0].material, vm = vd.map, vt = new THREE.VideoTexture(vids[0].v); vt.colorSpace = THREE.SRGBColorSpace; vd.map = vt; // the screen-recording shader too, or the first video screen compiles mid-scroll
+    await renderer.compileAsync(scene, camera).catch(() => {}); vd.map = vm; vt.dispose();
+    scene.traverse((o) => { for (const m of o.material ? [].concat(o.material) : []) { const pu = renderer.properties.get(m).uniforms || {}; for (const t of [...Object.values(m), ...Object.values(pu).map((v) => v.value)]) if (t?.isTexture && !t.isVideoTexture) renderer.initTexture(t); } }); // shader uniforms hold textures too (the sticker backs)
     for (const o of hid) o.visible = false; }
   root.classList.add('gl');
   requestAnimationFrame(tick);
@@ -934,8 +914,10 @@ function softboxRoom() {
 }
 
 // ---------- canvas textures ----------
+const backs = {};
 function backTex(flag, asp) { // the sticky side: mirror-silver release liner with a faint repeat print (the shader makes it metal + holo)
-  const c = document.createElement('canvas'), W = 512, H = Math.max(64, Math.round(512 / asp)); c.width = W; c.height = H; const x = c.getContext('2d');
+  const W = 512, h0 = Math.max(64, Math.round(512 / asp)), H = flag ? h0 : Math.round(64 * 2 ** (Math.round(Math.log2(h0 / 64) * 8) / 8)), key = flag + ':' + H; if (backs[key]) return backs[key]; // shared per 1/8 octave of height (print stretch <= 4.6%): 79 textures were ~80 MB of GPU memory, uploaded at once on the reveal
+  const c = document.createElement('canvas'); c.width = W; c.height = H; const x = c.getContext('2d');
   const g = x.createLinearGradient(0, 0, W, H); g.addColorStop(0, '#cfd5dd'); g.addColorStop(0.5, '#f4f6f9'); g.addColorStop(1, '#c3cad3'); x.fillStyle = g; x.fillRect(0, 0, W, H);
   x.save(); x.rotate(-0.35); x.fillStyle = 'rgba(40,48,60,0.07)'; x.font = '600 18px "JetBrains Mono", monospace';
   for (let yy = -H; yy < H * 2; yy += 30) for (let xx = -W; xx < W * 2; xx += 180) x.fillText('DEADPACKETS', xx + (yy / 30 % 2) * 90, yy);
@@ -944,5 +926,5 @@ function backTex(flag, asp) { // the sticky side: mirror-silver release liner wi
     x.fillStyle = '#2a2b30'; x.font = `600 ${Math.round(H * 0.3)}px "JetBrains Mono", monospace`; x.textBaseline = 'middle';
     for (const [al, px] of [['left', W * 0.05], ['right', W * 0.95]]) { x.textAlign = al; x.fillText(FLAG.slice(0, 10), px, H * 0.32); x.fillText(FLAG.slice(10), px, H * 0.68); }
   }
-  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return (backs[key] = t);
 }

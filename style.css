@@ -21,7 +21,7 @@ body {
 }
 .ascii { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; } /* ascii.js: the living background */
 .aura { position: fixed; left: 0; top: 0; width: 0; height: 0; z-index: -1; pointer-events: none; will-change: transform; } /* a light pool that follows the laptop */
-.aura i { position: absolute; left: -60vmax; top: -45vmax; width: 120vmax; height: 90vmax; opacity: 0; will-change: opacity; }
+.aura i { position: absolute; left: -15vmax; top: -11.25vmax; width: 30vmax; height: 22.5vmax; opacity: 0; will-change: opacity; transform: scale(4); } /* a soft gradient: rasterized at 1/16 the pixels, scaled up it looks the same */
 .aura .base { background: radial-gradient(closest-side, oklch(26% 0.04 250 / 0.55), oklch(16% 0.03 250 / 0.18) 55%, transparent); }
 .aura .eng { background: radial-gradient(closest-side, oklch(36% 0.08 205 / 0.5), oklch(20% 0.05 210 / 0.16) 55%, transparent); }
 .aura .off { background: radial-gradient(closest-side, oklch(34% 0.11 350 / 0.45), oklch(19% 0.06 350 / 0.15) 55%, transparent); }
@@ -52,19 +52,20 @@ ul, ol { margin: 0; padding: 0; }
 .nw .side { margin: 0 2px; }
 
 /* fixed layers: the stage photo (hero frame -> full bleed -> the laptop), then the WebGL laptops */
-.photo { position: fixed; inset: 0; z-index: 0; pointer-events: none; will-change: clip-path, opacity, filter; }
+.photo { position: fixed; left: 0; top: 0; width: 100%; height: 100lvh; z-index: 0; pointer-events: none; will-change: clip-path, opacity, filter; } /* the stage's large viewport, like #lid: its clip is computed in that space */
 .photo .dim { position: absolute; left: 0; top: 0; width: 1600px; height: 1066px; transform-origin: 0 0; opacity: 0; background: radial-gradient(300px 225px at 918px 724px, transparent 62%, oklch(7% 0.01 257 / 0.97)); } /* the lid's centre in photo px */
 .photo img { position: absolute; left: 0; top: 0; width: 1600px; height: 1066px; max-width: none; transform-origin: 0 0; will-change: transform; }
 html:not(.gl) .photo, html:not(.gl) #lid { display: none; }
 .cue .go, .cue .ld { display: none; } /* while loading, the fixed pill speaks for the page */
 .gl .cue .go { display: inline; }
-#lid { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 1; opacity: 0; pointer-events: none; touch-action: pinch-zoom; } /* vertical swipes are scrolled by app.js so a held drag can peel any way */
+#lid { position: fixed; left: 0; top: 0; width: 100%; height: 100lvh; z-index: 1; opacity: 0; pointer-events: none; touch-action: pan-y pinch-zoom; } /* swipes scroll natively; a held drag is claimed in app.js so it can peel any way */
 .play #lid { pointer-events: auto; background: radial-gradient(60% 46% at 50% 66%, oklch(20% 0.03 252 / 0.85), transparent 72%); } /* a lit stage under the finale pair: the black lid needs something to sit against */
 main { position: relative; z-index: 2; }
 .play main { pointer-events: none; } /* finale: the canvas under main gets drags and clicks */
 
 /* moments */
 .step { min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: 72px var(--pad); }
+.gl .step:not(.hero):not(.finale) { margin-bottom: 75svh; } /* a still reading hold before each transition; the copy is pinned by app.js */
 .play .step { pointer-events: none; } /* finale: drags reach the laptops; links stay live */
 .play .step a, .play .step button { pointer-events: auto; }
 .step .inner { max-width: min(36vw, 540px); display: grid; gap: 14px; will-change: opacity, transform; }
@@ -152,6 +153,9 @@ main { position: relative; z-index: 2; }
 .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
 .cv-edu { list-style: none; display: grid; gap: 14px; } .cv-edu .when { margin-top: 2px; }
 .cv-built { list-style: none; display: grid; gap: 16px; } .cv-built li { display: grid; gap: 2px; } .cv-built p { color: var(--muted); font-size: 15px; } .cv-built h4 .when { margin-left: 4px; }
+@supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) { /* scroll-linked: a block is still below the fold while it fades, so nothing already on screen can blink */
+  .cv-sec > h3, .cv-role, .cv-rec > div, .cv-stack > div, .cv-edu li, .cv-built li { animation: cv-in linear both; animation-timeline: view(); animation-range: entry 0% entry 80%; } } }
+@keyframes cv-in { from { opacity: 0; transform: translateY(14px); } }
 @media (min-width: 821px) { .cv-sec { grid-template-columns: 180px minmax(0, 1fr); gap: 24px 40px; } .cv-stack > div { grid-template-columns: 170px minmax(0, 1fr); align-items: start; } .cv-stack h4 { padding-top: 4px; } .cv-rec { grid-template-columns: repeat(3, minmax(0, 1fr)); } .cv-built { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 32px; } }
 
 /* finale: both laptops, yours to play with */
