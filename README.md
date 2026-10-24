@@ -131,8 +131,8 @@
 <tr>
 <td>
 <img class="status-badge" src="https://img.shields.io/badge/Live-3fb950?style=flat-square" alt="Live" />
-<a class="proj-name" href="https://projects.deadpackets.pw/DOSArchive/">DOSArchive</a>
-<div class="proj-desc">My dad's (Yasser Awad) old DOS programs, emulated so you can run them right in your browser.</div>
+<a class="proj-name" href="https://arabart.deadpackets.pw/">ARABART</a>
+<div class="proj-desc">A museum of my dad Yasser Awad's software: type with his 1991 Arabic engine, ported to JavaScript, and run his 15 DOS programs in your browser.</div>
 <div class="badges"><img src="https://img.shields.io/badge/Astro-FF5D01?style=flat-square&logo=astro&logoColor=white" alt="Astro" /></div>
 </td>
 <td></td>

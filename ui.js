@@ -66,7 +66,7 @@ function initNav() {
 // ---------- hidden shell ----------
 function initShell() {
   const box = document.querySelector('.shell'), out = box.querySelector('.out'), input = box.querySelector('input'), form = box.querySelector('form');
-  const P = { projecthailmary: null, 'llm-ad-defense': null, llmchessarena: 'https://llmchess.deadpackets.pw', buzzerminds: 'https://trivia.deadpackets.pw', faxmemaybe: 'https://remind.deadpackets.pw/', dosarchive: 'https://projects.deadpackets.pw/DOSArchive/' };
+  const P = { projecthailmary: null, 'llm-ad-defense': null, llmchessarena: 'https://llmchess.deadpackets.pw', buzzerminds: 'https://trivia.deadpackets.pw', faxmemaybe: 'https://remind.deadpackets.pw/', arabart: 'https://arabart.deadpackets.pw/' };
   const print = (t) => { out.textContent += t + '\n'; out.scrollTop = out.scrollHeight; };
   let back = null;
   const open = () => { back = document.activeElement; box.hidden = false; if (!out.textContent) print('lid shell. type help.'); input.focus(); };

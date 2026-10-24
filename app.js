@@ -414,7 +414,7 @@ async function start() {
   shotList = secs.filter((s) => s.dataset.shot).map((s) => s.dataset.shot);
   const shotTexs = shotList.map(() => null), shotK = shotList.map((n) => secs.findIndex((s) => s.dataset.shot === n)); // fetched as their moment comes near, like the videos
   // LLMChessArena: a real finished game from production, stepped move by move (recorded by qa, 15 s loop); plays only while its moment is on screen
-  const vids = ['llmchess', 'dosarchive'].map((k) => { // looping screen recordings, fetched only as their moment comes near (SUN.EXE: one tour of the real program, not a live emulator)
+  const vids = ['llmchess'].map((k) => { // looping screen recordings, fetched only as their moment comes near
     const o = { i: shotList.indexOf(k), k: secs.findIndex((s) => s.dataset.shot === k), v: Object.assign(document.createElement('video'), { muted: true, loop: true, playsInline: true, preload: 'none', src: `screens/${k}.mp4` }), fresh: false };
     if (o.i >= 0) o.v.addEventListener('loadeddata', () => { const t = new THREE.VideoTexture(o.v); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = maxAniso; shotTexs[o.i] = t; o.fresh = true; }, { once: true });
     return o; });
